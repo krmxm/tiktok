@@ -1,0 +1,94 @@
+.header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    &__icon {
+        &__back {
+            width: 94px;
+            height: 62px;
+            background: linear-gradient(0deg, rgba(255, 255, 255, 0.64), rgba(255, 255, 255, 0.64)), rgba(255, 255, 255, 0.64);
+            filter: blur(10px);
+            border-radius: 15px;
+        }
+        &__front {
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                top: 0;
+                width: 94px;
+                height: 62px;
+                background: rgba(255, 255, 255, 0.2);
+                border-radius: 15px;
+                a {
+                    img {
+                        padding: 32px 16px;
+                        
+                    }
+                }
+        }
+    }
+
+    &__conditions {
+        display: flex;
+        justify-content: space-between;
+        &__date {
+            text-align: end;
+            font-family: 'Montserrat';
+            font-weight: 500;
+            font-size: 32px;
+            color: #FFFFFF;
+            span {
+                display: block;
+                font-family: 'Montserrat';
+                font-weight: 400;
+                font-size: 24px;
+                color: #FFFFFF;
+            }
+        }
+        &__online {
+            position: relative;
+            width: 243px;
+            margin: 0 30px;
+            text-align: center;
+            font-family: 'Montserrat';
+            font-weight: 500;
+            font-size: 32px;
+            color: #FFFFFF;
+            &:after {
+                content: '';
+                position: absolute;
+                width: 246px;
+                height: 143px;
+                opacity: 0.4;
+                border: 3px solid #EEEEEE;
+                border-radius: 0px 0px 15px 15px;
+                border-top: none;
+                top: -25px;
+                right: 0;
+            }
+
+            span {
+                display: block;
+                font-family: 'Montserrat';
+                font-weight: 400;
+                font-size: 24px;
+                color: #FFFFFF;
+            }
+        }
+        &__long {
+            text-align: start;
+            font-family: 'Montserrat';
+            font-weight: 500;
+            font-size: 32px;
+            color: #FFFFFF;
+            span {
+                display: block;
+                font-family: 'Montserrat';
+                font-weight: 400;
+                font-size: 24px;
+                color: #FFFFFF;
+            }
+        }
+    }
+}
