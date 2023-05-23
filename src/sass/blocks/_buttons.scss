@@ -1,0 +1,38 @@
+.button {
+    position: relative;
+    width: 333.14px;
+    height: 132.41px;
+    background:#F0F0F0;
+    border-radius: 15px;
+    border: none;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #2D2B2B;
+
+
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        width: 333.14px;
+        height: 132.41px;
+        top: 0;
+        bottom: 0;
+        border-radius: 15px;
+        z-index: -1;
+    }
+
+    &::before {
+        background-color: #FE2C55;
+        left: -8px;
+        right: 0;
+    }
+
+    &::after {
+        background-color: #25F4EE;
+        right: 0;
+        left: 8px;
+    }
+}

@@ -1,9 +1,12 @@
 .promo {
+    position: relative;
     min-height: 1413px;
     padding: 25px 0 200px 0;
     background: url(../img/promo/bg.jpg);
+    z-index: 5;
     &__wrapper {
         position: relative;
+        z-index: -4;
     }
 
     &__header {
@@ -21,7 +24,7 @@
         display: block;
         margin: 0 auto;
         position: relative;
-        margin-bottom: 45px;
+        margin-bottom: 19px;
     }
     &__title {
         display: block;
@@ -77,14 +80,16 @@
         position: absolute;
         top: -209px;
         left: -357px;
-        z-index: 10;
+        z-index: 0;
     }
 
-    &__descr {
-        margin: 0 60px;
+    &__descr-wrap {
+        margin: 0 30px;
         display: grid;
-        grid-template-columns: repeat(2, 330px);
-        gap: 392px;
+        grid-template-columns: repeat(3, 352px);
+        gap: 20px;
+        align-items: center;
+        margin-bottom: 26.5px;
         div {
             font-family: 'Montserrat';
             font-weight: 400;
@@ -100,5 +105,29 @@
             text-align: left;
         }
     }
+    &__button {
+        margin: 0 auto;
+    }
+    &__descr-list {
+        margin: 0 auto;
+        width: 566px;
+        height: 108px;
+        background: url(../img/promo/Rectangle.png);
+        mix-blend-mode: screen;
+        opacity: 0.4;
+        border-radius: 15px;
+        div {
+            margin: 30 auto;
+            font-family: 'Montserrat';
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        color: #1E1C1C;
+        vertical-align: middle;
+        span {
+            color: #BB334E;
+        }
+        }
+    }
 }
-
