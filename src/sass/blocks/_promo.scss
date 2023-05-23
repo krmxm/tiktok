@@ -3,53 +3,101 @@
     padding: 25px 0 200px 0;
     background: url(../img/promo/bg.jpg);
     &__wrapper {
-        padding-top: 80px;
         position: relative;
-        h1 {
-            text-align: center;
+    }
+
+    &__header {
+        text-align: center;
+        margin: 0 auto;
+        font-family: 'Montserrat';
+        font-weight: 300;
+        font-size: 60px;
+        color: #FFFFFF;
+        margin-bottom: 38px;
+        line-height: 73px;
+    }
+
+    &__wrap-subheader {
+        display: block;
+        margin: 0 auto;
+        position: relative;
+        margin-bottom: 45px;
+    }
+    &__title {
+        display: block;
+        font-family: 'Source Sans 3';
+        font-weight: 900;
+        font-size: 300px;
+        line-height: 265px;
+        color: #FFFFFF;
+        opacity: 0.7;
+        text-align: center;
+    }
+    &__title-two {
+        display: block;
+        font-family: 'Source Sans 3';
+        font-weight: 900;
+        font-size: 300px;
+        line-height: 265px;
+        color: #FFFFFF;
+        text-align: center;
+    }
+
+    &__subheader-front {
+        position: absolute;
+        top: 0;
+        left: 95px;
+        z-index: 100;
+    }
+
+    &__subtitle {
+        display: block;
+        font-family: 'Source Sans 3';
+        font-weight: 900;
+        font-size: 300px;
+        line-height: 265px;
+        color: transparent;
+        -webkit-text-stroke: 1px rgba(255, 255, 255, 0.59);
+        opacity: 0.6;
+        text-align: center;
+    }
+    &__subtitle_two {
+        display: block;
+        font-family: 'Source Sans 3';
+        font-weight: 900;
+        font-size: 300px;
+        line-height: 265px;
+        color: transparent;
+        -webkit-text-stroke: 1px rgba(255, 255, 255, 0.59);
+        opacity: 0.6;
+        text-align: center;
+    }
+
+    &__img {
+        position: absolute;
+        top: -209px;
+        left: -357px;
+        z-index: 10;
+    }
+
+    &__descr {
+        margin: 0 60px;
+        display: grid;
+        grid-template-columns: repeat(2, 330px);
+        gap: 392px;
+        div {
             font-family: 'Montserrat';
-            font-weight: 300;
-            font-size: 60px;
-            color: #FFFFFF;
-            margin-bottom: 33px;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+            text-align: right;
+            color: #FFF7F7;
+            span {
+                color: #6FFFFB;
+            }
         }
-        &__maininfo {
-            margin: 0 auto;
-            position: relative;
-            display: block;
-            &__title {
-                display: block;
-                margin: 0 auto;
-                &__line1 {
-                    display: block;
-                    margin-bottom: 73px;
-                    font-family: 'Source Sans 3';
-                    font-weight: 900;
-                    font-size: 300px;
-                    text-align: center;
-                    color: #FFFFFF;
-                    opacity: 0.7;
-                }
-                &__line2 {
-                    font-family: 'Source Sans 3';
-                    font-weight: 900;
-                    font-size: 300px;
-                    text-align: center;
-                    color: #FFFFFF;
-                    opacity: 0.7;
-                }
-            }
-            &__img {
-                position: absolute;
-                top: 0;
-                left: 0;
-            }
-            &__overlay {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-            }
+        div:last-child {
+            text-align: left;
         }
     }
 }
