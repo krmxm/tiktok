@@ -1,14 +1,16 @@
 @import 'libs/bootstrap-reboot.min';
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;900&family=Source+Sans+3:wght@700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;900&family=Source+Sans+3:wght@700;900&family=Source+Sans+Pro:wght@600&display=swap');
 
 @import 'base/variables';
 @import 'base/mixins';
 * {
     font-family: 'Montserrat', sans-serif;
     font-family: 'Source Sans 3', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     margin: 0;
     padding: 0;
 }
+
 
 ul {
     margin: 0;
@@ -25,6 +27,13 @@ h1, h2, h3, h4, h5 {
     margin: 0 auto;
 }
 
+@import 'blocks/title';
+@import 'blocks/text';
+@import 'blocks/wave';
+@import 'blocks/buttons';
+
+
 @import 'blocks/promo';
 @import 'blocks/header';
-@import 'blocks/buttons';
+@import 'blocks/for';
+@import 'blocks/program';

@@ -25,14 +25,42 @@
     }
 
     &::before {
-        background-color: #FE2C55;
+        background-color: $main-color;
+        width: 50%;
         left: -8px;
         right: 0;
     }
 
     &::after {
-        background-color: #25F4EE;
+        background-color: $second-color;
         right: 0;
         left: 8px;
+    }
+    &__decor-left, &__decor-right {
+        display: block;
+        position: absolute;
+        width: 333.14px;
+        height: 132.41px;
+        top: 20px;
+        bottom: 0;
+        border-radius: 15px;
+        z-index: -1;
+    }
+
+    &__decor-left {
+        background-color: $main-color;
+        width: 50%;
+        height: 80%;
+        left: -3%;
+        right: 0;
+        filter: blur(50px);
+    }
+    &__decor-right {
+        background-color: $second-color;
+        width: 53%;
+        height: 50%;
+        right: 0;
+        left: 50%;
+        filter: blur(50px);
     }
 }

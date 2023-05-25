@@ -1,0 +1,33 @@
+.program {
+    position: relative;
+    min-height: 1413px;
+    padding: 25px 0 200px 0;
+    // z-index: 1000000;
+    &__background {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+    &__background-layer1 {
+        background: url(../img/promo/background-galaxy.jpg) center (center/cover) no-repeat;
+    }
+    
+    &__background-layer2 {
+        background: linear-gradient(0deg, rgba(70, 70, 70, 0.71), rgba(70, 70, 70, 0.71)), url(../img/promo/background-promo.jpg) center (center/cover) no-repeat;
+        opacity: 0.71;
+    }
+
+    &__background-layer3 {
+        display: block;
+        margin: 0 auto;
+        width: 1808.49px;
+        height: 357.84px;
+        background: #F4F9F9;
+        mix-blend-mode: multiply;
+        filter: blur(400px);
+        transform: matrix(0.01, -1, 1, 0.01, 0, 0);
+    }
+}

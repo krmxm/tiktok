@@ -52,6 +52,7 @@
                 font-weight: 400;
                 font-size: 24px;
                 color: #FFFFFF;
+                margin-top: 20px;
             }
         }
         &__online {
@@ -66,8 +67,8 @@
             &:after {
                 content: '';
                 position: absolute;
-                width: 246px;
-                height: 143px;
+                width: 243px;
+                height: 140px;
                 opacity: 0.4;
                 border: 3px solid #EEEEEE;
                 border-radius: 0px 0px 15px 15px;
@@ -75,13 +76,13 @@
                 top: -25px;
                 right: 0;
             }
-
             span {
                 display: block;
                 font-family: 'Montserrat';
                 font-weight: 400;
                 font-size: 24px;
                 color: #FFFFFF;
+                margin-top: 20px;
             }
         }
         &__long {

@@ -1,0 +1,13 @@
+.text {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24.38px;
+    color: #2D2B2B;
+    &_blue {
+        color: #19BFBA;
+    }
+    &_red {
+        color: #BB334E;
+    }
+}
