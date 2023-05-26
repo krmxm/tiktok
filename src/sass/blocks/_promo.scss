@@ -20,6 +20,11 @@
         background: linear-gradient(0deg, rgba(70, 70, 70, 0.71), rgba(70, 70, 70, 0.71)), url(../img/promo/background-promo.jpg) center (center/cover) no-repeat;
         opacity: 0.71;
     }
+    /* &__background-layer3 {
+        background: linear-gradient(89.87deg, rgba(95, 255, 250, 0.4) 13.48%, rgba(255, 90, 122, 0.4) 86.65%);
+filter: blur(350px);
+    } */
+
 
     &__wrapper {
         position: relative;

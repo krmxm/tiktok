@@ -1,12 +1,13 @@
 .title {
     font-family: 'Source Sans 3';
-    font-style: normal;
     font-weight: 700;
     font-size: 60px;
-    line-height: 85px;
     text-align: center;
     color: #2D2B2B;
     text-shadow: -1.5px -1.5px #25F4EE, 1.5px 1.5px #FE2C55;
+    &_white {
+        color: #EEEEEE;
+    }
 }
 
 .subtitle {
@@ -14,4 +15,12 @@
     font-weight: 600;
     font-size: 32px;
     color: #2D2B2B;
+    &_fw900{
+        font-weight: 900;
+        background: linear-gradient(90deg, #F4EDED 17.97%, rgba(252, 199, 199, 0.452381) 57.13%, rgba(233, 158, 158, 0.71) 89.48%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+            }
 }

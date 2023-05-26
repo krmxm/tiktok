@@ -1,7 +1,7 @@
 .program {
     position: relative;
     min-height: 1413px;
-    padding: 25px 0 200px 0;
+    padding: 200px 0;
     // z-index: 1000000;
     &__background {
         position: absolute;
@@ -21,13 +21,40 @@
     }
 
     &__background-layer3 {
+        height: 546px;
         display: block;
         margin: 0 auto;
-        width: 1808.49px;
-        height: 357.84px;
-        background: #F4F9F9;
-        mix-blend-mode: multiply;
-        filter: blur(400px);
-        transform: matrix(0.01, -1, 1, 0.01, 0, 0);
+        align-items: center;
+        background: linear-gradient(89.87deg, rgba(95, 255, 250, 0.4) 13.48%, rgba(255, 90, 122, 0.4) 86.65%);
+filter: blur(350px);
+    }
+
+    &__title {
+        margin-bottom: 85px;
+    }
+
+    &__cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__card {
+        width: 960px;
+        height: 394px;
+        background: linear-gradient(180deg, rgba(47, 46, 46, 0.5929) 15.32%, rgba(47, 46, 46, 0.77) 64.28%);
+        border-radius: 15px;
+        border: 5px solid red;
+        border-top: rgba(252, 188, 201, 0.186);
+        margin-bottom: 55px;
+    }
+
+    &__card-wrap {
+        margin: 110px 0 41px 233px
+    }
+    
+    &__subtitle {
+        margin-bottom: 20px;
     }
 }
