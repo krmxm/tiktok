@@ -44,47 +44,44 @@ filter: blur(350px);
     }
 
     &__card {
-        width: 960px;
-        min-height: 407px;
         position: relative;
+        width: 955px;
+        min-height: 402px;
         margin-bottom: 63px;
         box-sizing: border-box;
-    
-        $border: 5px;
-        color: #FFF;
         background: linear-gradient(180deg, rgba(47, 46, 46, 0.5236) 23.65%, rgba(47, 46, 46, 0.77) 78.34%);
-        background-clip: padding-box; /* !importanté */
-        border: solid $border transparent; /* !importanté */
         border-radius: 15px;
         // z-index: -1;
-
-
-        :after {
-            content: '';
+        svg {
             position: absolute;
-            top: 0px;
-            left: 0;
-            right: 0;
-            bottom: 0px;
-            background: linear-gradient(360deg, rgba(187, 51, 78, 0.1), rgba(252, 188, 201, 0.186));
-            background-size: 100% 100%;
-            // clip-path: inset(0 0 0 0 round 10%);
-            // clip-path: inset(0% 0% 0% 0% round 15px);
-            clip-path:polygon(0% 100%, 5px 100%, 5px 5px, calc(100% - 5px) 5px, calc(100% - 5px) calc(100% - 5px), 5px calc(100% - 5px), 5px 100%, 100% 100%, 100% 0%, 0% 0%);
-            border-radius: 10px;
-            opacity: 35%;
-            
-        }
-        
+            top: -2px;
+            left: -2px;
+            opacity: 0.6;
+            // z-index: 1;
+        }        
+    }
+
+    &__num {
+        display: block;
+        width: 163px;
+        height: 214px;
+    }
+
+    &__card-wrap {
+        display: grid;
+        grid-template-columns: 163px 710px;
+        column-gap: 30px;
+        padding-left: 40px;
     }
     
 
-    &__card-wrap {
-        margin: 110px 0 41px 233px;
+    &__card-text {
+        margin: 110px 0 41px 0;
         h3 {
             margin-bottom: 20px;
         }
         ul {
+            margin-left: 22px;
             li {
                 margin-bottom: 20px;
             }
@@ -95,27 +92,3 @@ filter: blur(350px);
         margin-bottom: 20px;
     }
 }
-
-.bubble {
-    width: 180px;
-    height: 180px;
-    margin:20px auto 60px;
-    position: relative;
-    border:5px solid purple;
-    border-bottom:none;
-    background:
-    linear-gradient(to right,purple ,purple )0 100%/100% 5px no-repeat;
-    position:relative;
-
-    // border-radius: 15px;
-  }
-//   .bubble:before {
-//     content:"";
-//     position:absolute;
-//     bottom:-38px;
-//     left:17px;
-//     width:62px;
-//     height:40px;
-//     border-left:3px solid purple;
-//     background:linear-gradient(to bottom right,transparent calc(50% - 2px),purple calc(50% - 2px),purple 50%,transparent 0);
-//   }
