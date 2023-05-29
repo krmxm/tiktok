@@ -11,6 +11,9 @@
     padding: 0;
 }
 
+body {
+    zoom: 70%
+}
 
 ul {
     margin: 0;
@@ -37,3 +40,4 @@ h1, h2, h3, h4, h5 {
 @import 'blocks/header';
 @import 'blocks/for';
 @import 'blocks/program';
+@import 'blocks/results';

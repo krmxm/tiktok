@@ -3,33 +3,33 @@
     min-height: 1413px;
     padding: 200px 0;
     // z-index: 1000000;
-    &__background {
+    
+
+    // transform: matrix(1, 0, 0, -1, 0, 0);
+    overflow: hidden;
+    &:after {
+        content: "";
         position: absolute;
-        bottom: 0;
+        height: 546px;
+        width: 100%;
+        z-index: -1;
+        top: 30%;
+        background: linear-gradient(89.87deg, rgba(95, 255, 250, 0.4) 13.48%, rgba(255, 90, 122, 0.4) 86.65%);
+filter: blur(350px);
+    }
+    &:before {
+        content: "";
+        position: absolute;
+        top: 2px;
         left: 0;
         width: 100%;
         height: 100%;
-        z-index: -1;
-    }
-    &__background-layer1 {
-        background: url(../img/promo/background-galaxy.jpg) center (center/cover) no-repeat;
-    }
-    
-    &__background-layer2 {
-        background: linear-gradient(0deg, rgba(70, 70, 70, 0.71), rgba(70, 70, 70, 0.71)), url(../img/promo/background-promo.jpg) center (center/cover) no-repeat;
-        opacity: 0.71;
-    }
+        z-index: -2;
+        // transform: matrix(1, 0, 0, -1, 0, 0);
+        background: url(../img/bg/bg.jpg) center (center/contain) no-repeat;
+        background-size: 100% 100%;
+        transform: matrix(1, 0, 0, -1, 0, 0);
 
-    &__background-layer3 {
-        position: absolute;
-        height: 546px;
-        z-index: -1;
-        top: 30%;
-        // display: block;
-        // margin: 0 auto;
-        // align-items: center;
-        background: linear-gradient(89.87deg, rgba(95, 255, 250, 0.4) 13.48%, rgba(255, 90, 122, 0.4) 86.65%);
-filter: blur(350px);
     }
 
     &__title {
@@ -45,26 +45,30 @@ filter: blur(350px);
 
     &__card {
         position: relative;
-        width: 955px;
-        min-height: 402px;
+        width: 960px;
+        min-height: 394px;
         margin-bottom: 63px;
         box-sizing: border-box;
-        background: linear-gradient(180deg, rgba(47, 46, 46, 0.5236) 23.65%, rgba(47, 46, 46, 0.77) 78.34%);
+        background: linear-gradient(180deg, rgba(47, 46, 46, 0.5236) 23.65%, rgba(47, 46, 46, 0.67) 78.34%);
         border-radius: 15px;
         // z-index: -1;
         svg {
             position: absolute;
-            top: -2px;
-            left: -2px;
-            opacity: 0.6;
+            top: -2.4px;
+            left: -2.5px;
+            opacity: 0.8;
             // z-index: 1;
-        }        
+        }
+        &:last-child{
+            margin-bottom: 0;
+        }      
     }
 
     &__num {
         display: block;
         width: 163px;
         height: 214px;
+
     }
 
     &__card-wrap {
@@ -84,6 +88,9 @@ filter: blur(350px);
             margin-left: 22px;
             li {
                 margin-bottom: 20px;
+                &:last-child{
+                    margin-bottom: 0;
+                }
             }
         }
     }
