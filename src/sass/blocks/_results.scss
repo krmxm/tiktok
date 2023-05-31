@@ -2,6 +2,7 @@
     position: relative;
     min-height: 2037px;
     padding: 200px 0;
+    z-index: 1000;
     &:before {
         content: "";
         position: absolute;

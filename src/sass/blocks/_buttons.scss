@@ -10,7 +10,8 @@
     font-size: 30px;
     text-transform: uppercase;
     color: #2D2B2B;
-
+    // z-index: 2000000;
+    // overflow: hidden;
 
     &::before,
     &::after {
@@ -25,14 +26,14 @@
     }
 
     &::before {
-        background-color: $main-color;
+        background-color: #FE2C55;
         width: 50%;
         left: -8px;
         right: 0;
     }
 
     &::after {
-        background-color: $second-color;
+        background-color: #25F4EE;
         right: 0;
         left: 8px;
     }
@@ -44,23 +45,35 @@
         top: 20px;
         bottom: 0;
         border-radius: 15px;
-        z-index: -1;
+        z-index: -2;
     }
 
     &__decor-left {
-        background-color: $main-color;
+        background-color: #FE2C55;
         width: 50%;
         height: 80%;
         left: -3%;
         right: 0;
         filter: blur(50px);
+        &_medium {
+            filter: blur(32px);
+            height: 56%;
+            top: 29px;
+            left: 0;
+        }
     }
     &__decor-right {
-        background-color: $second-color;
+        background-color: #25F4EE;
         width: 53%;
         height: 50%;
         right: 0;
         left: 50%;
         filter: blur(50px);
+        &_medium {
+            left: 46%;
+            filter: blur(32px);
+            top: 29px;
+            height: 56%;
+        }
     }
 }
