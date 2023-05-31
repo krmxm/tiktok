@@ -29,43 +29,203 @@
         position: relative;
         display: block;
         margin:  auto;
+        z-index: 1;
         img{
             display: block;
             margin: 0 auto;
-            width: 457px;
-            height: 457px;
+            width: 650px;
+            height: 650px;
+            mix-blend-mode: multiply;
+            transition: 0.2s;  
         }
         &:before {
             content: "";
             position: absolute;
             width: 457px;
             height: 457px;
-            top: -11px;
+            top: 95px;
             left: 317px;
             z-index: -1;
             background: #EEEEEE;
             filter: blur(125px);
+            opacity: 0.7;
+            transition: 0.2s;      
+        }
+        &:hover:before {
+            filter: blur(145px);
         }
     }
     &__orbita-main {
         position: absolute;
-        top: -164px;
-        left: 148px;
+        top: -69px;
+        left: 137px;
+        opacity: 0.45;
     }
     &__orbita-small {
         position: absolute;
-        top: -263px;
-        left: 54px;
+        top: -164px;
+        left: 43px;
+        opacity: 0.65;
+        img{
+            animation-name: rotation;
+            animation-duration: 15s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
     }
     &__orbita-medium {
         position: absolute;
-        top: -343px;
-        left: -25px;
+        top: -247px;
+        left: -36px;
+        opacity: 0.55;
+        img{
+            animation-name: rotation;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
     }
     &__orbita-big {
         position: absolute;
-        top: -389px;
-        left: -72px;
+        top: -294px;
+        left: -85px;
+        opacity: 0.45;
+        img{
+            animation-name: rotation;
+            animation-duration: 25s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+    }
+
+    &__card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 28px 19px;
+        position: absolute;
+        // min-width: 456px;
+        // min-height: 150px;
+        background: rgba(248, 245, 245, 0.51);
+        border-radius: 15px;
+
+        font-family: 'Montserrat';
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 32px;
+        text-align: center;
+        color: #2D2B2B;
+        z-index: 1;
+
+        &_1 {
+            width: 450px;
+            height: 150px;
+            right: 0;
+            top: -305px;
+            &::after{
+                content: '';
+                position: absolute;
+                width: 53.15px;
+                border: 2px solid #EEEEEE;
+                transform: rotate(4.32deg);
+                top: 139px;
+                right: 447px;
+            }
+            &::before {
+                content: '';
+                position: absolute;
+                width: 30px;
+                height: 30px;
+                top: 119px;
+                right: 487px;
+                border-radius: 100%;
+                background: #EEEEEE;
+                box-shadow: -4px -4px 15px rgba(217, 217, 217, 0.8), 4px 4px 15px rgba(217, 217, 217, 0.7);
+                filter: blur(2px);
+            }
+        }
+        &_2 {
+            width: 456px;
+            height: 150px;
+            left: 0;
+            top: -140px;
+            &::after{
+                content: '';
+                position: absolute;
+                width: 61px;
+                border: 2px solid #EEEEEE;
+                transform: matrix(-0.72, -0.69, -0.69, 0.72, 0, 0);
+                top: 165px;
+                left: 442px;
+            }
+            &::before {
+                content: '';
+                position: absolute;
+                width: 30px;
+                height: 30px;
+                top: 180px;
+                left: 487px;
+                border-radius: 100%;
+                background: #EEEEEE;
+                box-shadow: -4px -4px 15px rgba(217, 217, 217, 0.8), 4px 4px 15px rgba(217, 217, 217, 0.7);
+                filter: blur(2px);
+            }
+        }
+        &_3 {
+            width: 449px;
+            height: 150px;
+            left: 396px;
+            top: 543px;
+            &::after{
+                content: '';
+                position: absolute;
+                width: 63.03px;
+                border: 2px solid #EEEEEE;
+                transform: rotate(120.36deg);
+                top: -25px;
+                left: 428px;
+            }
+            &::before {
+                content: '';
+                position: absolute;
+                width: 30px;
+                height: 30px;
+                top: -68px;
+                left: 462px;
+                border-radius: 100%;
+                background: #EEEEEE;
+                box-shadow: -4px -4px 15px rgba(217, 217, 217, 0.8), 4px 4px 15px rgba(217, 217, 217, 0.7);
+                filter: blur(2px);
+            }
+        }
+        &_4 {
+            width: 556px;
+            height: 153px;
+            left: 307px;
+            top: 768px;
+            &::after{
+                content: '';
+                position: absolute;
+                width: 61px;
+                border: 2px solid #EEEEEE;
+                transform: matrix(0.39, 0.92, 0.92, -0.39, 0, 0);
+                top: -28px;
+                left: -34px;
+            }
+            &::before {
+                content: '';
+                position: absolute;
+                width: 30px;
+                height: 30px;
+                top: -81px;
+                left: -33px;
+                border-radius: 100%;
+                background: #EEEEEE;
+                box-shadow: -4px -4px 15px rgba(217, 217, 217, 0.8), 4px 4px 15px rgba(217, 217, 217, 0.7);
+                filter: blur(2px);
+            }
+        }
+        
     }
     
 }

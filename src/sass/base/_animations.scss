@@ -1,11 +1,17 @@
-@keyframes heartbeat {
-    from {
-        transform: scale(1);
+@keyframes rotation {
+    0% {
+        transform:rotate(0deg);
     }
-    50% {
-        transform: scale(1.3)
+    100% {
+        transform:rotate(360deg);
     }
-    to {
-        transform: scale(1);
+}
+
+@keyframes rotation-back {
+    0% {
+        transform:rotate(3600deg);
+    }
+    100% {
+        transform:rotate(0deg);
     }
 }
