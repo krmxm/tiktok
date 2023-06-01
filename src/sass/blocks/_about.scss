@@ -1,0 +1,93 @@
+.about {
+    position: relative;
+    padding: 200px 0 224px;
+    height: 1307px;
+    &:before {
+        content: "";
+        position: absolute;
+        top: 2px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -2;
+        // transform: matrix(1, 0, 0, -1, 0, 0);
+        background: url(../img/bg/bg.jpg) center (center/contain) no-repeat;
+        background-size: 100% 100%;
+        transform: matrix(1, 0, 0, -1, 0, 0);
+
+    }
+    &__title {
+        margin-bottom: 110px;
+    }
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        width: 665px;
+        min-height: 583px;
+        padding: 40px;
+        // box-sizing: border-box;
+        background: linear-gradient(180deg, rgba(47, 46, 46, 0.5236) 23.65%, rgba(47, 46, 46, 0.67) 78.34%);
+        border-radius: 15px;
+        svg {
+            position: absolute;
+            top: -2.4px;
+            left: -2.5px;
+            opacity: 0.8;
+            z-index: -1;
+        }
+    }
+    &__subtitle {
+        margin-bottom: 24px;
+    }
+    &__photo {
+        position: absolute;
+        top: -148px;
+        left: 271px;
+        z-index: -2;
+        &:after {
+            content: '';
+            position: absolute;
+            width: 617.04px;
+            height: 431.3px;
+            right: 147px;
+            top: 80px;
+            background: #FE2C55;
+            opacity: 0.4;
+            filter: blur(200px);
+            transform: matrix(0.96, 0.27, -0.7, 0.71, 0, 0);
+            z-index: -3;
+        }
+        &:before {
+            content: '';
+            position: absolute;
+            width: 625.26px;
+            height: 450.63px;
+            right: 363px;
+            top: 400px;
+            background: #25F4EE;
+            opacity: 0.4;
+            filter: blur(150px);
+            transform: matrix(0.96, 0.27, -0.7, 0.71, 0, 0);
+            z-index: -3;
+            
+        }
+    }
+    &__back-white {
+        position: absolute;
+        width: 999.65px;
+        height: 217.3px;
+        left: 204px;
+        top: 364px;
+        background: #EEEEEE;
+        opacity: 0.4;
+        filter: blur(181.5px);
+        transform: matrix(1, 0.04, -0.13, 0.99, 0, 0);
+        z-index: -3;
+    }
+}

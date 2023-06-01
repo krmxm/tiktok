@@ -30,6 +30,8 @@ h1, h2, h3, h4, h5 {
 .container {
     width: 1160px;
     margin: 0 auto;
+    overflow: visible;
+
 }
 
 @import 'blocks/title';
@@ -44,3 +46,4 @@ h1, h2, h3, h4, h5 {
 @import 'blocks/program';
 @import 'blocks/results';
 @import 'blocks/rates';
+@import 'blocks/about';
