@@ -30,14 +30,13 @@ h1, h2, h3, h4, h5 {
 .container {
     width: 1160px;
     margin: 0 auto;
-    overflow: visible;
-
 }
 
 @import 'blocks/title';
 @import 'blocks/text';
 @import 'blocks/wave';
 @import 'blocks/buttons';
+@import 'blocks/form';
 
 
 @import 'blocks/promo';
@@ -47,3 +46,4 @@ h1, h2, h3, h4, h5 {
 @import 'blocks/results';
 @import 'blocks/rates';
 @import 'blocks/about';
+@import 'blocks/contacts';
