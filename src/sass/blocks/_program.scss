@@ -49,7 +49,8 @@ filter: blur(350px);
         min-height: 394px;
         margin-bottom: 63px;
         box-sizing: border-box;
-        background: linear-gradient(180deg, rgba(47, 46, 46, 0.5236) 23.65%, rgba(47, 46, 46, 0.67) 78.34%);
+        background: url(../img/about/about-card.png) center (center/contain) no-repeat;
+        background-size:100% 100%;
         border-radius: 15px;
         // z-index: -1;
         svg {
@@ -61,7 +62,21 @@ filter: blur(350px);
         }
         &:last-child{
             margin-bottom: 0;
-        }      
+        }
+        ::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            border-radius: 15px; 
+            padding: 5px; 
+            background:linear-gradient(90deg,rgba(187, 51, 78, 0.6),rgba(252, 188, 201, 0.186));
+            opacity: .1; 
+            -webkit-mask: 
+               linear-gradient(#fff 0 0) content-box,
+               linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+                    mask-composite: exclude; 
+          }  
     }
 
     &__num {

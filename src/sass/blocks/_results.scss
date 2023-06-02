@@ -31,30 +31,29 @@
         display: block;
         margin:  auto;
         z-index: 1;
+        mix-blend-mode: multiply;
         img{
             display: block;
             margin: 0 auto;
             width: 650px;
             height: 650px;
-            mix-blend-mode: multiply;
+            // mix-blend-mode: multiply;
             transition: 0.2s;  
-        }
-        &:before {
-            content: "";
-            position: absolute;
-            width: 457px;
-            height: 457px;
-            top: 95px;
-            left: 317px;
-            z-index: -1;
-            background: #EEEEEE;
-            filter: blur(125px);
-            opacity: 0.7;
-            transition: 0.2s;      
         }
         &:hover:before {
             filter: blur(145px);
         }
+    }
+    &__shine {
+        position: absolute;
+        width: 457px;
+        height: 457px;
+        top: 95px;
+        left: 317px;
+        z-index: -1;
+        background: #EEEEEE;
+        filter: blur(100px);
+        opacity: 0.8;  
     }
     &__orbita-main {
         position: absolute;

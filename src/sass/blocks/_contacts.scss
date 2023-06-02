@@ -6,7 +6,7 @@
     &:before {
         content: "";
         position: absolute;
-        top: 2px;
+        top: -0.5px;
         left: 0;
         width: 100%;
         height: 100%;
@@ -21,6 +21,7 @@
         justify-content: start;
         align-items: end;
         margin-bottom: 30px;
+        z-index: 1000;
     }
     &__title{
         text-align: left;
@@ -33,6 +34,7 @@
         flex-direction: column;
         width: 634px;
         margin-right: 41.98px;
+        z-index: 1000;
     }
     &__img {
         width: 290.45px;
