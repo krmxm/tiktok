@@ -53,13 +53,6 @@ filter: blur(350px);
         background-size:100% 100%;
         border-radius: 15px;
         // z-index: -1;
-        svg {
-            position: absolute;
-            top: -2.4px;
-            left: -2.5px;
-            opacity: 0.8;
-            // z-index: 1;
-        }
         &:last-child{
             margin-bottom: 0;
         }
@@ -70,12 +63,13 @@ filter: blur(350px);
             border-radius: 15px; 
             padding: 5px; 
             background:linear-gradient(90deg,rgba(187, 51, 78, 0.6),rgba(252, 188, 201, 0.186));
-            opacity: .1; 
+            opacity: 1; 
             -webkit-mask: 
                linear-gradient(#fff 0 0) content-box,
                linear-gradient(#fff 0 0);
             -webkit-mask-composite: xor;
-                    mask-composite: exclude; 
+                    mask-composite: exclude;
+            animation: animatedBackground 5s ease infinite;
           }  
     }
 

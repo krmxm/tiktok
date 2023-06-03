@@ -50,3 +50,11 @@ h1, h2, h3, h4, h5 {
 @import 'blocks/contacts';
 @import 'blocks/questions';
 @import 'blocks/footer';
+
+
+.gradient {
+    width: 500px;
+    height: 500px;
+    background:linear-gradient(90deg, green,blue);
+    animation: animatedBackground 1s ease infinite;
+}

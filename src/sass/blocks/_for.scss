@@ -14,13 +14,16 @@
     &__items {
         display: flex;
         flex-direction: column;
+        justify-content: end;
         align-items: center;
     }
     &__emoji {
         display: block;
+        max-height: 368px;
         width: 300px;
         margin-bottom: 20px;
         img {
+            height: 100%;
             width: 100%;
         }
     }
