@@ -21,13 +21,13 @@
         opacity: 0;
         overflow: hidden;
         // will-change: max-height;
-        transition: all 0.3s ease-out;
+        transition: all 0.5s ease-out;
         box-sizing: content-box;
         font-size: 25px;
         line-height: 32px;
     }
     &__icon {
-        transition: transform 0.7s ease-out;
+        transition: transform 0.5s ease-out;
     }
 }
 

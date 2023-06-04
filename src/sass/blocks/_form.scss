@@ -49,13 +49,20 @@
         inset: 0;
         border-radius: 15px; 
         padding: 5px; 
-        background:linear-gradient(380deg,rgba(187, 51, 78, 0.6),rgba(252, 188, 201, 0.186));
-        // opacity: .9; 
+        background: linear-gradient(90deg, rgba(187, 51, 78, 0.6), rgba(252, 188, 201, 0.186));
+        background: linear-gradient(20deg, rgba(187, 51, 78, 0.6) 36%, rgba(252, 188, 201, 0.186) 50%);
+        opacity: .9; 
         -webkit-mask: 
            linear-gradient(#fff 0 0) content-box,
            linear-gradient(#fff 0 0);
         -webkit-mask-composite: xor;
-                mask-composite: exclude;
+        mask-composite: exclude;
+        background-size: 100% 450%;
+        animation-name: animation;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-direction: alternate;
         z-index: -1;
       }  
 }

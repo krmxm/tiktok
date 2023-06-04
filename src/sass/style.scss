@@ -53,8 +53,16 @@ h1, h2, h3, h4, h5 {
 
 
 .gradient {
-    width: 500px;
-    height: 500px;
-    background:linear-gradient(90deg, green,blue);
-    animation: animatedBackground 1s ease infinite;
+    width: 960px;
+    height: 394px;
+    background: linear-gradient(90deg, rgba(187, 51, 78, 0.6), rgba(252, 188, 201, 0.186));
+    background: linear-gradient(45deg, rgba(187, 51, 78, 0.6) 36%, rgba(252, 188, 201, 0.186) 50%);
+	background-size: 100% 450%;
+    animation-name: animation;
+    animation-duration: 10s;
+    animation-iteration-count:infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+	// transform: translate3d(0, 0, 0);
 }
+

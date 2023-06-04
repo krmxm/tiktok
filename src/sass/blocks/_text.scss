@@ -13,6 +13,10 @@
     &_white {
         color: #EEEEEE;
     }
+    &_line-through {
+        text-decoration: line-through;
+        color: rgba(45, 43, 43, 0.55);
+    }
     &_fz26 {
         font-size: 26px;
         line-height: 32px;
