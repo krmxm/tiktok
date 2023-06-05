@@ -6,98 +6,99 @@
     padding: 0 32.5px 0 32.5px;
     &__icon {
         position: relative;
-        &__back {
-            width: 94px;
-            height: 62px;
-            background: linear-gradient(0deg, rgba(255, 255, 255, 0.64), rgba(255, 255, 255, 0.64)), rgba(255, 255, 255, 0.64);
-            filter: blur(10px);
-            border-radius: 15px;
-            z-index: 10;
-        }
-        &__front {
-                position: absolute;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                top: 0px;
-                width: 94px;
-                height: 62px;
-                background: rgba(255, 255, 255, 0.2);
-                border-radius: 15px;
-                z-index: 100;
-                a {
-                    width: 100%;
-                    img {
-                        display: block;
-                        margin: 0 auto;
-                        padding: 32px 16px;
-                        z-index: 1000;
-                    }
-                }
-        }
     }
+    &__icon-back {
+        width: 94px;
+        height: 62px;
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.64), rgba(255, 255, 255, 0.64)), rgba(255, 255, 255, 0.64);
+        filter: blur(10px);
+        border-radius: 15px;
+        z-index: 10;
+    }
+    &__icon-front {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 0px;
+        width: 94px;
+        height: 62px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 15px;
+        z-index: 100;
+        a {
+            width: 100%;
+            img {
+                display: block;
+                margin: 0 auto;
+                padding: 32px 16px;
+                z-index: 1000;
+            }
+        }
+}
 
     &__conditions {
         display: flex;
         justify-content: space-between;
-        &__date {
-            text-align: end;
+    }
+    &__condition-date {
+        text-align: end;
+        font-family: 'Montserrat';
+        font-weight: 500;
+        font-size: 32px;
+        color: #FFFFFF;
+        span {
+            display: block;
             font-family: 'Montserrat';
-            font-weight: 500;
-            font-size: 32px;
+            font-weight: 400;
+            font-size: 24px;
             color: #FFFFFF;
-            span {
-                display: block;
-                font-family: 'Montserrat';
-                font-weight: 400;
-                font-size: 24px;
-                color: #FFFFFF;
-                margin-top: 20px;
-            }
+            margin-top: 20px;
         }
-        &__online {
-            position: relative;
+    }
+    &__condition-online {
+        position: relative;
+        width: 243px;
+        margin: 0 30px;
+        text-align: center;
+        font-family: 'Montserrat';
+        font-weight: 500;
+        font-size: 32px;
+        color: #FFFFFF;
+        &:after {
+            content: '';
+            position: absolute;
             width: 243px;
-            margin: 0 30px;
-            text-align: center;
-            font-family: 'Montserrat';
-            font-weight: 500;
-            font-size: 32px;
-            color: #FFFFFF;
-            &:after {
-                content: '';
-                position: absolute;
-                width: 243px;
-                height: 140px;
-                opacity: 0.4;
-                border: 3px solid #EEEEEE;
-                border-radius: 0px 0px 15px 15px;
-                border-top: none;
-                top: -25px;
-                right: 0;
-            }
-            span {
-                display: block;
-                font-family: 'Montserrat';
-                font-weight: 400;
-                font-size: 24px;
-                color: #FFFFFF;
-                margin-top: 20px;
-            }
+            height: 140px;
+            opacity: 0.4;
+            border: 3px solid #EEEEEE;
+            border-radius: 0px 0px 15px 15px;
+            border-top: none;
+            top: -25px;
+            right: 0;
         }
-        &__long {
-            text-align: start;
+        span {
+            display: block;
             font-family: 'Montserrat';
-            font-weight: 500;
-            font-size: 32px;
+            font-weight: 400;
+            font-size: 24px;
             color: #FFFFFF;
-            span {
-                display: block;
-                font-family: 'Montserrat';
-                font-weight: 400;
-                font-size: 24px;
-                color: #FFFFFF;
-            }
+            margin-top: 20px;
+        }
+    }
+    &__condition-long {
+        text-align: start;
+        font-family: 'Montserrat';
+        font-weight: 500;
+        font-size: 32px;
+        color: #FFFFFF;
+        span {
+            display: block;
+            font-family: 'Montserrat';
+            font-weight: 400;
+            font-size: 24px;
+            color: #FFFFFF;
+            margin-top: 20px;
         }
     }
 }

@@ -1,0 +1,18 @@
+@media (max-width: 991px) {
+    .button {
+        width: 323.14px;
+        height: 122.41px;
+        &::before,
+    &::after {
+        width: 323.14px;
+        height: 122.41px;
+    }
+        &::after {
+            right: 0;
+            left: 8px;
+        }
+        &::before {
+            left: -8px;
+        }
+    }
+}

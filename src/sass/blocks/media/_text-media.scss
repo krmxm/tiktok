@@ -1,0 +1,34 @@
+@media (max-width: 991px) {
+    h1 {
+        font-size: 50px;
+    }
+    .title {
+        font-size: 50px;
+    }
+    .subtitle {
+        font-size: 22px;
+    }
+    .text {
+        font-size: 18px;
+        &_fz26 {
+            font-size: 24px;
+        }
+        &_fz32 {
+            font-size: 30px;
+        }
+        &_footer {
+            font-size: 18px;  
+        }
+        &_contacts {
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 39px;
+        }
+    }
+}
+@media (max-width: 767px) {
+
+}
+@media (max-width: 575px) {
+
+}
