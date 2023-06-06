@@ -11,6 +11,7 @@
 }
 @media (max-width: 767px) {
     .header {
+        padding: 0 15px 0 15px;
         align-items: start;
         // &__conditions {
         //     flex-direction: column;
@@ -34,7 +35,7 @@
             font-weight: 500;
             font-size: 25px;
             line-height: 29px;
-            margin: 0 2px;
+            margin: 0 5px;
             // margin-bottom: 15px;
             // order: 1;
             span {
@@ -75,6 +76,7 @@
 }
 @media (max-width: 575px) {
     .header {
+        margin-bottom: 37px;
         align-items: start;
         &__conditions {
             flex-direction: column;
@@ -99,7 +101,7 @@
                 width: 132px;
                 height: 109px;           
                 top: -29px;
-                right: 15px;
+                right: 16px;
             }
         }
         &__condition-long {

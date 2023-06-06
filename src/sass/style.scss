@@ -40,18 +40,18 @@ h1, h2, h3, h4, h5 {
 }
 @media (max-width: 991px) {
     .container {
-        max-width: 1045px;
+        width: 1030px;
     }
 }
 @media (max-width: 767px) {
     .container {
-        width: 790px;
+        width: 800px;
     }
 }
 @media (max-width: 575px) {
     .container {
-        max-width: 100%;
-        padding: 0 15px;
+        width: 100%;
+        padding: 0 13px;
     }
 }
 
@@ -75,7 +75,7 @@ h1, h2, h3, h4, h5 {
 
 @import 'blocks/media/promo-media';
 @import 'blocks/media/header-media';
-// @import 'blocks/media/for-media';
+@import 'blocks/media/for-media';
 // @import 'blocks/media/program-media';
 // @import 'blocks/media/results-media';
 // @import 'blocks/media/rates-media';

@@ -1,0 +1,98 @@
+@media (max-width: 1200px) {
+    .for{
+        &__wrap {
+            margin: 0 99px;
+            grid-template-columns: repeat(2, 422px);
+            column-gap: 90px;
+            row-gap: 90px;
+            // gap: 118px;
+            grid-auto-rows: minmax(600px, auto);
+        }
+    }
+}
+@media (max-width: 991px) {
+    .for{
+        &__wrap {
+            margin: 0 47px;
+            grid-template-columns: repeat(2, 422px);
+            column-gap: 90px;
+            row-gap: 90px;
+            // gap: 118px;
+            grid-auto-rows: minmax(600px, auto);
+        }
+        &__descr {
+            padding-top: 30px;
+            padding-left: 30px;
+            padding-right: 30px;
+            /* br {
+                display: none;
+            } */
+        }
+    }
+}
+@media (max-width: 767px) {
+    .for{
+        padding: 80px 0 120px 0;
+        &__title {
+            margin-bottom: 50px;
+        }
+        &__wrap {
+            // margin: 0 auto;
+            grid-template-columns: repeat(1, 1fr);
+            // column-gap: 90px;
+            row-gap: 25px;
+            // gap: 118px;
+            grid-auto-rows: minmax(600px, auto);
+        }
+        
+    }
+}
+@media (max-width: 575px) {
+    .for {
+        &__title {
+            margin-bottom: 30px;
+        }
+        &__wrap {
+            grid-auto-rows: minmax(545px, auto);
+        }
+        &__emoji {
+            width: 278px;
+            max-height: 281px;
+            &_girl {
+                width: 231px;
+                height: 231px;
+            }
+            &_boy-glasses {
+                width: 250px;
+                height: 281px;
+            }
+            &_boy {
+                width: 278px;
+                height: 220px;
+            }
+            &_girl-star {
+                width: 250px;
+                height: 230px;
+            }
+        }
+        &__descr {
+            width: 295px;
+            height: 307px;
+            padding-top: 40px;
+            padding-left: 20px;
+            padding-right: 0;
+            .text {
+                width: 255px;
+                // br {
+                //     display: none;
+                // }
+                .media-hiden {
+                    display: none;
+                }
+            }
+        }
+        &__subtitle {
+            margin-bottom: 5px;
+        }
+    }
+}

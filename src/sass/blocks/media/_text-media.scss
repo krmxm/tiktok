@@ -6,10 +6,10 @@
         font-size: 50px;
     }
     .subtitle {
-        font-size: 22px;
+        font-size: 28px;
     }
     .text {
-        font-size: 18px;
+        font-size: 20px;
         &_fz26 {
             font-size: 24px;
         }
@@ -27,8 +27,35 @@
     }
 }
 @media (max-width: 767px) {
-
+    .title {
+        font-size: 44px;
+    }
 }
 @media (max-width: 575px) {
-
+    .title {
+        font-weight: 700;
+        font-size: 30px;
+    }
+    .subtitle {
+        font-weight: 600;
+        font-size: 24px;
+    }
+    .text {
+        font-weight: 400;
+        font-size: 16px;
+        &_fz26 {
+            font-size: 24px;
+        }
+        &_fz32 {
+            font-size: 30px;
+        }
+        &_footer {
+            font-size: 18px;  
+        }
+        &_contacts {
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 39px;
+        }
+    }
 }

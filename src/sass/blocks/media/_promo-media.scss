@@ -37,7 +37,7 @@
             font-size: 250px;
         }
         &__subheader-front {
-            left: 119px;
+            left: 111px;
         }
         &__subtitle {
             font-size: 250px;  
@@ -46,8 +46,9 @@
             font-size: 250px;
         }
         &__img {
-            left: 291px;
-            zoom: 100%;
+            top: 160px;
+            left: 319px;
+            zoom: 95%;
             &:after {
                 width: 608.53px;
                 height: 638.06px;
@@ -73,7 +74,192 @@
     }
 }
 @media (max-width: 767px) {
+    .promo {
+        &__wrapper {
+            display: block;
+            margin: 0 auto;
+            width: 800px;
+        }
+        &__header {
+            font-weight: 300;
+            font-size: 40px;
+            line-height: 47px;
+            margin-bottom: 190px;
+        }
+        &__title {
+            font-size: 150px;
+            font-weight: 900;
+            line-height: 50px;
+        }
+        &__title-two {
+            font-size: 150px;
+            font-weight: 900;
+            line-height: 188px;
+        }
+        &__subheader-front {
+            left: 158px;
+        }
+        &__subtitle {
+            font-size: 150px;
+            font-weight: 900;
+            line-height: 50px;  
+        }
+        &__subtitle-two {
+            font-size: 150px;
+            font-weight: 900;
+            line-height: 188px;
+        }
+        &__img {
+            top: 71px;
+            left: 255px;
+            zoom: 79%;
+            &:after {
+                width: 575.53px;
+                height: 638.06px;
+                left: 2px;
+                top: -127px;
+            }
+            &:before {
+                width: 667.34px;
+                height: 666.87px;
+                right: -88px;
+                top: 307px;
+            }
+        }
+        &__back-white {
+            left: -256px;
+            top: 284px;
+            width: 959.44px;
+            height: 370.28px;
+        }
+        &__descr {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+        }
+        &__get-create {
+            font-weight: 400;
+            line-height: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+            &_first {
+                order: 3;
+            }
+            &_second {
+                order: 4;
+            }
+            &:nth-child(3) {
+                text-align: center;
+                
+            }
+        }
+        &__button {
+            margin-bottom: 20px;
+            order: 1;
+        }
+        &__descr-list {
+            width: 300px;
+            height: 116px;
+            margin: 0;
+            margin-bottom: 20px;
+            padding: 18px 25px;
+            background: url(../img/promo/Rectangle-mobile.png);
+            mix-blend-mode: screen 0.4;
+            order: 2;
+            div{
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20px;
+                text-align: center;
+                span {
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 20px;
+                    text-align: center;
+                }
+            }
+        }
+    }
 }
 @media (max-width: 575px) {
+    .promo {
+        &__wrapper {
+            display: block;
+            margin: 0 auto;
+            width: 320px;
+        }
+        &__header {
+            // padding: 0 50px 0 50px;
+            display: block;
+            width: 334px;
+            font-weight: 300;
+            font-size: 30px;
+            line-height: 37px;
+            margin-bottom: 117px;
+        }
+        // &__wrapper {
+        //     width: 308px;
+        //     display: flex;
+        //     flex-direction: column;
+        //     align-items: center;
+        // }
+        &__wrap-subheader {
+            width: 300px;
+        }
+        &__title {
+            font-weight: 900;
+            font-size: 90px;
+            line-height: 90px;
+        }
+        &__title-two {
+            font-weight: 900;
+            font-size: 90px;
+            line-height: 90px;
+        }
+        &__subheader-front {
+            left: 5px
+        }
+        &__subtitle {
+            font-weight: 900;
+            font-size: 90px;
+            line-height: 90px;
+        }
+        &__subtitle-two {
+            font-weight: 900;
+            font-size: 90px;
+            line-height: 90px;
+        }
+        &__img {
+            top: 242px;
+            left: 60px;
+            zoom: 50%;
+            &:after {
+                width: 575.53px;
+                height: 515.06px;
+                left: -22px;
+                top: -43px;
+            }
+            &:before {
+                width: 584.34px;
+                height: 525.87px;
+                right: -35px;
+                top: 201px;
+            }
+        }
+        &__back-white {
+            left: -192px;
+            width: 860.44px;
+        }
+        &__get-create {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
 
+        }
+        &__button {
+            margin: 0;
+            margin-bottom: 20px;
+        }
+    }
 }
