@@ -33,6 +33,13 @@ h1, h2, h3, h4, h5 {
     margin: 0 auto;
 }
 
+.desktop-hidden {
+    content: ' ';
+    &:after {
+        content: ' '
+    }
+}
+
 @media (max-width: 1200px) {
     .container {
         max-width: 1100px;
@@ -76,7 +83,7 @@ h1, h2, h3, h4, h5 {
 @import 'blocks/media/promo-media';
 @import 'blocks/media/header-media';
 @import 'blocks/media/for-media';
-// @import 'blocks/media/program-media';
+@import 'blocks/media/program-media';
 // @import 'blocks/media/results-media';
 // @import 'blocks/media/rates-media';
 // @import 'blocks/media/about-media';

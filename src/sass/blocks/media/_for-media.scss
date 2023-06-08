@@ -28,6 +28,9 @@
                 display: none;
             } */
         }
+        &__title {
+            margin-bottom: 60px;
+        }
     }
 }
 @media (max-width: 767px) {
@@ -86,8 +89,14 @@
                 // br {
                 //     display: none;
                 // }
-                .media-hiden {
-                    display: none;
+                .media-hidden {
+                    content: ' ';
+                    &:after {
+                        content: ' '
+                    }
+                }
+                .desktop-hidden {
+                    display: block;
                 }
             }
         }
@@ -95,4 +104,6 @@
             margin-bottom: 5px;
         }
     }
+
+    
 }

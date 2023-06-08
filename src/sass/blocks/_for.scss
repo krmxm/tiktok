@@ -56,4 +56,11 @@
         display: block;
         margin-bottom: 20px;
     }
+
+    .desktop-hidden {
+        content: ' ';
+        &:after {
+            content: ' '
+        }
+    }
 }
