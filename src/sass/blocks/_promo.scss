@@ -3,6 +3,7 @@
     min-height: 1413px;
     padding: 25px 0 200px 0;
     z-index: 1000000;
+    overflow: hidden;
     &:before {
         content: "";
         position: absolute;
