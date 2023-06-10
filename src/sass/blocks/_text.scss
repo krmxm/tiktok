@@ -44,7 +44,12 @@
         text-decoration: line-through;
         color: rgba(45, 43, 43, 0.55);
     }
-    &_fz26 {
+    &_fz26{
+        font-size: 26px;
+        line-height: 32;
+    }
+    &_fz26-fw600 {
+        font-weight: 600;
         font-size: 26px;
         line-height: 32px;
     }

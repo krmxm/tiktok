@@ -1,0 +1,394 @@
+@media (max-width: 1200px) {
+    .results {
+        overflow: hidden;
+        &__wrap {
+            max-width: 1100px;
+        }
+        &__shaine {
+            left: 323px;
+        }
+        &__orbita-main {
+            left: 149px;
+        }
+        &__orbita-small {
+            left: 54px;
+        }
+        &__orbita-medium {
+            left: -31px;
+        }
+        &__orbita-big {
+            left: -80px;
+        }
+        &__card{
+            &_1 {
+                right: 60px;
+            }
+            &_2 {
+                top: -139px;
+            }
+            &_3 {
+                left: 409px;
+            }
+            &_4 {
+                top: 784px;
+            }
+        }
+    }
+}
+@media (max-width: 991px) {
+    .results {
+        overflow: hidden;
+        &__wrap {
+            width: 1030px;
+        }
+        &__brain {
+            img {
+                width: 550px;
+                height: 550px;
+            }
+        }
+        &__shine {
+            top: 58px;
+            left: 288px;
+        }
+        &__orbita-main {
+            top: -90px;
+            left: 140px;
+            img {
+                // display: block;
+                // margin: 0 auto;
+                width: 750px;
+                height: 750px;
+            }
+        }
+        &__orbita-small {
+            left: 45px;
+            top: -187px;
+            img {
+                width: 941px;
+                height: 941px;
+            }
+        }
+        &__orbita-medium {
+            left: -40px;
+            top: -272px;
+            img {
+                width: 1105px;
+                height: 1105px;
+            }
+        }
+        &__orbita-big {
+            left: -89px;
+            top: -321px;
+            img {
+                width: 1199px;
+                height: 1199px;
+            }
+        }
+        &__card {
+            padding: 23px 14px;
+            &_1 {
+                width: 445px;
+                height: 145px;
+                top: -332px;
+                &::after{
+                    top: 134px;
+                    right: 442px;
+                }
+                &::before {
+                    top: 115px;
+                }
+            }
+            &_2 {
+                top: -160px;
+                width: 451px;
+                height: 145px;
+                &::after {
+                    top: 159px;
+                    left: 437px;
+                }
+                &::before {
+                    top: 173px;
+                    left: 481px;
+                }
+            }
+            &_3 {
+                top: 491px;
+                left: 443px;
+                width: 444px;
+                height: 145px;
+            }
+            &_4 {
+                top: 737px;
+                width: 551px;
+                height: 148px;
+            }
+        }
+    }
+}
+@media (max-width: 767px) {
+    .results {
+        padding: 103px 0 192px 0;
+        &__title {
+            margin-bottom: 380px;
+        }
+        &__wrap {
+            width: 540px;
+        }
+        &__brain {
+            img {
+                width: 350px;
+                height: 350px;
+            }
+        }
+        &__shine {
+            width: 357px;
+            height: 357px;
+            top: 5px;
+            left: 227px;
+        }
+        &__orbita-main {
+            top: -50px;
+            left: 175px;
+            img {
+                // display: block;
+                // margin: 0 auto;
+                width: 450px;
+                height: 450px;
+            }
+        }
+        &__orbita-small {
+            left: 85px; // +40
+            top: -152px; // +35
+            img {
+                width: 641px;
+                height: 641px;
+            }
+        }
+        &__orbita-medium {
+            left: 0;
+            top: -237px;
+            img {
+                width: 805px;
+                height: 805px;
+            }
+        }
+        &__orbita-big {
+            left: -49px;
+            top: -286px;
+            img {
+                width: 899px;
+                height: 899px;
+            }
+        }
+        &__card {
+            padding: 15px 8px;
+            &_1 {
+                width: 350px;
+                height: 90px;
+                top: -276px;
+                right: 0;
+                &::after{
+                    top: 79px;
+                    right: 347px;
+                }
+                &::before {
+                    top: 60px;
+                    right: 393px;
+                }
+            }
+            &_2 {
+                top: -127px;
+                width: 300px;
+                height: 120px;
+                &::after {
+                    top: 134px;
+                    left: 287px;
+                }
+                &::before {
+                    top: 143px;
+                    left: 326px;
+                }
+            }
+            &_3 {
+                top: 310px;
+                left: 300px;
+                width: 300px;
+                height: 90px;
+                &::after {
+                    top: -22px;
+                    left: 280px;
+                }
+                &::before {
+                    top: -60px;
+                    left: 309px;
+                }
+            }
+            &_4 {
+                top: 518px;
+                width: 380px;
+                height: 110px;
+                &::after {
+                    width: 40px;
+                    top: -17px;
+                    left: -22px;
+                }
+                &::before {
+                    top: -58px;
+                    left: -28px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 575px) {
+    .results {
+        &__title {
+            margin-bottom: 205px;
+        }
+        &__wrap {
+            width: 449px;
+        }
+        &__brain {
+            img {
+                width: 173px;
+                height: 173px;
+            }
+        }
+        &__shine {
+            width: 186.94px;
+            height: 160.65px;
+            filter: blur(39px);
+            top: 8px;
+            left: 135px;
+        }
+        &__orbita-main {
+            // content: url("../img/results/main-orbita-media.png");
+            top: -24px;
+            left: 112px;
+            img {
+                // display: block;
+                // margin: 0 auto;
+                width: 223px;
+                height: 223px;
+            }
+        }
+        &__orbita-small {
+            left: 75px;
+            top: -63px;
+            img {
+                width: 300px;
+                height: 300px;
+            }
+        }
+        &__orbita-medium {
+            left: 51px;
+            top: -88px;
+            img {
+                width: 350px;
+                height: 350px;
+            }
+        }
+        &__orbita-big {
+            left: 27px;
+            top: -115px;
+            img {
+                width: 400px;
+                height: 400px;
+            }
+        }
+        &__card {
+            padding: 5px 5px;
+            &_1 {
+                width: 119px;
+                height: 114px;
+                top: -171px;
+                right: 5px;
+                &::after{
+                    width: 15.91px;
+                    height: 0px;
+                    border: 2px solid #EEEEEE;
+                    transform: matrix(0.68, -0.74, 0.71, 0.7, 0, 0);
+                    top: 115px;
+                    right: 112px;
+                }
+                &::before {
+                    width: 10.98px;
+                    height: 11.46px;
+                    top: 116px;
+                    right: 121px;
+                    box-shadow: -4px -4px 15px rgba(217, 217, 217, 0.8), 4px 4px 15px rgba(217, 217, 217, 0.7);
+                    filter: blur(2px);
+                    transform: matrix(0.64, 0.77, -0.88, 0.48, 0, 0);
+                }
+            }
+            &_2 {
+                top: -134px;
+                left: 39px;
+                width: 135px;
+                height: 142px;
+                &::after {
+                    width: 22.77px;
+                    height: 0px;
+                    border: 2px solid #EEEEEE;
+                    transform: matrix(-0.76, -0.65, -0.73, 0.68, 0, 0);
+                    top: 142px;
+                    left: 130px;
+                }
+                &::before {
+                    width: 11.8px;
+                    height: 10.49px;
+                    box-shadow: -4px -4px 15px rgba(217, 217, 217, 0.8), 4px 4px 15px rgba(217, 217, 217, 0.7);
+                    filter: blur(2px);
+                    top: 147px;
+                    left: 146px;
+                }
+            }
+            &_3 {
+                width: 134px;
+                height: 96px;
+                top: 176px;
+                left: 82px;
+                &::after {
+                    width: 35.42px;
+                    height: 0px;
+                    border: 2px solid #EEEEEE;
+                    transform: rotate(-169.02deg);
+                    top: 15px;
+                    left: 133px;
+                }
+                &::before {
+                    width: 11.8px;
+                    height: 10.49px;
+                    box-shadow: -4px -4px 15px rgba(217, 217, 217, 0.8), 4px 4px 15px rgba(217, 217, 217, 0.7);
+                    filter: blur(2px);
+                    top: 15px;
+                    left: 161px;
+                }
+            }
+            &_4 {
+                width: 178px;
+                height: 133px;
+                top: 230px;
+                left: 279px;
+                &::after {
+                    width: 40.55px;
+                    height: 0px;
+                    border: 2px solid #EEEEEE;
+                    transform: rotate(62.54deg);
+                    top: -17.5px;
+                    left: 21px;
+                }
+                &::before {
+                    width: 11.8px;
+                    height: 10.49px;
+                    box-shadow: -4px -4px 15px rgba(217, 217, 217, 0.8), 4px 4px 15px rgba(217, 217, 217, 0.7);
+                    filter: blur(2px);
+                    transform: matrix(-1, 0, 0, 1, 0, 0);
+                    top: -40px;
+                    left: 26px;
+                }
+            }
+        }
+    }
+}

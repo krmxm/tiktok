@@ -1,6 +1,5 @@
 .results {
     position: relative;
-    min-height: 2037px;
     padding: 200px 0;
     z-index: 1000;
     &:before {
@@ -22,14 +21,13 @@
     }
     &__wrap {
         position: relative;
-        width: 1081px;
-        height: 1231px;
+        width: 1160px;
         margin: 0 auto;
     }
     &__brain {
         position: relative;
         display: block;
-        margin:  auto;
+        margin: auto;
         z-index: 1;
         mix-blend-mode: multiply;
         img{
@@ -49,7 +47,7 @@
         width: 457px;
         height: 457px;
         top: 95px;
-        left: 317px;
+        left: 348px;
         z-index: -1;
         background: #EEEEEE;
         filter: blur(100px);
@@ -58,15 +56,23 @@
     &__orbita-main {
         position: absolute;
         top: -69px;
-        left: 137px;
+        left: 180px;
         opacity: 0.45;
+        img {
+            display: block;
+            margin: 0 auto;
+            width: 800px;
+            height: 800px;
+        }
     }
     &__orbita-small {
         position: absolute;
-        top: -164px;
-        left: 43px;
+        top: -166px;
+        left: 85px;
         opacity: 0.65;
         img{
+            width: 991px;
+            height: 991px;
             animation-name: rotation;
             animation-duration: 15s;
             animation-iteration-count: infinite;
@@ -75,10 +81,12 @@
     }
     &__orbita-medium {
         position: absolute;
-        top: -247px;
-        left: -36px;
+        top: -251px;
+        left: 0;
         opacity: 0.55;
         img{
+            width: 1155px;
+            height: 1155px;
             animation-name: rotation;
             animation-duration: 20s;
             animation-iteration-count: infinite;
@@ -87,10 +95,12 @@
     }
     &__orbita-big {
         position: absolute;
-        top: -294px;
-        left: -85px;
+        top: -300px;
+        left: -49px;
         opacity: 0.45;
         img{
+            width: 1249px;
+            height: 1249px;
             animation-name: rotation;
             animation-duration: 25s;
             animation-iteration-count: infinite;
@@ -109,19 +119,14 @@
         background: rgba(248, 245, 245, 0.51);
         border-radius: 15px;
 
-        font-family: 'Montserrat';
-        font-weight: 600;
-        font-size: 26px;
-        line-height: 32px;
         text-align: center;
-        color: #2D2B2B;
         z-index: 1;
 
         &_1 {
             width: 450px;
             height: 150px;
-            right: 0;
-            top: -305px;
+            right: 49px;
+            top: -313px;
             &::after{
                 content: '';
                 position: absolute;
@@ -148,7 +153,7 @@
             width: 456px;
             height: 150px;
             left: 0;
-            top: -140px;
+            top: -132px;
             &::after{
                 content: '';
                 position: absolute;
@@ -163,8 +168,8 @@
                 position: absolute;
                 width: 30px;
                 height: 30px;
-                top: 180px;
-                left: 487px;
+                top: 182px;
+                left: 489px;
                 border-radius: 100%;
                 background: #EEEEEE;
                 box-shadow: -4px -4px 15px rgba(217, 217, 217, 0.8), 4px 4px 15px rgba(217, 217, 217, 0.7);
@@ -174,16 +179,16 @@
         &_3 {
             width: 449px;
             height: 150px;
-            left: 396px;
-            top: 543px;
+            left: 440px;
+            top: 546px;
             &::after{
                 content: '';
                 position: absolute;
                 width: 63.03px;
                 border: 2px solid #EEEEEE;
                 transform: rotate(120.36deg);
-                top: -25px;
-                left: 428px;
+                top: -22px;
+                left: 426px;
             }
             &::before {
                 content: '';
@@ -191,7 +196,7 @@
                 width: 30px;
                 height: 30px;
                 top: -68px;
-                left: 462px;
+                left: 459px;
                 border-radius: 100%;
                 background: #EEEEEE;
                 box-shadow: -4px -4px 15px rgba(217, 217, 217, 0.8), 4px 4px 15px rgba(217, 217, 217, 0.7);
@@ -201,7 +206,7 @@
         &_4 {
             width: 556px;
             height: 153px;
-            left: 307px;
+            left: 344px;
             top: 768px;
             &::after{
                 content: '';
@@ -209,7 +214,7 @@
                 width: 61px;
                 border: 2px solid #EEEEEE;
                 transform: matrix(0.39, 0.92, 0.92, -0.39, 0, 0);
-                top: -28px;
+                top: -26px;
                 left: -34px;
             }
             &::before {
@@ -217,7 +222,7 @@
                 position: absolute;
                 width: 30px;
                 height: 30px;
-                top: -81px;
+                top: -78px;
                 left: -33px;
                 border-radius: 100%;
                 background: #EEEEEE;

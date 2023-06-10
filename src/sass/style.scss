@@ -15,7 +15,7 @@
 }
 
 body {
-    zoom: 70%
+    // zoom: 70%
 }
 
 ul {
@@ -40,6 +40,12 @@ h1, h2, h3, h4, h5 {
     }
 }
 
+@media (max-width: 2000px) {
+    .container {
+        max-width: 1500px;
+    }
+}
+
 @media (max-width: 1200px) {
     .container {
         max-width: 1100px;
@@ -52,13 +58,13 @@ h1, h2, h3, h4, h5 {
 }
 @media (max-width: 767px) {
     .container {
-        width: 800px;
+        max-width: 540px;
     }
 }
 @media (max-width: 575px) {
     .container {
         width: 100%;
-        padding: 0 13px;
+        padding: 0 4px;
     }
 }
 
@@ -84,7 +90,7 @@ h1, h2, h3, h4, h5 {
 @import 'blocks/media/header-media';
 @import 'blocks/media/for-media';
 @import 'blocks/media/program-media';
-// @import 'blocks/media/results-media';
+@import 'blocks/media/results-media';
 // @import 'blocks/media/rates-media';
 // @import 'blocks/media/about-media';
 // @import 'blocks/media/contacts-media';

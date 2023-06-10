@@ -13,6 +13,9 @@
         &_fz26 {
             font-size: 24px;
         }
+        &_fz26-fw600 {
+            font-size: 24px;
+        }
         &_fz32 {
             font-size: 30px;
         }
@@ -30,28 +33,15 @@
     .title {
         font-size: 44px;
     }
-}
-@media (max-width: 575px) {
-    .title {
-        font-weight: 700;
-        font-size: 30px;
-    }
-    .subtitle {
-        font-weight: 600;
-        font-size: 24px;
-        &_fw900{
-            background: linear-gradient(90deg,#f4eded 16.97%,rgba(252,199,199,.452381) 60.13%,rgba(233,158,158,.71) 89.48%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-    }
     .text {
         font-weight: 400;
         font-size: 16px;
         line-height: 20px;
         &_fz26 {
-            font-size: 24px;
+            font-size: 22px;
+        }
+        &_fz26-fw600 {
+            font-size: 22px;
         }
         &_fz32 {
             font-size: 30px;
@@ -65,6 +55,50 @@
             line-height: 39px;
         }
     }
+}
+@media (max-width: 575px) {
+    .title {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 43px;
+    }
+    .text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        &_fz26 {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+        }
+        &_fz26-fw600 {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+        }
+        &_fz32 {
+            font-size: 28px;
+        }
+        &_footer {
+            font-size: 16px;  
+        }
+        &_contacts {
+            font-weight: 400;
+            font-size: 28px;
+            line-height: 39px;
+        }
+    }
+    .subtitle {
+        font-weight: 600;
+        font-size: 24px;
+        &_fw900{
+            background: linear-gradient(90deg,#f4eded 16.97%,rgba(252,199,199,.452381) 60.13%,rgba(233,158,158,.71) 89.48%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    }
+
 
     .num {
         font-weight: 900;
