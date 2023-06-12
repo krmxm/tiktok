@@ -1,10 +1,13 @@
 @media (max-width: 1200px) {
     .promo {
+        &__wrapper {
+            width: 985px;
+        }
         &__subheader-front {
-            left: 66px;
+            left: 7px;
         }
         &__img {
-            left: 304px;
+            left: 247px;
             &:after {
                 width: 709.53px;
                 height: 665.06px;
@@ -27,6 +30,9 @@
 
 @media (max-width: 991px) {
     .promo {
+        &__wrapper {
+            width: 750px;
+        }
         &__header {
             font-size: 50px;
         }

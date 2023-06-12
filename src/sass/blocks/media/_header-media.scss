@@ -1,6 +1,14 @@
 @media (max-width: 1200px) {
     .header {
         padding: 0 15px 0 15px;
+        &__icon {
+            &_first {
+                margin-right: 45px;
+            }
+            &_second {
+                margin-left: 45px;
+            }
+        }
         &__condition-online {
             margin: 0 10px;
             &::after {
@@ -20,19 +28,23 @@
 @media (max-width: 991px) {
     .header {
         padding: 0 5px 0 5px;
-        align-items: start;
-        // &__conditions {
-        //     flex-direction: column;
-        //     align-items: center;
-        // }
+        // align-items: start;
+        &__icon {
+            &_first {
+                margin-right: 9px;
+            }
+            &_second {
+                margin-left: 9px;
+            }
+        }
         &__condition-date {
-            // text-align: center;
-            font-weight: 500;
-            font-size: 27px;
-            line-height: 29px;
-            // order: 3;
-            span {
-                margin-top: 10px;
+            .span-first {
+                font-weight: 500;
+                font-size: 27px;
+                line-height: 29px;
+            }
+            .span-second {
+                padding: 10px 0;
                 font-weight: 400;
                 font-size: 21px;
                 line-height: 24px;
@@ -40,13 +52,13 @@
         }
         &__condition-online {
             width: 140px;
-            font-weight: 500;
-            font-size: 27px;
-            line-height: 29px;
             margin: 0 5px;
-            // margin-bottom: 15px;
-            // order: 1;
-            span {
+            .span-first {
+                font-weight: 500;
+                font-size: 27px;
+                line-height: 29px;
+            }
+            .span-second {
                 margin-top: 10px;
                 font-weight: 400;
                 font-size: 21px;
@@ -54,19 +66,19 @@
             }
             &::after {
                 width: 140px;
-                height: 115px;
+                height: 130px;
                 top: -29px;
                 right: 0px;
             }
         }
         &__condition-long {
-            font-weight: 500;
-            font-size: 27px;
-            line-height: 29px;
-            // text-align: center;
-            // order: 2;
-            span {
-                margin-top: 10px;
+            .span-first {
+                font-weight: 500;
+                font-size: 27px;
+                line-height: 29px;
+            }
+            .span-second {
+                padding: 10px 0;
                 font-weight: 400;
                 font-size: 21px;
                 line-height: 24px;
@@ -85,26 +97,37 @@
 @media (max-width: 767px) {
     .header {
         margin-bottom: 37px;
+        flex-wrap: wrap;
         align-items: start;
-        &__conditions {
-            flex-direction: column;
-            align-items: center;
+        justify-content: space-between;
+        &__icon {
+            &_first {
+                order: 1;
+            }
+            &_second {
+                order: 3;
+            }
         }
         &__condition-date {
+            width: 100%;
             text-align: center;
             font-weight: 500;
             font-size: 24px;
             line-height: 29px;
-            order: 3;
+            order: 5;
         }
         &__condition-online {
             width: 165px;
             font-weight: 500;
             font-size: 24px;
             line-height: 29px;
-            margin: 0 2px;
-            margin-bottom: 40px;
-            order: 1;
+            margin: 0 0;
+            margin-bottom: 39px;
+            // margin-bottom: 40px;
+            order: 2;
+            .span-second {
+                padding: 0 0;
+            }
             &::after {
                 width: 132px;
                 height: 109px;           
@@ -113,11 +136,12 @@
             }
         }
         &__condition-long {
+            width: 100%;
             font-weight: 500;
             font-size: 24px;
             line-height: 29px;
             text-align: center;
-            order: 2;
+            order: 4;
             margin-bottom: 15px;
         }
     }
@@ -126,30 +150,65 @@
     .header {
         margin-bottom: 37px;
         align-items: start;
-        &__conditions {
-            flex-direction: column;
-            align-items: center;
+        justify-content: center;
+        &__icon {
+            &_first {
+                margin-right: 0;
+            }
+            &_second {
+                margin-left: 0;
+            }
+        }
+        &__icon-front {
+            width: 77px;
+            height: 50px;
+            a {
+                width: 100%;
+                img {
+                    width: 24.57px;
+                    height: 24.19px;
+                    // display: block;
+                    // margin: 0 auto;
+                    // padding: 32px 16px;
+                    z-index: 1000;
+                }
+            }
+        }
+        &__icon-back {
+            width: 77px;
+            height: 50px;
         }
         &__condition-date {
             text-align: center;
             font-weight: 500;
             font-size: 25px;
             line-height: 29px;
-            order: 3;
+            .span-first {
+                margin-bottom: 5px;
+            }
+            .span-second {
+                padding: 0 0;
+            }
         }
         &__condition-online {
-            width: 165px;
-            font-weight: 500;
-            font-size: 25px;
-            line-height: 29px;
-            margin: 0 2px;
-            margin-bottom: 40px;
-            order: 1;
+            width: 132px;
+            height: 107px;
+            margin: 0 20px;
+            .span-first {
+                font-weight: 500;
+                font-size: 25px;
+                line-height: 29px;
+            }
+            .span-second {
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 24px;
+            }
             &::after {
                 width: 132px;
-                height: 109px;           
+                height: 107px;           
                 top: -29px;
-                right: 16px;
+                right: 0px;
             }
         }
         &__condition-long {
@@ -157,8 +216,19 @@
             font-size: 25px;
             line-height: 29px;
             text-align: center;
-            order: 2;
             margin-bottom: 15px;
+            .span-first {
+                margin-bottom: 5px;
+            }
+            .span-second {
+                padding: 0 0;
+            }
+        
         }
+    }
+}
+@media (max-width: 360px) {
+    .header {
+        zoom: 90%;
     }
 }
