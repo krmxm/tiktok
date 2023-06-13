@@ -151,6 +151,7 @@
         margin-bottom: 37px;
         align-items: start;
         justify-content: center;
+        padding: 0 0;
         &__icon {
             &_first {
                 margin-right: 0;
@@ -162,6 +163,7 @@
         &__icon-front {
             width: 77px;
             height: 50px;
+            margin-top: 5px;
             a {
                 width: 100%;
                 img {
@@ -177,6 +179,7 @@
         &__icon-back {
             width: 77px;
             height: 50px;
+            margin-top: 5px;
         }
         &__condition-date {
             text-align: center;
@@ -191,12 +194,12 @@
             }
         }
         &__condition-online {
-            width: 132px;
+            width: 131px;
             height: 107px;
-            margin: 0 20px;
+            margin: 0 19px;
             .span-first {
                 font-weight: 500;
-                font-size: 25px;
+                font-size: 24px;
                 line-height: 29px;
             }
             .span-second {
@@ -205,7 +208,7 @@
                 line-height: 24px;
             }
             &::after {
-                width: 132px;
+                width: 131px;
                 height: 107px;           
                 top: -29px;
                 right: 0px;
@@ -227,8 +230,91 @@
         }
     }
 }
+
 @media (max-width: 360px) {
     .header {
-        zoom: 90%;
+        .header {
+            margin-bottom: 37px;
+            align-items: start;
+            justify-content: center;
+            &__icon {
+                &_first {
+                    margin-right: 0;
+                }
+                &_second {
+                    margin-left: 0;
+                }
+            }
+            &__icon-front {
+                width: 65px;
+                height: 38px;
+                margin-top: 12px;
+                border-radius: 10px;
+                a {
+                    width: 100%;
+                    img {
+                        width: 24.57px;
+                        height: 24.19px;
+                        // display: block;
+                        // margin: 0 auto;
+                        // padding: 32px 16px;
+                        z-index: 1000;
+                    }
+                }
+            }
+            &__icon-back {
+                width: 65px;
+                height: 38px;
+                margin-top: 12px;
+                border-radius: 10px;
+            }
+            &__condition-date {
+                text-align: center;
+                font-weight: 500;
+                font-size: 25px;
+                line-height: 29px;
+                .span-first {
+                    margin-bottom: 5px;
+                }
+                .span-second {
+                    padding: 0 0;
+                }
+            }
+            &__condition-online {
+                width: 132px;
+                height: 107px;
+                margin: 0 20px;
+                .span-first {
+                    font-weight: 500;
+                    font-size: 25px;
+                    line-height: 29px;
+                }
+                .span-second {
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 24px;
+                }
+                &::after {
+                    width: 132px;
+                    height: 107px;           
+                    top: -29px;
+                    right: 0px;
+                }
+            }
+            &__condition-long {
+                font-weight: 500;
+                font-size: 25px;
+                line-height: 29px;
+                text-align: center;
+                margin-bottom: 15px;
+                .span-first {
+                    margin-bottom: 5px;
+                }
+                .span-second {
+                    padding: 0 0;
+                }
+            
+            }
+        }
     }
 }

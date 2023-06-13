@@ -57,14 +57,18 @@ h1, h2, h3, h4, h5 {
 }
 @media (max-width: 575px) {
     .container {
-        width: 100%;
-        padding: 0 4px;
+        width: 324px;
+        // padding: 0 4px;
     }
 }
-@media (max-width: 320px) {
+@media (max-width: 360px) {
     .container {
-        width: 85%;
+        width: 310px;
+        // padding: 0 1px
     }
+    // body {
+    //     zoom: 90%;
+    // }
 }
 
 @import 'blocks/text';
