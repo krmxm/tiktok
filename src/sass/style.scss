@@ -61,11 +61,6 @@ h1, h2, h3, h4, h5 {
         padding: 0 4px;
     }
 }
-@media (max-width: 320px) {
-    .container {
-        width: 85%;
-    }
-}
 
 @import 'blocks/text';
 @import 'blocks/wave';
