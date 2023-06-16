@@ -1,7 +1,7 @@
 @media (max-width: 1200px) {
     .for{
         &__wrap {
-            margin: 0 99px;
+            // margin: 0 99px;
             grid-template-columns: repeat(2, 422px);
             column-gap: 90px;
             row-gap: 90px;
@@ -13,10 +13,10 @@
 @media (max-width: 991px) {
     .for{
         &__wrap {
-            margin: 0 47px;
-            grid-template-columns: repeat(2, 422px);
-            column-gap: 90px;
-            row-gap: 90px;
+            // margin: 0 auto;
+            grid-template-columns: repeat(1, 1fr);
+            // column-gap: 90px;
+            row-gap: 25px;
             // gap: 118px;
             grid-auto-rows: minmax(600px, auto);
         }

@@ -57,8 +57,13 @@ h1, h2, h3, h4, h5 {
 }
 @media (max-width: 575px) {
     .container {
-        width: 100%;
-        padding: 0 4px;
+        width: 324px;
+        // padding: 0 4px;
+    }
+}
+@media (max-width: 320px) {
+    .container {
+        width: 85%;
     }
 }
 
@@ -85,8 +90,8 @@ h1, h2, h3, h4, h5 {
 @import 'blocks/media/for-media';
 @import 'blocks/media/program-media';
 @import 'blocks/media/results-media';
-// @import 'blocks/media/rates-media';
-// @import 'blocks/media/about-media';
+@import 'blocks/media/rates-media';
+@import 'blocks/media/about-media';
 // @import 'blocks/media/contacts-media';
 // @import 'blocks/media/questions-media';
 // @import 'blocks/media/footer-media';

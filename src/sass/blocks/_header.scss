@@ -4,6 +4,7 @@
     align-items: center;
     margin-bottom: 107px;
     padding: 0 32.5px 0 32.5px;
+    z-index: 1000;
     &__icon {
         position: relative;
         &_first {
@@ -36,12 +37,15 @@
             width: 100%;
             img {
                 display: block;
+                width: 24.57px;
+                height: 24.19px;
                 margin: 0 auto;
+                opacity: 0.57;
                 // padding: 32px 16px;
                 z-index: 1000;
             }
         }
-}
+    }
 
     &__conditions {
         display: flex;

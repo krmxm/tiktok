@@ -2,8 +2,9 @@
     padding: 103px 0 200px 0;
     background: #F1F1F1;
     &__wrap {
-        margin: 0 99px;
+        // margin: 0 auto;
         display: grid;
+        justify-content: center;
         grid-template-columns: repeat(2, 422px);
         gap: 118px;
         grid-auto-rows: minmax(600px, auto);

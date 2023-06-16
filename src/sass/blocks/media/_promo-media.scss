@@ -37,23 +37,23 @@
             font-size: 50px;
         }
         &__title {
-            font-size: 250px;
+            font-size: 228px;
         }
         &__title-two {
-            font-size: 250px;
+            font-size: 228px;
         }
         &__subheader-front {
-            left: 111px;
+            left: 7px;
         }
         &__subtitle {
-            font-size: 250px;  
+            font-size: 228px;  
         }
         &__subtitle-two {
-            font-size: 250px;
+            font-size: 228px;
         }
         &__img {
             top: 160px;
-            left: 319px;
+            left: 147px;
             zoom: 95%;
             &:after {
                 width: 608.53px;
@@ -74,8 +74,54 @@
             width: 959.44px;
             height: 370.28px;
         }
+        &__descr {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+        }
         &__get-create {
-            font-size: 18px;
+            // font-size: 18px;
+            // font-weight: 400;
+            // line-height: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+            &_first {
+                order: 3;
+            }
+            &_second {
+                order: 4;
+            }
+            &:nth-child(3) {
+                text-align: center;
+                
+            }
+        }
+        &__button {
+            margin-bottom: 20px;
+            order: 1;
+        }
+        &__descr-list {
+            width: 300px;
+            height: 116px;
+            margin: 0;
+            margin-bottom: 20px;
+            padding: 18px 25px;
+            background: url(../img/promo/Rectangle-mobile.png);
+            mix-blend-mode: screen 0.4;
+            order: 2;
+            div{
+                // font-weight: 400;
+                // font-size: 16px;
+                // line-height: 20px;
+                text-align: center;
+                span {
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 20px;
+                    text-align: center;
+                }
+            }
         }
     }
 }
@@ -84,7 +130,7 @@
         &__wrapper {
             display: block;
             margin: 0 auto;
-            width: 800px;
+            width: 540px;
         }
         &__header {
             font-weight: 300;
@@ -103,7 +149,7 @@
             line-height: 188px;
         }
         &__subheader-front {
-            left: 158px;
+            left: 28px;
         }
         &__subtitle {
             font-size: 150px;
@@ -117,7 +163,7 @@
         }
         &__img {
             top: 71px;
-            left: 255px;
+            left: 90px;
             zoom: 79%;
             &:after {
                 width: 575.53px;
@@ -142,7 +188,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            margin: 0;
+            margin: 0 auto;
         }
         &__get-create {
             font-weight: 400;
@@ -269,3 +315,86 @@
         }
     }
 }
+
+@media (max-width: 360px) {
+    .promo {
+        &__wrapper {
+            display: block;
+            margin: 0 auto;
+            width: 310px;
+        }
+        &__header {
+            // padding: 0 50px 0 50px;
+            display: block;
+            width: 310px;
+            font-weight: 300;
+            font-size: 30px;
+            line-height: 37px;
+            margin-bottom: 117px;
+        }
+        // &__wrapper {
+        //     width: 308px;
+        //     display: flex;
+        //     flex-direction: column;
+        //     align-items: center;
+        // }
+        &__wrap-subheader {
+            width: 310px;
+        }
+        &__title {
+            font-weight: 900;
+            font-size: 80px;
+            line-height: 90px;
+        }
+        &__title-two {
+            font-weight: 900;
+            font-size: 80px;
+            line-height: 90px;
+        }
+        &__subheader-front {
+            left: 26px
+        }
+        &__subtitle {
+            font-weight: 900;
+            font-size: 80px;
+            line-height: 90px;
+        }
+        &__subtitle-two {
+            font-weight: 900;
+            font-size: 80px;
+            line-height: 90px;
+        }
+        &__img {
+            top: 281px;
+            left: 77px;
+            zoom: 48%;
+            &:after {
+                width: 575.53px;
+                height: 515.06px;
+                left: -22px;
+                top: -43px;
+            }
+            &:before {
+                width: 584.34px;
+                height: 525.87px;
+                right: -35px;
+                top: 201px;
+            }
+        }
+        &__back-white {
+            left: -192px;
+            width: 860.44px;
+        }
+        &__get-create {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+
+        }
+        &__button {
+            margin: 0;
+            margin-bottom: 20px;
+        }
+    }
+}
+
