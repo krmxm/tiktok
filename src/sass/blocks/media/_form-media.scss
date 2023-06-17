@@ -1,0 +1,21 @@
+@media (max-width: 1200px) {
+    .feed-form {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        .input-wrapper {
+            margin-bottom: 30px;
+        }
+    }
+}
+@media (max-width: 991px) {
+    .feed-form {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width: 767px) {
+
+}
+@media (max-width: 575px) {
+
+}

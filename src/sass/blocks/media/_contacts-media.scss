@@ -1,0 +1,33 @@
+@media (max-width: 1200px) {
+    .contacts {
+        overflow: hidden;
+       &__descr {
+        margin-right: 0;
+       } 
+    }
+}
+@media (max-width: 991px) {
+    .contacts {
+        &__wrap {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__descr {
+            // justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        &__title {
+            text-align: center;
+        }
+        &__text {
+            text-align: center;
+        }
+    }
+}
+@media (max-width: 767px) {
+
+}
+@media (max-width: 575px) {
+
+}
