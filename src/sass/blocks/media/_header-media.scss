@@ -150,7 +150,7 @@
     .header {
         margin-bottom: 37px;
         align-items: start;
-        justify-content: center;
+        justify-content: space-between;
         padding: 0 0;
         &__icon {
             &_first {
@@ -281,9 +281,10 @@
                 }
             }
             &__condition-online {
-                width: 132px;
+                width: 128px;
                 height: 107px;
                 margin: 0 20px;
+                margin: 0 6px;
                 .span-first {
                     font-weight: 500;
                     font-size: 25px;
@@ -295,7 +296,7 @@
                     line-height: 24px;
                 }
                 &::after {
-                    width: 132px;
+                    width: 128px;
                     height: 107px;           
                     top: -29px;
                     right: 0px;

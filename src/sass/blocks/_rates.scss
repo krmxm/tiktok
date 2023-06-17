@@ -30,6 +30,8 @@
         display: flex;
         justify-content: start;
         margin-left: 98px;
+        margin-right: 56px;
+        margin-bottom: 80px;
         ul {
             li{
                 margin-bottom: 20px;
@@ -40,15 +42,21 @@
         }
     }
     &__price {
-        position: absolute;
-        bottom: 276px;
-        left: 50%;
-        transform: translateX(-50%);
+        // position: absolute;
+        // bottom: 276px;
+        // left: 50%;
+        // transform: translateX(-50%);
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 30px;
     }
     button {
-        position: absolute;
-        bottom: 102px;
-        left: 17%;
+        // position: absolute;
+        // bottom: 102px;
+        // left: 17%;
         // transform: translateX(-50%);
+        display: block;
+        margin: 0 auto;
     }
 }

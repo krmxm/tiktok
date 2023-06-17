@@ -27,7 +27,9 @@
 }
 @media (max-width: 575px) {
     .rates {
+        padding: 104px 0 100px;
         &__card {
+            min-height: 858px;
             padding: 70px 0 75px;
             width: 311px;
         }
@@ -36,6 +38,32 @@
         }
         &__descr {
             margin-left: 43px;
+            margin-right: 0;
+            margin-bottom: 40px;
+        }
+        &__price {
+            margin-bottom: 15px;
+        }
+    }
+}
+@media (max-width: 360px) {
+    .rates {
+        padding: 104px 0 100px;
+        &__card {
+            min-height: 808px;
+            padding: 55px 0 50px;
+            width: 290px;
+        }
+        &__subtitle {
+            margin-bottom: 30px;
+        }
+        &__descr {
+            margin-left: 43px;
+            margin-right: 0;
+            margin-bottom: 40px;
+        }
+        &__price {
+            margin-bottom: 15px;
         }
     }
 }
