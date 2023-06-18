@@ -3,16 +3,25 @@
         width: 323.14px;
         height: 122.41px;
         &::before,
-    &::after {
+        &::after {
         width: 323.14px;
         height: 122.41px;
-    }
+        }
         &::after {
             right: 0;
             left: 8px;
         }
         &::before {
             left: -8px;
+        }
+        &_medium {
+            width: 374px;
+            height: 91.26px;
+            &::before,
+            &::after {
+                width: 374px;
+                height: 91.26px;
+            }
         }
     }
 }
@@ -47,12 +56,22 @@
             filter: blur(15px);
             top: 19px;
         }
+        &_medium {
+            width: 374px;
+            height: 91.26px;
+            &::before,
+            &::after {
+                width: 374px;
+                height: 91.26px;
+            }
+        }
     }
 }
 @media (max-width: 575px) {
     .button {
         width: 261.38px;
         height: 97.2px;
+        font-size: 24px;
         &::before, &::after {
             width: 261.38px;
             height: 97.2px;
@@ -75,6 +94,16 @@
             left: 50%;
             right: 0;
             filter: blur(15px);
+        }
+        &_medium {
+            width: 256.48px;
+            height: 75.86px;
+            font-size: 24px;
+            &::before,
+            &::after {
+                width: 256.48px;
+                height: 75.86px;
+            }
         }
     }
 }

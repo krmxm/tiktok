@@ -29,5 +29,24 @@
 
 }
 @media (max-width: 575px) {
-
+    .contacts {
+        padding: 100px 0 100px 0;
+        &__wrap {
+            margin-bottom: 21px;
+        }
+        &__descr {
+            width: 332px;
+            margin-bottom: 6px;
+        }
+        &__title {
+            margin-bottom: 12px;
+        }
+        &__text {
+            width: 100%;
+        }
+        &__img {
+            width: 147.13px;
+            height: 184.58px;
+        }
+    }
 }

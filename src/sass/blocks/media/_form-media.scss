@@ -17,5 +17,21 @@
 
 }
 @media (max-width: 575px) {
-
+    .feed-form {
+        .input-wrapper {
+            width: 286px;
+            height: 71px;
+            margin-bottom: 20px;
+            &:last-of-type {
+                margin-bottom: 32px;
+            }
+            input {
+                padding: 23px 0 23px 30px;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 24px;
+            }
+        }
+        
+    }
 }

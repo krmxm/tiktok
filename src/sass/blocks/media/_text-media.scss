@@ -64,6 +64,9 @@
         font-size: 30px;
         line-height: 43px;
         text-shadow: 1.2px 1.2px #25F4EE, 2.5px 2.5px #FE2C55;
+        &_contacts {
+            line-height: 36px;
+        }
     }
     .text {
         font-weight: 400;
@@ -89,8 +92,8 @@
         }
         &_contacts {
             font-weight: 400;
-            font-size: 28px;
-            line-height: 39px;
+            font-size: 24px;
+            line-height: 29px;
         }
     }
     .subtitle {
