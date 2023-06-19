@@ -54,8 +54,13 @@
             top: 36px;
             background: #F8EBEB;
             filter: blur(100px);
-            transform: rotate(-25.52deg);
             z-index: -1;
+        }
+    }
+    .desktop-hidden {
+        content: ' ';
+        &:after {
+            content: ' '
         }
     }
 }

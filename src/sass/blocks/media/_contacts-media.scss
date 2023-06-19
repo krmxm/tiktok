@@ -40,13 +40,32 @@
         }
         &__title {
             margin-bottom: 12px;
+            .desktop-hidden {
+                display: block;
+            }
         }
         &__text {
             width: 100%;
+            margin-bottom: 4px;
         }
         &__img {
             width: 147.13px;
             height: 184.58px;
+            &:after {
+                width: 120.21px;
+                height: 146.5px;
+                filter: blur(75px);
+                transform: rotate(-25.52deg);
+                left: 13px;
+                top: 15px;
+            }
+        }
+    }
+}
+@media (max-width: 360px) {
+    .contacts {
+        &__descr {
+            width: 290px;
         }
     }
 }

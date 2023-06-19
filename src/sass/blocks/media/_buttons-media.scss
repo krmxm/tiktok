@@ -128,14 +128,26 @@
         &__decor-left {
             height: 68%;
             left: 0%;
+            top: 19%;
             right: 0;
             filter: blur(15px);
         }
         &__decor-right {
             height: 68%;
+            top: 19%;
             left: 50%;
             right: 0;
             filter: blur(15px);
+        }
+        &_medium {
+            width: 238.48px;
+            height: 57.86px;
+            font-size: 22px;
+            &::before,
+            &::after {
+                width: 238.48px;
+                height: 57.86px;
+            }
         }
     }
 }
