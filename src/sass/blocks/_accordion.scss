@@ -1,6 +1,13 @@
 .accordion {
+    &__list {
+        width: 1160px;
+        margin: 0 auto;
+    }
     margin-bottom: 100px;
     list-style-type: none;
+    &:last-child {
+        margin-bottom: 0;
+    }
     &__control {
         display: flex;
         justify-content: space-between;
@@ -10,10 +17,6 @@
         border: none;
         border-top: 3px solid #CE9AA4;
         border-bottom: 3px solid #CE9AA4;
-
-        svg{
-            margin-right: 10px;
-        }
     }
     &__title {
         text-align: left;
@@ -40,7 +43,7 @@
 }
 
 .open .accordion__icon {
-    margin-right: 10px;
+    // margin-right: 10px;
     transform: rotate(180deg);
 }
 

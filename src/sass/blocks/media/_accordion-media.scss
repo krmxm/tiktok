@@ -1,15 +1,37 @@
 @media (max-width: 1200px) {
-
+    .accordion {
+        &__list {
+            width: 985px;
+        }
+    }
 }
 @media (max-width: 991px) {
-
+    .accordion {
+        &__list {
+            width: 750px;
+        }
+    }
 }
 @media (max-width: 767px) {
-
+    .accordion {
+        &__list {
+            width: 540px;
+        }
+    }
 }
 @media (max-width: 575px) {
     .accordion {
+        margin-bottom: 30px;
+        &__list{
+            width: 100%;
+        }
         &__control {
+            padding: 17px 10px;
+        }
+        &__title {
+            width: 279px;
+        }
+        &__content {
             padding: 0 10px;
         }
     }
