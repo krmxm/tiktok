@@ -74,7 +74,7 @@
 
                     <div class="promo__get-create promo__get-create_first">Создай свой бренд в TikTok и <br> <span>набирай 100.000</span> подписчиков <br> всего <span>за 3 недели</span></div>
                     
-                    <button class="button promo__button">
+                    <button data-modal class="button promo__button">
                         НаЧАТЬ
                         <span class="button__decor-left"></span>
                         <span class="button__decor-right"></span>
@@ -292,7 +292,7 @@
                     </div>
 
                     <div class="text text_fz32 rates__price">Цена: 5000 ₽</div>
-                    <button class="button rates__button">Купить
+                    <button data-modal class="button rates__button">Купить
                         <span class="button__decor-left button__decor-left_medium"></span>
                         <span class="button__decor-right button__decor-right_medium"></span>
                     </button>
@@ -314,7 +314,7 @@
                     </div>
 
                     <div class="text text_fz32 rates__price">Цена: 10000 ₽</div>
-                    <button class="button rates__button">Купить
+                    <button data-modal class="button rates__button">Купить
                         <span class="button__decor-left button__decor-left_medium"></span>
                         <span class="button__decor-right button__decor-right_medium"></span>
                     </button>
@@ -457,6 +457,30 @@
             </div>
         </div>
     </footer>
+
+    <div class="modal">
+        <div class="modal__dialog">
+            <div data-close class="modal__close">&times;</div>
+            <div class="modal__content">
+                <form action="#" class="modal__form">
+                    <div class=" title title_white modal__title">Мы свяжемся с тобой как можно быстрее!</div>
+
+                    <div class="input-wrapper">
+                        <input name="name" minlength="2" required placeholder="Имя" type="text">
+                    </div>
+                    
+                    <div class="input-wrapper">
+                        <input name="email" required placeholder="Email" type="email">
+                    </div>
+                    
+                    <button  data-modal class="button button_medium modal__button">Оставить
+                        <span class="button__decor-left button__decor-left_medium"></span>
+                        <span class="button__decor-right button__decor-right_medium"></span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
 
     <script src="js/script.js"></script>
 </body>
