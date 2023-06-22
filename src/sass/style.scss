@@ -40,6 +40,14 @@ h1, h2, h3, h4, h5 {
     }
 }
 
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
 .fade {
     animation-name: fade;
     animation-duration: 1.5s;
@@ -99,6 +107,8 @@ h1, h2, h3, h4, h5 {
 @import 'blocks/questions';
 @import 'blocks/footer';
 @import 'blocks/modal';
+@import 'blocks/buble';
+@import 'blocks/tiktok-loader';
 
 @import 'blocks/media/promo-media';
 @import 'blocks/media/header-media';

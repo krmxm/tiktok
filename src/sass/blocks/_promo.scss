@@ -207,4 +207,12 @@ filter: blur(350px);
             }
         }
     }
+    &__buble {
+        &_tiktok-buble {
+            top: 153px;
+            right: 518px;
+            transform: translateY(-150%);
+            animation: ani 6s forwards;
+        }
+    }
 }

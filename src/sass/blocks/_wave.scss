@@ -5,7 +5,7 @@
     width: 100%;
     overflow: hidden;
     // line-height: 0;
-    z-index: 1;
+    z-index: 10;
     svg {
         // position: relative;
         // display: block;
@@ -17,7 +17,7 @@
     &_up {
         position: absolute;
         bottom: 0;
-        top: -807px;
+        top: -1385px;
         left: 0;
         width: 100%;
         overflow: hidden;
