@@ -33,13 +33,4 @@
 		background-position: 0% 0%;
     }
   }
-
-  @keyframes ani {
-    0% { 
-      transform: translateY(-150%) rotate(360deg);
-      }
-    100% {
-      transform: translateY(0) rotate(0deg);
-    }
-  }
   

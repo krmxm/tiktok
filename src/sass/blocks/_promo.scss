@@ -209,10 +209,88 @@ filter: blur(350px);
     }
     &__buble {
         &_tiktok-buble {
-            top: 153px;
-            right: 518px;
+            top: 99px;
+            right: -277px;
             transform: translateY(-150%);
-            animation: ani 6s forwards;
+            animation: animation-promo-tiktok 6s forwards;
+        }
+        &_message-buble {
+            top: 301px;
+            left: -306px;
+            transform: translateY(-150%) rotate(-31.718deg);
+            animation: animation-promo-message 5s forwards;
+            // img {
+            //     width: 349.22px;
+            //     height: 369.603px;
+            // }
+        }
+        &_send-buble {
+            bottom: -72px;
+            right: -28px;
+            transform: translateY(-150%);
+            animation: animation-promo-send 5s forwards;
+        }
+        &_heart-buble {
+            bottom: -163px;
+            left: -88px;
+            transform: translateY(-150%);
+            animation: animation-promo-heart 5s forwards;
+            img {
+                width: 385px;
+                height: 329px;
+            }
         }
     }
 }
+
+// animation 
+
+@keyframes animation-promo-tiktok {
+    0% { 
+      transform: translateY(-40%) translateX(70%) rotate(240deg);
+      opacity: 0.1;
+      }
+    100% {
+      transform: translateY(0) translateX(0) rotate(0deg);
+      opacity: 1;
+    }
+  }
+
+  @keyframes animation-promo-message {
+    0% { 
+      transform: translateY(0) translateX(-70%) rotate(180deg);
+      opacity: 0.1;
+      filter: blur(0);
+      }
+    100% {
+      transform: translateY(0) translateX(0) rotate(-31.718deg);
+      opacity: 1;
+      filter: blur(5.5px);
+    }
+  }
+
+  @keyframes animation-promo-send {
+    0% { 
+      transform: translateY(80%) translateX(170%) rotate(180deg);
+      opacity: 0.1;
+      filter: blur(0);
+      }
+    100% {
+      transform: translateY(0) translateX(0) rotate(-172.445deg);
+      opacity: 1;
+      filter: blur(5.5px);
+    }
+  }
+  
+  @keyframes animation-promo-heart {
+    0% { 
+      transform: translateY(120%) translateX(-70%) rotate(360deg);
+      opacity: 0.1;
+      filter: blur(0);
+      }
+    100% {
+      transform: translateY(0) translateX(0) rotate(0deg);
+      opacity: 1;
+      filter: blur(4px);
+    }
+  }
