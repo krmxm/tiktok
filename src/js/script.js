@@ -157,4 +157,19 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // Создать наблюдателя
+    const observer = new IntersectionObserver(entries => {
+        // перебор записей
+        entries.forEach(entry => {
+            // если элемент появился
+            if (entry.isIntersecting) {
+            // добавить ему CSS-класс
+            entry.target.classList.add('element-animation');
+            }
+        });
+    });
+    
+    // Сообщить наблюдателю, какие элементы следует отслеживать
+    observer.observe(document.querySelector('.elements'));
+
 });
