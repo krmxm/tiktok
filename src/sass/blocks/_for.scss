@@ -2,12 +2,14 @@
     padding: 103px 0 200px 0;
     background: #F1F1F1;
     &__wrap {
+        position: relative;
         // margin: 0 auto;
         display: grid;
         justify-content: center;
         grid-template-columns: repeat(2, 422px);
         gap: 118px;
         grid-auto-rows: minmax(600px, auto);
+        z-index: 10000000000;
     }
     &__title {
         margin-bottom: 83px;
@@ -64,4 +66,65 @@
             content: ' '
         }
     }
+    &__buble {
+        &_tiktok-buble {
+            top: -200px;
+            right: -200px;
+            filter: blur(4px);
+            transform: translateY(-150%) rotate(-0.956deg);
+            // transform: scale(-1, -1);
+            z-index: 10000000;
+            img {
+                width: 331px;
+                height: 293px;
+                transform: scaleX(-1);
+            }
+        }
+        &_tiktok-buble-animation {
+            animation: animation-for-tiktok 6s forwards;
+        }
+        // &_message-buble {
+        //     top: 301px;
+        //     left: -306px;
+        //     transform: translateY(-150%) rotate(-31.718deg);
+        //     animation: animation-promo-message 5s forwards;
+        //     // img {
+        //     //     width: 349.22px;
+        //     //     height: 369.603px;
+        //     // }
+        // }
+        // &_send-buble {
+        //     bottom: -72px;
+        //     right: -28px;
+        //     transform: translateY(-150%);
+        //     animation: animation-promo-send 5s forwards;
+        // }
+        // &_heart-buble {
+        //     bottom: -163px;
+        //     left: -88px;
+        //     transform: translateY(-150%);
+        //     animation: animation-promo-heart 5s forwards;
+        //     img {
+        //         width: 385px;
+        //         height: 329px;
+        //     }
+        // }
+    }
 }
+
+.element-animation {
+    opacity: 0;
+}
+
+// animation 
+
+@keyframes animation-for-tiktok {
+    0% { 
+      transform: translateY(150%) translateX(100%) rotate(240deg);
+      opacity: 0.1;
+      }
+    100% {
+      transform: translateY(0) translateX(0) rotate(0deg);
+      opacity: 1;
+    }
+  }
