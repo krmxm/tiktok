@@ -1,0 +1,28 @@
+@media (max-width: 1900px) {
+    html {
+        zoom: 67%;
+    }
+    @-moz-document url-prefix() {
+        html {
+           transform: scale(0.67);
+           transform-origin: left top;
+           width: calc(100% / 0.67);
+           height: calc(100% / 0.67);
+           }
+    }
+}
+
+
+@media (max-width: 991px) {
+    html {
+        zoom: 100%;
+    }
+    @-moz-document url-prefix() {
+        html {
+            transform: none;
+            transform-origin: initial;
+            width: initial;
+            height: initial;
+          }
+    }
+}

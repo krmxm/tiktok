@@ -164,12 +164,15 @@ document.addEventListener('DOMContentLoaded', () => {
             // если элемент появился
             if (entry.isIntersecting) {
             // добавить ему CSS-класс
-            entry.target.classList.add('element-animation');
+            entry.target.classList.add('scroll-item-animation');
             }
         });
     });
     
     // Сообщить наблюдателю, какие элементы следует отслеживать
-    observer.observe(document.querySelector('.elements'));
+    const bubleAnimation = document.querySelectorAll('.scroll-item');
+    bubleAnimation.forEach(item => {
+        observer.observe(item);
+    });
 
 });

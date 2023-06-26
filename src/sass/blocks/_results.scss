@@ -1,8 +1,9 @@
 .results {
     position: relative;
-    padding: 200px 0 350px 0;
+    padding: 200px 0 550px 0;
     z-index: 1000;
     overflow: hidden;
+    // min-height: 1910px;
     &:before {
         content: "";
         position: absolute;
@@ -17,8 +18,10 @@
     }
 
     &__title {
+        position: relative;
         margin: 0 auto;
         margin-bottom: 450px;
+        z-index: 100;
     }
     &__wrap {
         position: relative;
@@ -121,7 +124,7 @@
         border-radius: 15px;
 
         text-align: center;
-        z-index: 1;
+        z-index: 100;
 
         &_1 {
             width: 450px;
@@ -233,5 +236,50 @@
         }
         
     }
-    
+    &__bubble {
+        position: absolute;
+        z-index: 10;
+        &_heart-buble {
+            top: 1490px;
+            right: 460px;
+            filter: blur(3px);
+            animation: animation-results-heart 90s linear infinite;
+
+        }
+        &_send {
+            top: 700px;
+            right: 450px;
+            filter: blur(3px);
+            z-index: 10;
+            animation: animation-results-send 60s linear infinite;
+        }
+        &_tiktok-bubble{
+            top: 700px;
+            right: 450px;
+            filter: blur(2px);
+            opacity: 0.8;
+            animation: animation-results-tiktok 80s linear infinite;
+            img {
+                width: 331px;
+                height: 263px;
+            }
+        }
+    }
+}
+
+// animation
+
+@keyframes animation-results-heart {
+    0% { transform: rotate(0deg) translateY(-440%) translateX(-440%) rotate(0);  opacity: 0.6;}
+	100%   {  transform: rotate(360deg) translateY(-440%) translateX(-440%) rotate(720deg); opacity: 0.6;}
+}
+
+@keyframes animation-results-send {
+    0% { transform: rotate(0deg) translateY(-150%) translateX(-150%) rotate(0);  opacity: 0.6;}
+	100%   {  transform: rotate(360deg) translateY(-150%) translateX(-150%) rotate(720deg); opacity: 0.6;}
+}
+
+@keyframes animation-results-tiktok {
+    0% { transform: rotate(0deg) translateY(170%) translateX(-170%) rotate(0);  opacity: 0.6;}
+	100%   {  transform: rotate(360deg) translateY(170%) translateX(-170%) rotate(720deg); opacity: 0.6;}
 }

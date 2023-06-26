@@ -1,6 +1,7 @@
 .for {
     padding: 200px 0 200px 0;
     background: #F1F1F1;
+    // overflow: hidden;
     &__wrap {
         position: relative;
         // margin: 0 auto;
@@ -67,6 +68,8 @@
         }
     }
     &__buble {
+        position: absolute;
+        // margin-top: 100px;
         &_tiktok-buble {
             top: -252px;
             right: -89px;
@@ -85,6 +88,7 @@
             img {
                 width: 61.91px;
                 height: 61.91px;
+                opacity: 0.7;
             }
         }
         &_heart-2 {
@@ -101,46 +105,79 @@
                 height: 79.565px;
             }
         }
-        // &_tiktok-buble-animation {
-        //     animation: animation-for-tiktok 6s forwards;
-        // }
-        // &_message-buble {
-        //     top: 301px;
-        //     left: -306px;
-        //     transform: translateY(-150%) rotate(-31.718deg);
-        //     animation: animation-promo-message 5s forwards;
-        //     // img {
-        //     //     width: 349.22px;
-        //     //     height: 369.603px;
-        //     // }
-        // }
-        // &_send-buble {
-        //     bottom: -72px;
-        //     right: -28px;
-        //     transform: translateY(-150%);
-        //     animation: animation-promo-send 5s forwards;
-        // }
-        // &_heart-buble {
-        //     bottom: -163px;
-        //     left: -88px;
-        //     transform: translateY(-150%);
-        //     animation: animation-promo-heart 5s forwards;
-        //     img {
-        //         width: 385px;
-        //         height: 329px;
-        //     }
-        // }
+        &_send {
+            top: 949px;
+            left: -59px;
+            transform: rotate(-5.217deg);
+            filter: blur(3.5px);
+            img {
+                transform: scaleX(-1);
+            }
+        }
+        &_heart-3 {
+            top: 1064px;
+            left: 510px;
+            img {
+                width: 90.123px;
+                height: 87.757px;
+                opacity: .5;
+            }
+        }
+        &_tik-tok-2 {
+            top: 1114px;
+            left: 1096px;
+            transform: rotate(-19.942deg);
+            img {
+                width: 70.798px;
+                height: 75.636px;
+            }
+        }
+        &_tik-tok-3 {
+            bottom: 0;
+            left: -380px;
+            transform: rotate(-19.942deg);
+            img {
+                width: 138.729px;
+                height: 144.053px;
+                opacity: 0.5;
+            }
+        }
+        &_tik-tok-4 {
+            bottom: -163px;
+            left: 81px;
+            transform: rotate(18.155deg);
+            img {
+                width: 81.795px;
+                height: 79.565px;
+                opacity: 0.7;
+            }
+        }
+        &_heart-bubble {
+            bottom: -250px;
+            left: 800px;
+            filter: blur(3px);
+        }
+        &_heart-4 {
+            bottom: -60px;
+            right: -340px;
+            transform: rotate(-39.166deg);
+            img {
+                width: 144.984px;
+                height: 140.703px;
+                opacity: 0.5;
+            }
+        }
     }
 }
 
-.elements {
-    height: 0;
-    width: 100%;
+.scroll-item {
     opacity: 0;
+    transition: opacity 2.5s ease-in-out;
 }
 
-.element-animation {
-    animation: element-animation 2s forwards;
+.scroll-item.scroll-item-animation {
+    // animation: element-animation 4s linear;
+    opacity: 1;
 }
 
 // animation 

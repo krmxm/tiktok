@@ -2,10 +2,6 @@
     position: relative;
     min-height: 1413px;
     padding: 200px 0;
-    // z-index: 1000000;
-    
-
-    // transform: matrix(1, 0, 0, -1, 0, 0);
     overflow: hidden;
     &:after {
         content: "";
@@ -113,14 +109,64 @@ filter: blur(350px);
     &__subtitle {
         margin-bottom: 20px;
     }
+    &__bubble {
+        position: absolute;
+        &_tiktok-bubble {
+            top: 250px;
+            left: 450px;
+            filter: blur(3px);
+            // z-index: 10000000;
+            animation: animation-for-tiktok 120s linear infinite;
+            img {
+                width: 331px;
+                height: 293px;
+            }
+        }
+        &_send {
+            top: 0;
+            right: -850px;
+            filter: blur(4.5px);
+            transform: rotate(9.721deg);
+            animation: animation-for-send 80s linear infinite;
+        }
+        &_message-bubble {
+            bottom: -200px;
+            left: -250px;
+            filter: blur(4.5px);
+            transform: rotate(9.721deg);
+            animation: animation-for-message 60s linear infinite;
+        }
+    }
 }
 
 // animation 
 
-// @keyframes animation-for-tiktok {
-//     0% { transform: rotate(0deg) translateY(-150%) translateX(-150%) rotate(240deg);  opacity: 0;}
-//     25% { opacity: 0.4;}
-//     50% {opacity: 1;}
-//     75% {opacity: 0;}
-// 	100%   {  transform: rotate(360deg) translateY(-150%) translateX(-150%) rotate(240deg); opacity: 0;}
-// }
+@keyframes animation-for-tiktok {
+    0% { transform: rotate(360deg) translateY(-150%) translateX(-150%) rotate(360deg);  opacity: 1;}
+    25% { opacity: 0.1;}
+    50% {opacity: 0.1;}
+    75% {opacity: 1;}
+	100%   {  transform: rotate(0deg) translateY(-150%) translateX(-150%) rotate(360deg); opacity: 0;}
+}
+
+@keyframes animation-for-send {
+    0% { transform:  translateY(400%) translateX(-150%) rotate(360deg);  opacity: 1;}
+    50% {
+        transform: translateY(0) translateX(-150%) rotate(0deg); opacity: 1;
+    }
+	100%   {  transform: translateY(400%) translateX(-150%) rotate(360deg); opacity: 1;}
+}
+
+@keyframes animation-for-message {
+    0% { transform: translateY(0%) translateX(-10%) rotate(0);  opacity: 1;}
+    50% {
+        transform: translateY(-200%) translateX(-50%) rotate(-360deg); opacity: 0;
+    }
+	100%   {  transform: translateY(0%) translateX(-10%) rotate(360deg); opacity: 1;}
+
+    // 0% { transform: rotate(0deg) translateY(-20%) translateX(-20%) rotate(360deg);  opacity: 1;}
+    // 25% { opacity: 0.1;}
+    // 50% {opacity: 0.1;}
+    // 75% {opacity: 1;}
+	// 100%   {  transform: rotate(360deg) translateY(-20%) translateX(-20%) rotate(360deg); opacity: 0;}
+}
