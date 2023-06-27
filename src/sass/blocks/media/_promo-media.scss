@@ -124,6 +124,18 @@
             }
         }
     }
+    @-moz-document url-prefix() {
+        .promo {
+            &__img {
+                top: 325px;
+                left: 209px;
+                transform: scale(0.67);
+                transform-origin: left top;
+                width: calc(100% / 0.95);
+                height: calc(100% / 0.95);
+           }
+        }
+    }
 }
 @media (max-width: 767px) {
     .promo {
@@ -233,6 +245,15 @@
             }
         }
     }
+    @-moz-document url-prefix() {
+        .promo__img {
+            left: 75px;
+            transform: scale(0.79);
+            transform-origin: left top;
+            width: calc(100% / 0.79);
+            height: calc(100% / 0.79);
+        }
+    }
 }
 @media (max-width: 575px) {
     .promo {
@@ -242,7 +263,6 @@
             width: 320px;
         }
         &__header {
-            // padding: 0 50px 0 50px;
             display: block;
             width: 334px;
             font-weight: 300;
@@ -250,12 +270,6 @@
             line-height: 37px;
             margin-bottom: 117px;
         }
-        // &__wrapper {
-        //     width: 308px;
-        //     display: flex;
-        //     flex-direction: column;
-        //     align-items: center;
-        // }
         &__wrap-subheader {
             width: 300px;
         }
@@ -313,6 +327,16 @@
             margin: 0;
             margin-bottom: 20px;
         }
+    }
+    @-moz-document url-prefix() {
+        .promo__img {
+            top: 122px;
+            left: 42px;
+            transform: scale(0.50);
+            transform-origin: left top;
+            width: calc(100% / 0.50);
+            height: calc(100% / 0.50);
+            }
     }
 }
 
@@ -395,6 +419,16 @@
             margin: 0;
             margin-bottom: 20px;
         }
+    }
+    @-moz-document url-prefix() {
+        .promo__img {
+            top: 135px;
+            left: 30px;
+            transform: scale(0.48);
+            transform-origin: left top;
+            width: calc(100% / 0.48);
+            height: calc(100% / 0.48);
+            }
     }
 }
 

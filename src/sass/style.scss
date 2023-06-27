@@ -14,10 +14,6 @@
     padding: 0;
 }
 
-body {
-    // zoom: 70%
-}
-
 ul {
     margin: 0;
     padding: 0;
@@ -108,7 +104,6 @@ h1, h2, h3, h4, h5 {
 @import 'blocks/questions';
 @import 'blocks/footer';
 @import 'blocks/modal';
-@import 'blocks/buble';
 @import 'blocks/tiktok-loader';
 
 @import 'blocks/media/promo-media';
@@ -121,6 +116,7 @@ h1, h2, h3, h4, h5 {
 @import 'blocks/media/contacts-media';
 @import 'blocks/media/questions-media';
 @import 'blocks/media/footer-media';
+@import 'blocks/media/html-media';
 
 
 @import 'blocks/media/text-media';
