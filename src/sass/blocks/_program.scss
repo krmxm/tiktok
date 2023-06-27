@@ -37,6 +37,7 @@ filter: blur(350px);
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        z-index: 10;
     }
 
     &__card {
@@ -111,6 +112,7 @@ filter: blur(350px);
     }
     &__bubble {
         position: absolute;
+        z-index: 1;
         &_tiktok-bubble {
             top: 250px;
             left: 450px;
@@ -144,7 +146,7 @@ filter: blur(350px);
 @keyframes animation-for-tiktok {
     0% { transform: rotate(360deg) translateY(-150%) translateX(-150%) rotate(360deg);  opacity: 1;}
     25% { opacity: 0.1;}
-    50% {opacity: 0.1;}
+    50% {opacity: 0;}
     75% {opacity: 1;}
 	100%   {  transform: rotate(0deg) translateY(-150%) translateX(-150%) rotate(360deg); opacity: 0;}
 }
@@ -160,7 +162,7 @@ filter: blur(350px);
 @keyframes animation-for-message {
     0% { transform: translateY(0%) translateX(-10%) rotate(0);  opacity: 1;}
     50% {
-        transform: translateY(-200%) translateX(-50%) rotate(-360deg); opacity: 0;
+        transform: translateY(-200%) translateX(-50%) rotate(-360deg);
     }
 	100%   {  transform: translateY(0%) translateX(-10%) rotate(360deg); opacity: 1;}
 

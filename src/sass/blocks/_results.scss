@@ -251,7 +251,7 @@
             right: 450px;
             filter: blur(3px);
             z-index: 10;
-            animation: animation-results-send 40s linear infinite;
+            animation: animation-results-send 90s linear infinite;
             img {
                 opacity: 0.8;
             }
@@ -260,7 +260,7 @@
             top: 700px;
             right: 450px;
             filter: blur(2px);
-            animation: animation-results-tiktok 40s linear infinite;
+            animation: animation-results-tiktok 90s linear infinite;
             img {
                 width: 331px;
                 height: 263px;
@@ -273,9 +273,9 @@
             filter: blur(2px);
             // transform: scaleX(-1);
             // transform: scaleY(-1);
-            animation: animation-results-message 40s linear infinite;
+            animation: animation-results-message 90s linear infinite;
             img {
-            opacity: 0.5;
+            opacity: 0.8;
             }
         }
     }
