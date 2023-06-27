@@ -240,10 +240,10 @@
         position: absolute;
         z-index: 10;
         &_heart-buble {
-            top: 1490px;
+            top: 790px;
             right: 460px;
             filter: blur(3px);
-            animation: animation-results-heart 90s linear infinite;
+            animation: animation-results-heart 120s linear infinite;
 
         }
         &_send {
@@ -251,24 +251,32 @@
             right: 450px;
             filter: blur(3px);
             z-index: 10;
-            animation: animation-results-send 60s linear infinite;
+            animation: animation-results-send 40s linear infinite;
+            img {
+                opacity: 0.8;
+            }
         }
         &_tiktok-bubble{
             top: 700px;
             right: 450px;
             filter: blur(2px);
-            opacity: 0.8;
-            animation: animation-results-tiktok 80s linear infinite;
+            animation: animation-results-tiktok 40s linear infinite;
             img {
                 width: 331px;
                 height: 263px;
+                opacity: 0.6;
             }
         }
         &_message-bubble {
-            top: 100px;
+            top: 550px;
+            left: 300px;
             filter: blur(2px);
-            opacity: 0.8;
-            animation: animation-results-message 55s linear infinite;
+            // transform: scaleX(-1);
+            // transform: scaleY(-1);
+            animation: animation-results-message 40s linear infinite;
+            img {
+            opacity: 0.5;
+            }
         }
     }
 }
@@ -276,13 +284,13 @@
 // animation
 
 @keyframes animation-results-heart {
-    0% { transform: rotate(0deg) translateY(-440%) translateX(-440%) rotate(0);  opacity: 0.6;}
-	100%   {  transform: rotate(360deg) translateY(-440%) translateX(-440%) rotate(720deg); opacity: 0.6;}
+    0% { transform: rotate(0deg) translateY(-270%) translateX(-270%) rotate(0);  opacity: 0.6;}
+	100%   {  transform: rotate(360deg) translateY(-270%) translateX(-270%) rotate(720deg); opacity: 0.6;}
 }
 
 @keyframes animation-results-send {
-    0% { transform: rotate(0deg) translateY(-150%) translateX(-150%) rotate(0);  opacity: 0.6;}
-	100%   {  transform: rotate(360deg) translateY(-150%) translateX(-150%) rotate(720deg); opacity: 0.6;}
+    0% { transform: rotate(90deg) translateY(-150%) translateX(-150%) rotate(0);  opacity: 0.6;}
+	100%   {  transform: rotate(450deg) translateY(-150%) translateX(-150%) rotate(720deg); opacity: 0.6;}
 }
 
 @keyframes animation-results-tiktok {
@@ -291,6 +299,6 @@
 }
 
 @keyframes animation-results-message {
-    0% { transform: rotate(0deg) translateY(80%) translateX(80%) rotate(0);  opacity: 0.6;}
-	100%   {  transform: rotate(360deg) translateY(80%) translateX(80%) rotate(720deg); opacity: 0.6;}
+    0% { transform: rotate(0deg) translateY(110%) translateX(110%) rotate(0);  opacity: 0.6;}
+	100%   {  transform: rotate(360deg) translateY(110%) translateX(110%) rotate(720deg); opacity: 0.6;}
 }
