@@ -3,6 +3,7 @@
     padding: 200px 0 224px;
     min-height: 1307px;
     overflow: hidden;
+    z-index: 2;
     &:before {
         content: "";
         position: absolute;
@@ -145,7 +146,7 @@
 
     &__bubble {
         position: absolute;
-        &_send {
+        &_send-bubble {
             top: -250px;
             right: -200px;
             filter: blur(3.5px);

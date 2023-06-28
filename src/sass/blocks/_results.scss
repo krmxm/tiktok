@@ -239,14 +239,14 @@
     &__bubble {
         position: absolute;
         z-index: 10;
-        &_heart-buble {
+        &_heart-bubble {
             top: 790px;
             right: 460px;
             filter: blur(3px);
             animation: animation-results-heart 120s linear infinite;
 
         }
-        &_send {
+        &_send-bubble {
             top: 700px;
             right: 450px;
             filter: blur(3px);

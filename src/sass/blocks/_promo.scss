@@ -207,15 +207,15 @@ filter: blur(350px);
             }
         }
     }
-    &__buble {
+    &__bubble {
         position: absolute;
-        &_tiktok-buble {
+        &_tiktok-bubble {
             top: 99px;
             right: -277px;
             transform: translateY(-150%);
             animation: animation-promo-tiktok 6s forwards;
         }
-        &_message-buble {
+        &_message-bubble {
             top: 301px;
             left: -306px;
             transform: translateY(-150%) rotate(-31.718deg);
@@ -225,13 +225,13 @@ filter: blur(350px);
             //     height: 369.603px;
             // }
         }
-        &_send-buble {
+        &_send-bubble {
             bottom: -72px;
             right: -28px;
             transform: translateY(-150%);
             animation: animation-promo-send 5s forwards;
         }
-        &_heart-buble {
+        &_heart-bubble {
             bottom: -163px;
             left: -88px;
             transform: translateY(-150%);

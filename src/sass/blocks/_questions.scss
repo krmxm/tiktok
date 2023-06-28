@@ -1,8 +1,101 @@
 .questions {
+    position: relative;
     padding: 277px 0 100px 0;
     background: #F1F1F1;
-    // mix-blend-mode: luminosity;
+    overflow: hidden;
     &__title {
         margin-bottom: 80px;
+    }
+    &__bubble {
+        position: absolute;
+        &_tiktok-bubble {
+            top: -290px;
+            right: -130px;
+            filter: blur(2px);
+            transform: rotate(18.831deg);
+            img {
+                width: 342px;
+                height: 300px;
+                // transform: scaleX(-1);
+            }
+        }
+        &_heart {
+            top: -89px;
+            left: 320px;
+            img {
+                width: 61.91px;
+                height: 61.91px;
+                opacity: 0.7;
+            }
+        }
+        &_tik-tok {
+            top: 55px;
+            right: 80px;
+            transform: rotate(18.155deg);
+            img {
+                width: 71.795px;
+                height: 69.565px;
+                opacity: 0.5;
+            }
+        }
+        &_heart-2 {
+            top: 239px;
+            left: -170px;
+            img {
+                width: 80.123px;
+                height: 77.757px;
+                opacity: 0.5;
+            }
+        }
+        &_heart-3 {
+            top: 239px;
+            right: -170px;
+            img {
+                width: 100px;
+                height: 100px;
+                opacity: 0.8;
+            }
+        }
+        &_tik-tok-2 {
+            top: 790px;
+            left: -170px;
+            transform: rotate(18.155deg);
+            img {
+                width: 81.795px;
+                height: 79.565px;
+                opacity: 0.6;
+            }
+        }
+        &_message-bubble {
+            top: -120px;
+            left: -70px;
+            filter: blur(2.5px);
+            transform: rotate(-36.311deg);
+            img {
+                width: 279.566px;
+                height: 282.854px;
+                transform: scaleX(-1);
+            }
+        }
+        &_tiktok-bubble-1 {
+            top: 1220px;
+            right: -70px;
+            filter: blur(2.5px);
+            img {
+                width: 210px;
+                height: 193px;
+            }
+        }
+        &_tik-tok-3 {
+            bottom: -210px;
+            right: -400px;
+            transform: rotate(-18.155deg);
+            z-index: -5;
+            img {
+                width: 138.729px;
+                height: 144.053px;
+                opacity: 0.6;
+            }
+        }
     }
 }

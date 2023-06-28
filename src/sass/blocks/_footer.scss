@@ -1,6 +1,7 @@
 footer {
     padding: 100px 0 200px 0;
     background: #F1F1F1;
+    overflow: hidden;
     .wrapper{
         display: flex;
         justify-content: space-between;
@@ -9,6 +10,30 @@ footer {
             text-decoration: underline;
             &:hover {
                 text-decoration: none;
+            }
+        }
+    }
+}
+
+.footer {
+    &__bubble {
+        position: absolute;
+        &_heart-bubble {
+            top: 120px;
+            transform: rotate(5.59deg);
+            filter: blur(3.5px);
+            img {
+                width: 204.719px;
+                height: 195.966px;
+            }
+        }
+        &_tiktok-bubble {
+            top: 80px;
+            right: 10px;
+            filter: blur(3.5px);
+            img {
+                width: 213px;
+                height: 193px;
             }
         }
     }
