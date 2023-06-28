@@ -3,7 +3,7 @@
     padding: 193px 0 200px;
     background: #F1F1F1;
     z-index: 1000000;
-    // overflow-y: hidden;
+    overflow-x: clip;
     &__title {
         margin-bottom: 80px;
     }

@@ -16,6 +16,95 @@
         &__descr {
             margin-left: 65px;
         }
+        &__bubble {
+            &_heart {
+                top: -70px;
+                left: 1px;
+                transform: rotate(-36.269deg);
+                img {
+                    width: 61.91px;
+                    height: 61.91px;
+                    opacity: 0.7;
+                }
+            }
+            &_tik-tok {
+                top: -70px;
+                right: -33px;
+                transform: rotate(18.155deg);
+                img {
+                    width: 71.795px;
+                    height: 69.565px;
+                }
+            }
+            &_heart-2 {
+                top: 75px;
+                left: auto;
+                right: 7px;
+                img {
+                    width: 54.891px;
+                    height: 50.738px;
+                }
+            }
+            &_heart-3 {
+                top: 602px;
+                right: -74px;
+                transform: scaleX(-1) rotate(-10.233deg);
+                img {
+                    width: 100px;
+                    height: 100px;
+                    opacity: 0.8;
+                }
+            }
+            &_tik-tok-2 {
+                top: 598px;
+                left: -56px;
+                transform: rotate(7.588deg);
+                img {
+                    width: 81.795px;
+                    height: 79.565px;
+                    opacity: 0.6;
+                }
+            }
+            &_heart-4 {
+                bottom: 522px;
+                left: -56px;
+                transform: rotate(-8.233deg);
+                img {
+                    width: 78.638px;
+                    height: 76.584px;
+                    opacity: 0.4;
+                }
+            }
+            &_tik-tok-3 {
+                bottom: 696px;
+                right: -55px;
+                transform: rotate(-54.155deg);
+                img {
+                    width: 81.795px;
+                    height: 79.565px;
+                    opacity: 0.6;
+                }
+            }
+            &_tik-tok-4 {
+                bottom: -85px;
+                left: -47px;
+                transform: rotate(-22.971deg);
+                img {
+                    width: 81.795px;
+                    height: 79.565px;
+                    opacity: 0.6;
+                }
+            }
+            &_heart-5 {
+                bottom: -92px;
+                right: -55px;
+                img {
+                    width: 81.795px;
+                    height: 79.565px;
+                    opacity: 1;
+                }
+            }
+        }
     }
 }
 @media (max-width: 767px) {
@@ -28,6 +117,9 @@
 @media (max-width: 575px) {
     .rates {
         padding: 104px 0 100px;
+        &__title {
+            margin-bottom: 32px;
+        }
         &__card {
             min-height: 858px;
             padding: 70px 0 75px;

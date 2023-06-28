@@ -1,7 +1,8 @@
 .for {
     padding: 200px 0 200px 0;
     background: #F1F1F1;
-    overflow-x: hidden;
+    overflow-x: clip;
+    // clip-path: inset( -100vw );
     &__wrap {
         position: relative;
         // margin: 0 auto;
