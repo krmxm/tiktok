@@ -2,7 +2,71 @@
 
 }
 @media (max-width: 991px) {
-
+    .questions {
+        padding: 50px 0 80px 0;
+        &__bubble {
+            &_heart {
+                top: -69px;
+                left: -16px;
+                transform: rotate(-44.905deg);
+                img {
+                    width: 59.91px;
+                    height: 59.91px;
+                    opacity: 0.8;
+                }
+            }
+            &_tik-tok {
+                top: -78px;
+                right: -12px;
+                transform: rotate(18.155deg);
+                img {
+                    width: 71.795px;
+                    height: 69.565px;
+                    opacity: 1;
+                }
+            }
+            &_heart-2 {
+                top: 80px;
+                left: auto;
+                right: 2px;
+                img {
+                    width: 50.891px;
+                    height: 46.738px;
+                    opacity: 0.6;
+                }
+            }
+            &_heart-3 {
+                top: 239px;
+                right: -170px;
+                img {
+                    width: 100px;
+                    height: 100px;
+                    opacity: 0.8;
+                }
+            }
+            &_tik-tok-2 {
+                top: 790px;
+                left: -170px;
+                transform: rotate(18.155deg);
+                img {
+                    width: 81.795px;
+                    height: 79.565px;
+                    opacity: 0.6;
+                }
+            }
+            &_tik-tok-3 {
+                bottom: -210px;
+                right: -400px;
+                transform: rotate(-18.155deg);
+                z-index: -5;
+                img {
+                    width: 138.729px;
+                    height: 144.053px;
+                    opacity: 0.6;
+                }
+            }
+        }
+    }
 }
 @media (max-width: 767px) {
     .questions {
@@ -11,6 +75,7 @@
 }
 @media (max-width: 575px) {
     .questions {
+        padding: 90px 0 100px;
         &__title {
             margin-bottom: 40px;
         }

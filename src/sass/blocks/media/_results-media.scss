@@ -74,6 +74,7 @@
 }
 @media (max-width: 991px) {
     .results {
+        padding: 150px 0 650px 0;
         overflow: hidden;
         &__wrap {
             width: 750px;
@@ -176,6 +177,7 @@
 }
 @media (max-width: 767px) {
     .results {
+        padding: 100px 0 400px 0;
         &__title {
             margin-bottom: 205px;
         }
@@ -327,8 +329,9 @@
 }
 @media (max-width: 575px) {
     .results {
+        padding: 90px 0 350px 0;
         &__title {
-            margin-bottom: 205px;
+            margin-bottom: 215px;
         }
         &__wrap {
             width: 324px;

@@ -7,6 +7,7 @@
 }
 @media (max-width: 991px) {
     .program {
+        padding: 300px 0 150px 0;
         &__card {
         width: 700px;
         }
@@ -30,6 +31,7 @@
 }
 @media (max-width: 767px) {
     .program {
+        padding: 300px 0 100px 0;
         &__card {
         width: 422px;
         // height: 600px;
@@ -68,11 +70,16 @@
 }
 @media (max-width: 575px) {
     .program {
+        padding: 150px 0 90px 0;
+        &__title {
+            margin-bottom: 42px;
+        }
         &__card {
             position: relative;
             width: 300px;
             height: 600px;
             padding: 0 18px 0 18px;
+            margin-bottom: 50px;
         }
         &__num {
             position: absolute;

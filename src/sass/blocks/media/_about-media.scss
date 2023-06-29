@@ -3,6 +3,7 @@
 }
 @media (max-width: 991px) {
     .about {
+        padding: 300px 0 150px 0;
         &__wrap {
             flex-direction: column;
         }
@@ -10,39 +11,13 @@
 }
 @media (max-width: 767px) {
     .about {
+        padding: 300px 0 100px 0;
         &__card {
             width: 510px;
         }
         &__photo {
             img {
                 height: 500px;
-            }
-        }
-        &__contacts {
-            width: 170px;
-        }
-    }
-}
-@media (max-width: 575px) {
-    .about {
-        padding: 108px 0 100px;
-        &__title {
-            margin-bottom: 39px;
-            font-weight: 900;
-            font-size: 24px;
-            line-height: 29px;
-        }
-        &__card {
-            width: 300px;
-            padding: 40px 14px 40px 13px;
-        }
-        &__subtitle {
-            margin-bottom: 20px;
-        }
-        &__photo {
-            img {
-                height: 364px;
-                padding-left: 20px;
             }
             &::after {
                 width: 343.21px;
@@ -67,6 +42,33 @@
             height: 120.86px;
             left: -208px;
             top: 152px;
+        }
+        &__contacts {
+            width: 170px;
+        }
+    }
+}
+@media (max-width: 575px) {
+    .about {
+        padding: 150px 0 90px 0;
+        &__title {
+            margin-bottom: 39px;
+            font-weight: 900;
+            font-size: 24px;
+            line-height: 29px;
+        }
+        &__card {
+            width: 300px;
+            padding: 40px 14px 40px 13px;
+        }
+        &__subtitle {
+            margin-bottom: 20px;
+        }
+        &__photo {
+            img {
+                height: 364px;
+                padding-left: 20px;
+            }
         }
         &__contacts {
             width: 140px;

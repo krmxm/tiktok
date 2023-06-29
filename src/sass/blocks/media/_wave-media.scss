@@ -1,0 +1,25 @@
+@media (max-width: 991px) {
+    .wave {
+        position: absolute;
+        width: 100%;
+        overflow: hidden;
+        z-index: 10;
+        &__down {
+            &_desktop {
+                display: none;
+            }
+            &_media {
+                display: block;
+            }
+        }
+        &__up {
+            &_desktop {
+                display: none;
+            }
+            &_media {
+                display: block;
+            }
+        }
+    }
+    
+}

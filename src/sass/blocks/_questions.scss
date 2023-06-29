@@ -2,12 +2,13 @@
     position: relative;
     padding: 277px 0 100px 0;
     background: #F1F1F1;
-    overflow: hidden;
+    overflow-x: clip;
     &__title {
         margin-bottom: 80px;
     }
     &__bubble {
         position: absolute;
+        z-index: 1000;
         &_tiktok-bubble {
             top: -290px;
             right: -130px;
