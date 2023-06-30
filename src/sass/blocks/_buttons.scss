@@ -15,7 +15,7 @@
         bottom: 0;
         border-radius: 15px;
         z-index: -1;
-        transition: 0.8s;
+        transition: 0.8s ease-in;
     }
 
     &::before {
@@ -32,14 +32,12 @@
     }
     &:hover::before {
         background-color: #25F4EE;
-        // z-index: -2;
     }
     &:hover::after {
         background-color: #FE2C55;
-        // z-index: -2;
     }
     &:hover {
-        transform: scale(1.1);
+        transform: scale(1.05);
         .button {
             &__decor-left {
                 background-color: #25F4EE;
@@ -48,6 +46,79 @@
                 background-color: #FE2C55;
             }
         }
+    }
+    &:active {
+        transform: scale(0.92);
+    }
+    &_medium {
+        width: 326px;
+        height: 91.26px;
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            width: 326px;
+            height: 91.26px;
+            top: 0;
+            bottom: 0;
+            border-radius: 15px;
+            z-index: -1;
+            transition: 0.8s ease-in;
+        }
+    
+        &::before {
+            background-color: #FE2C55;
+            width: 50%;
+            left: -8px;
+            right: 0;
+        }
+    
+        &::after {
+            background-color: #25F4EE;
+            right: 0;
+            left: 8px;
+        }
+        &:hover::before {
+            background-color: #25F4EE;
+        }
+        &:hover::after {
+            background-color: #FE2C55;
+        }
+    }
+    &_modal {
+        width: 326px;
+            height: 91.26px;
+            &::before,
+            &::after {
+                content: '';
+                position: absolute;
+                width: 326px;
+                height: 91.26px;
+                top: 0;
+                bottom: 0;
+                border-radius: 15px;
+                z-index: -1;
+                transition: 0.8s ease-in;
+            }
+        
+            &::before {
+                background-color: #FE2C55;
+                width: 50%;
+                left: -8px;
+                right: 0;
+            }
+        
+            &::after {
+                background-color: #25F4EE;
+                right: 0;
+                left: 8px;
+            }
+            &:hover::before {
+                background-color: #25F4EE;
+            }
+            &:hover::after {
+                background-color: #FE2C55;
+            }
     }
 }
 
@@ -84,12 +155,15 @@
         left: -3%;
         right: 0;
         filter: blur(50px);
-        transition: 1s;
+        transition: 0.8s;
         &_medium {
             filter: blur(32px);
             height: 56%;
             top: 29px;
             left: 0;
+        }
+        &:hover {
+            background-color: #25F4EE;
         }
     }
     &__decor-right {
@@ -110,33 +184,12 @@
             background-color: #FE2C55;
         }
     }
-
     &_medium {
         width: 326px;
         height: 91.26px;
-        &::before,
-        &::after {
-            content: '';
-            position: absolute;
-            width: 326px;
-            height: 91.26px;
-            top: 0;
-            bottom: 0;
-            border-radius: 15px;
-            z-index: -1;
-        }
-    
-        &::before {
-            background-color: #FE2C55;
-            width: 50%;
-            left: -8px;
-            right: 0;
-        }
-    
-        &::after {
-            background-color: #25F4EE;
-            right: 0;
-            left: 8px;
-        }
+    }
+    &_modal {
+        width: 326px;
+        height: 91.26px;
     }
 }

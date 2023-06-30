@@ -4,6 +4,10 @@
     }
     .title {
         font-size: 50px;
+        &_modal {
+            font-size: 38px;
+            line-height: 47px;
+        }
     }
     .subtitle {
         font-size: 28px;
@@ -33,6 +37,10 @@
 @media (max-width: 767px) {
     .title {
         font-size: 44px;
+        &_modal {
+            font-size: 29px;
+            line-height: 39px;
+        }
     }
     .subtitle {
         // font-size: 24px;
@@ -71,6 +79,10 @@
         text-shadow: 1.2px 1.2px #25F4EE, 2.5px 2.5px #FE2C55;
         &_contacts {
             line-height: 36px;
+        }
+        &_modal {
+            font-size: 29px;
+            line-height: 39px;
         }
     }
     .text {
@@ -132,6 +144,11 @@
         text-shadow: 1.2px 1.2px #25F4EE, 2.5px 2.5px #FE2C55;
         &_contacts {
             line-height: 36px;
+        }
+        &_modal {
+            font-size: 23px;
+            line-height: 30px;
+            text-shadow: 1px 1px #25F4EE, 2px 2px #FE2C55;
         }
     }
     .text {

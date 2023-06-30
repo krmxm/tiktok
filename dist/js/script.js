@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const message = {
         loading: 'Загрузка...',
-        success: 'Спасибо! Скоро с тобой свяжутся :)',
+        success: 'Спасибо! Скоро с тобой свяжутся!',
         failure: 'Что-то пошло не так...'
     };
 

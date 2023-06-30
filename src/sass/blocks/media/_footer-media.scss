@@ -2,6 +2,10 @@
 
 }
 @media (max-width: 991px) {
+    footer {
+        overflow-y: visible;
+        
+    }
     .footer {
         &__bubble {
             &_heart {
@@ -18,6 +22,7 @@
                 top: -90px;
                 right: -30px;
                 transform: rotate(-53.538deg);
+                z-index: 2;
                 img {
                     width: 81.795px;
                     height: 79.565px;

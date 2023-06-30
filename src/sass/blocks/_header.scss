@@ -7,11 +7,19 @@
     z-index: 1000;
     &__icon {
         position: relative;
+        transition: 1s;
         &_first {
             margin-right: 62px;
         }
         &_second {
             margin-left: 62px;
+        }
+        &:hover {
+            transform: scale(1.07);
+        }
+        &:active {
+            transform: scale(0.98);
+
         }
     }
     &__icon-back {

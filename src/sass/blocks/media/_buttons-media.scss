@@ -1,18 +1,11 @@
 @media (max-width: 991px) {
-    .button {
+    .button-wrap {
         width: 323.14px;
         height: 122.41px;
         &::before,
         &::after {
         width: 323.14px;
         height: 122.41px;
-        }
-        &::after {
-            right: 0;
-            left: 8px;
-        }
-        &::before {
-            left: -8px;
         }
         &_medium {
             width: 374px;
@@ -23,25 +16,84 @@
                 height: 91.26px;
             }
         }
+        &_modal {
+            width: 256.48px;
+            height: 75.86px;
+            font-size: 24px;
+            &::before,
+            &::after {
+                width: 256.48px;
+                height: 75.86px;
+            }
+        }
+        &:hover {
+            transform: scale(0.92);
+        }
+    }
+    .button {
+        width: 323.14px;
+        height: 122.41px;
+        &::before,
+        &::after {
+        width: 323.14px;
+        height: 122.41px;
+        }
+        &_medium {
+            width: 374px;
+            height: 91.26px;
+            &::before,
+            &::after {
+                width: 374px;
+                height: 91.26px;
+            }
+        }
+        &_modal {
+            width: 256.48px;
+            height: 75.86px;
+            font-size: 24px;
+            &::before,
+            &::after {
+                width: 256.48px;
+                height: 75.86px;
+            }
+        }
     }
 }
 @media (max-width: 767px) {
+    .button-wrap {
+        width: 285px;
+        height: 105px;
+        &::before,
+        &::after {
+        width: 285px;
+        height: 105px;
+        }
+        &_medium {
+            width: 256.48px;
+            height: 75.86px;
+            font-size: 24px;
+            &::before,
+            &::after {
+                width: 256.48px;
+                height: 75.86px;
+            }
+        }
+        &_modal {
+            width: 256.48px;
+            height: 75.86px;
+            font-size: 24px;
+            &::before,
+            &::after {
+                width: 256.48px;
+                height: 75.86px;
+            }
+        }
+    }
     .button {
         width: 285px;
         height: 105px;
         font-size: 26px;
         font-weight: 600;
-        &::before, &::after {
-            width: 285px;
-            height: 105px;
-        }
-        &::after {
-            right: 0;
-            left: 8px;
-        }
-        &::before {
-            left: -8px;
-        }
         &__decor-left {
             height: 70%;
             left: 0;
@@ -57,17 +109,57 @@
             top: 19px;
         }
         &_medium {
-            width: 374px;
-            height: 91.26px;
+            width: 256.48px;
+            height: 75.86px;
+            font-size: 24px;
             &::before,
             &::after {
-                width: 374px;
-                height: 91.26px;
+                width: 256.48px;
+                height: 75.86px;
+            }
+        }
+        &_modal {
+            width: 256.48px;
+            height: 75.86px;
+            font-size: 24px;
+            &::before,
+            &::after {
+                width: 256.48px;
+                height: 75.86px;
             }
         }
     }
 }
 @media (max-width: 575px) {
+    .button-wrap {
+        width: 261.38px;
+        height: 97.2px;
+        &::before,
+        &::after {
+            width: 261.38px;
+            height: 97.2px;
+        }
+        &_medium {
+            width: 256.48px;
+            height: 75.86px;
+            font-size: 24px;
+            &::before,
+            &::after {
+                width: 256.48px;
+                height: 75.86px;
+            }
+        }
+        &_modal {
+            width: 256.48px;
+            height: 75.86px;
+            font-size: 24px;
+            &::before,
+            &::after {
+                width: 256.48px;
+                height: 75.86px;
+            }
+        }
+    }
     .button {
         width: 261.38px;
         height: 97.2px;
@@ -75,13 +167,6 @@
         &::before, &::after {
             width: 261.38px;
             height: 97.2px;
-        }
-        &::after {
-            right: 0;
-            left: 8px;
-        }
-        &::before {
-            left: -8px;
         }
         &__decor-left {
             height: 68%;
@@ -105,9 +190,48 @@
                 height: 75.86px;
             }
         }
+        &_modal {
+            width: 256.48px;
+            height: 75.86px;
+            font-size: 24px;
+            &::before,
+            &::after {
+                width: 256.48px;
+                height: 75.86px;
+            }
+        }
     }
 }
 @media (max-width: 360px) {
+    .button-wrap {
+        width: 243.38px;
+        height: 79.2px;
+        &::before,
+        &::after {
+            width: 243.38px;
+            height: 79.2px;
+        }
+        &_medium {
+            width: 238.48px;
+            height: 57.86px;
+            font-size: 22px;
+            &::before,
+            &::after {
+                width: 238.48px;
+                height: 57.86px;
+            }
+        }
+        &_modal {
+            width: 238.48px;
+            height: 57.86px;
+            font-size: 22px;
+            &::before,
+            &::after {
+                width: 238.48px;
+                height: 57.86px;
+            }
+        }
+    }
     .button {
         width: 243.38px;
         height: 79.2px;
@@ -117,13 +241,6 @@
         &::before, &::after {
             width: 243.38px;
             height: 79.2px;
-        }
-        &::after {
-            right: 0;
-            left: 8px;
-        }
-        &::before {
-            left: -8px;
         }
         &__decor-left {
             height: 68%;
@@ -140,6 +257,16 @@
             filter: blur(15px);
         }
         &_medium {
+            width: 238.48px;
+            height: 57.86px;
+            font-size: 22px;
+            &::before,
+            &::after {
+                width: 238.48px;
+                height: 57.86px;
+            }
+        }
+        &_modal {
             width: 238.48px;
             height: 57.86px;
             font-size: 22px;

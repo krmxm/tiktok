@@ -52,8 +52,8 @@
             font-size: 228px;
         }
         &__img {
-            top: 160px;
-            left: 147px;
+            top: 164px;
+            left: 151px;
             zoom: 95%;
             &:after {
                 width: 608.53px;
@@ -174,20 +174,22 @@
             line-height: 188px;
         }
         &__img {
-            top: 71px;
-            left: 90px;
+            top: 79px;
+            left: 98px;
             zoom: 79%;
             &:after {
                 width: 575.53px;
                 height: 638.06px;
                 left: 2px;
                 top: -127px;
+                filter: blur(75px);
             }
             &:before {
                 width: 667.34px;
                 height: 666.87px;
                 right: -88px;
                 top: 307px;
+                filter: blur(75px);
             }
         }
         &__back-white {
@@ -297,18 +299,22 @@
             line-height: 90px;
         }
         &__img {
-            top: 242px;
-            left: 60px;
+            top: 250px;
+            left: 78px;
             zoom: 50%;
             &:after {
-                width: 575.53px;
-                height: 515.06px;
+                width: 266.715px;
+                height: 235.282px;
+                border-radius: 266.715px;
+                opacity: 0.6399999856948853;
                 left: -22px;
                 top: -43px;
             }
             &:before {
-                width: 584.34px;
-                height: 525.87px;
+                width: 270.265px;
+                height: 245.829px;
+                border-radius: 270.265px;
+                opacity: 0.6399999856948853;
                 right: -35px;
                 top: 201px;
             }
@@ -356,12 +362,6 @@
             line-height: 37px;
             margin-bottom: 117px;
         }
-        // &__wrapper {
-        //     width: 308px;
-        //     display: flex;
-        //     flex-direction: column;
-        //     align-items: center;
-        // }
         &__wrap-subheader {
             width: 300px;
         }
@@ -390,7 +390,7 @@
         }
         &__img {
             top: 281px;
-            left: 77px;
+            left: 56px;
             zoom: 48%;
             &:after {
                 width: 575.53px;

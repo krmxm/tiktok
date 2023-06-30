@@ -1,3 +1,12 @@
 .bubble-media {
     display: none;
 }
+
+.scroll-item {
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+.scroll-item.scroll-item-animation {
+    opacity: 1;
+}

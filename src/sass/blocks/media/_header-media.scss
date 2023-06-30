@@ -36,6 +36,9 @@
             &_second {
                 margin-left: 9px;
             }
+            &:hover {
+                transform: scale(0.92);
+            }
         }
         &__condition-date {
             .span-first {

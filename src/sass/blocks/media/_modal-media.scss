@@ -1,0 +1,40 @@
+@media (max-width: 991px) {
+    .modal {
+        &__title {
+            font-size: 37px;
+        }
+    }
+}
+@media (max-width: 767px) {
+    .modal {
+        &__close {
+            top: -92px;
+            right: -50px;
+            font-size: 70px;
+            opacity: .8;
+            font-weight: 700;
+        }
+    }
+}
+@media (max-width: 575px) {
+    .modal {
+        &__content {
+            padding: 30px 15px;
+            border: 5px solid rgba(102,102,102,.5);
+        }
+        &__close {
+            top: -75px;
+            right: 0;
+            font-size: 60px;
+            opacity: .8;
+            font-weight: 700;
+        }
+    }
+}
+@media (max-width: 360px) {
+    .modal {
+        &__content {
+            padding: 20px 10px;
+        }
+    }
+}
