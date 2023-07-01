@@ -122,7 +122,7 @@ filter: blur(350px);
             top: -116px;
             background: rgba(254, 44, 85, 1);
             opacity: 0.64;
-            // filter: blur(200px);
+            filter: blur(200px);
             transform: matrix(0.93, 0.37, -0.58, 0.81, 0, 0);
             z-index: -1;
         }
@@ -135,23 +135,23 @@ filter: blur(350px);
             top: 252px;
             background: #25F4EE;
             opacity: 0.64;
-            // filter: blur(150px);
+            filter: blur(150px);
             transform: matrix(0.93, 0.37, -0.58, 0.81, 0, 0);
             z-index: -1; 
         }
     }
-    // &__back-white {
-    //     position: absolute;
-    //     width: 1272.44px;
-    //     height: 382.28px;
-    //     left: -322px;
-    //     top: 300px;
-    //     background: #EEEEEE;
-    //     opacity: 0.64;
-    //     filter: blur(181.5px);
-    //     transform: matrix(1, 0.05, -0.09, 1, 0, 0);
-    //     z-index: -10;
-    // }
+    &__back-white {
+        position: absolute;
+        width: 1272.44px;
+        height: 382.28px;
+        left: -322px;
+        top: 300px;
+        background: #EEEEEE;
+        opacity: 0.64;
+        filter: blur(181.5px);
+        transform: matrix(1, 0.05, -0.09, 1, 0, 0);
+        z-index: -10;
+    }
     
     &__descr {
         margin: 0 30px;

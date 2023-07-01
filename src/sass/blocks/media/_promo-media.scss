@@ -178,25 +178,26 @@
             left: 98px;
             zoom: 79%;
             &:after {
-                width: 575.53px;
-                height: 638.06px;
-                left: 2px;
-                top: -127px;
-                filter: blur(75px);
+                width: 290.715px;
+                height: 259.282px;
+                left: 142px;
+                top: -29px;
+                border-radius: 266.715px;
+                filter: blur(90px);
             }
             &:before {
-                width: 667.34px;
-                height: 666.87px;
-                right: -88px;
-                top: 307px;
-                filter: blur(75px);
+                width: 300.715px;
+                height: 269.282px;
+                right: 89px;
+                top: 315px;
+                filter: blur(95px);
             }
         }
         &__back-white {
-            left: -256px;
+            left: 48px;
             top: 284px;
-            width: 959.44px;
-            height: 370.28px;
+            width: 419.44px;
+            height: 177.28px;
         }
         &__descr {
             flex-direction: column;
@@ -306,22 +307,29 @@
                 width: 266.715px;
                 height: 235.282px;
                 border-radius: 266.715px;
-                opacity: 0.6399999856948853;
-                left: -22px;
-                top: -43px;
+                opacity: 0.63;
+                left: 122px;
+                top: 45px;
+                filter: blur(75px);
             }
             &:before {
                 width: 270.265px;
                 height: 245.829px;
                 border-radius: 270.265px;
-                opacity: 0.6399999856948853;
-                right: -35px;
-                top: 201px;
+                opacity: 0.6;
+                right: 114px;
+                top: 363px;
+                filter: blur(75px);
             }
         }
         &__back-white {
-            left: -192px;
-            width: 860.44px;
+            width: 409.88px;
+            height: 140.854px;
+            border-radius: 409.88px;
+            opacity: 0.63;
+            background: #EEE;
+            filter: blur(75px);
+            left: 40px;
         }
         &__get-create {
             font-weight: 400;
