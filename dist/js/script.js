@@ -2,6 +2,17 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
+    const critical = require('critical');
+
+    critical.generate({
+    inline: true,
+    base: 'initial/',
+    src: 'homepage.html',
+    dest: 'final/homepage.html',
+    width: 1366,
+    height: 768
+    });
+
     // modal
 
     function openModal(modalSelector) {
