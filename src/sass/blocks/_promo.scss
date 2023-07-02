@@ -15,7 +15,6 @@
         z-index: -1;
         background: url(../img/bg/bg.jpg) center (center/cover) no-repeat;
         background-size: 100% 100%;
-
     }
     /* &__background-layer3 {
         background: linear-gradient(89.87deg, rgba(95, 255, 250, 0.4) 13.48%, rgba(255, 90, 122, 0.4) 86.65%);
@@ -110,9 +109,11 @@ filter: blur(350px);
     &__img {
         position: absolute;
         top: 116px;
-        left: 334px;
+        left: 344px;
         z-index: 10;
-        zoom: 102%;
+        picture {
+            zoom: 102%;
+        }
         &:after {
             content: '';
             position: absolute;
@@ -123,7 +124,7 @@ filter: blur(350px);
             background: rgba(254, 44, 85, 1);
             opacity: 0.64;
             filter: blur(200px);
-            transform: matrix(0.93, 0.37, -0.58, 0.81, 0, 0);
+            transform: translate3d(0,0,0) matrix(0.93, 0.37, -0.58, 0.81, 0, 0);
             z-index: -1;
         }
         &:before {
@@ -136,7 +137,7 @@ filter: blur(350px);
             background: #25F4EE;
             opacity: 0.64;
             filter: blur(150px);
-            transform: matrix(0.93, 0.37, -0.58, 0.81, 0, 0);
+            transform: translate3d(0,0,0) matrix(0.93, 0.37, -0.58, 0.81, 0, 0);
             z-index: -1; 
         }
     }
@@ -149,7 +150,7 @@ filter: blur(350px);
         background: #EEEEEE;
         opacity: 0.64;
         filter: blur(181.5px);
-        transform: matrix(1, 0.05, -0.09, 1, 0, 0);
+        transform: translate3d(0,0,0) matrix(1, 0.05, -0.09, 1, 0, 0);
         z-index: -10;
     }
     
@@ -246,8 +247,11 @@ filter: blur(350px);
 @-moz-document url-prefix() {
     .promo {
         &__img {
-            transform: scale(1.02);
-            transform-origin: left top;
+            top: 124px;
+            picture {
+                transform: scale(1.02);
+                transform-origin: left top;
+            }
        }
     }
 }
