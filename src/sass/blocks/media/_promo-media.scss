@@ -280,6 +280,12 @@
 }
 @media (max-width: 575px) {
     .promo {
+        &:before {
+            content: "";
+            position: absolute;
+            background: url(../img/bg/bg2.jpg) center (center/cover) no-repeat;
+            // background-size: contain;
+        }
         &__wrapper {
             display: block;
             margin: 0 auto;

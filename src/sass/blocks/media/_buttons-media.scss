@@ -105,17 +105,19 @@
         font-weight: 600;
         &__decor-left {
             height: 70%;
+            top: 19px;
             left: 0;
             right: 0;
             filter: blur(15px);
-            top: 19px;
+            transform: translate3d(0,0,0);
         }
         &__decor-right {
             height: 70%;
             left: 50%;
             right: 0;
-            filter: blur(15px);
             top: 19px;
+            filter: blur(15px);
+            transform: translate3d(0,0,0);
         }
         &_medium {
             width: 256.48px;
@@ -188,6 +190,7 @@
             left: 50%;
             right: 0;
             filter: blur(15px);
+            transform: translate3d(0,0,0);
         }
         &_medium {
             width: 256.48px;
@@ -257,6 +260,7 @@
             top: 19%;
             right: 0;
             filter: blur(15px);
+            transform: translate3d(0,0,0);
         }
         &__decor-right {
             height: 68%;
@@ -264,6 +268,7 @@
             left: 50%;
             right: 0;
             filter: blur(15px);
+            transform: translate3d(0,0,0);
         }
         &_medium {
             width: 238.48px;
