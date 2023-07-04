@@ -19,15 +19,15 @@
     width: 374px;
     height: 91px;
     &_modal {
-        width: 286px;
-        height: 71px;
+        width: 356px;
+        // height: 71px;
         margin-bottom: 20px;
         &:last-of-type {
             margin-bottom: 32px;
         }
     }
     input {
-        padding: 30px 30px 29px 40px;
+        padding: 30px 30px 30px 40px;
         // margin-right: 30px;
         width: 100%;
         height: 100%;
@@ -41,6 +41,16 @@
         line-height: 32px;
         color: rgba(238, 238, 238, 0.76);
         z-index: 2;
+        &:focus {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 0 0 1px rgba(240, 240, 240, 0.7);
+            outline: none;
+            transition: .8s;
+        }
+    }
+    input[type=text] {
+        color: rgba(240, 240, 240, 1);
     }
     &::before {
         content: "";

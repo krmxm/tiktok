@@ -34,24 +34,21 @@
         flex-direction: column;
         justify-content: start;
         width: 665px;
-        // height: 583px;
+        min-height: 394px;
         padding: 40px;
-        // box-sizing: border-box;
-        // background: linear-gradient(180deg, rgba(47, 46, 46, 0.5236) 23.65%, rgba(47, 46, 46, 0.67) 78.34%);
+        box-sizing: border-box;
         background: url(../img/about/about-card.png) center (center/contain) no-repeat;
         background-size:100% 100%;
         border-radius: 15px;
         &::before {
             content: "";
             position: absolute;
-            width: 100%;
-            height: 100%;
             inset: 0;
             border-radius: 15px; 
             padding: 5px; 
             background: linear-gradient(90deg, rgba(187, 51, 78, 0.6), rgba(252, 188, 201, 0.186));
             background: linear-gradient(45deg, rgba(187, 51, 78, 0.6) 36%, rgba(252, 188, 201, 0.186) 50%);
-            // opacity: .9; 
+            opacity: 0.35;
             -webkit-mask: 
                linear-gradient(#fff 0 0) content-box,
                linear-gradient(#fff 0 0);
@@ -59,22 +56,19 @@
             mask-composite: exclude;
             background-size: 100% 450%;
             animation-name: animation;
-            animation-duration: 5s;
+            animation-duration: 15s;
             animation-iteration-count: infinite;
             animation-timing-function: linear;
-            animation-direction: alternate;
-            z-index: -1;
+            animation-direction: alternate;;
           } 
     }
     &__subtitle {
         margin-bottom: 24px;
     }
-    &__photo {
+    &__img {
         position: relative;
-        // top: -133px;
-        // left: 271px;
         z-index: -2;
-        padding-top: 15px;
+        padding-bottom: 30px;
         &:after {
             content: '';
             position: absolute;
@@ -85,7 +79,7 @@
             background: #FE2C55;
             opacity: 0.4;
             filter: blur(200px);
-            transform: matrix(0.96, 0.27, -0.7, 0.71, 0, 0);
+            transform: translate3d(0,0,0) matrix(0.96, 0.27, -0.7, 0.71, 0, 0);
             z-index: -3;
         }
         &:before {
@@ -98,7 +92,7 @@
             background: #25F4EE;
             opacity: 0.4;
             filter: blur(150px);
-            transform: matrix(0.96, 0.27, -0.7, 0.71, 0, 0);
+            transform: translate3d(0,0,0) matrix(0.96, 0.27, -0.7, 0.71, 0, 0);
             z-index: -3;
             
         }
@@ -112,19 +106,14 @@
         background: #EEEEEE;
         opacity: 0.4;
         filter: blur(181.5px);
-        transform: matrix(1, 0.04, -0.13, 0.99, 0, 0);
+        transform: translate3d(0,0,0) matrix(1, 0.04, -0.13, 0.99, 0, 0);
         z-index: -3;
     }
     &__contacts {
-        // position: absolute;
-        // bottom: 0;
-        // right: 50%;
-        // transform: translateX(50%);
         display: flex;
         flex-direction: column;
         justify-content: center;
         margin: 0 auto;
-        margin-top: 10px;
         width: 198px;
         height: 57px;
         background: rgba(248, 245, 245, 0.51);
@@ -146,6 +135,7 @@
 
     &__bubble {
         position: absolute;
+        z-index: -3;
         &_send-bubble {
             top: -250px;
             right: -200px;

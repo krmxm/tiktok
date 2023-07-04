@@ -7,6 +7,21 @@
         &__wrap {
             flex-direction: column;
         }
+        &__img {
+            &::after{
+                filter: blur(110px);
+            }
+            &::before {
+                filter: blur(110px);
+            }
+        }
+        &__back-white {
+            width: 559.44px;
+            height: 170.28px;
+            left: -23px;
+            top: 315px;
+            filter: blur(110px);
+        }
     }
 }
 @media (max-width: 767px) {
@@ -15,7 +30,7 @@
         &__card {
             width: 510px;
         }
-        &__photo {
+        &__img {
             img {
                 height: 500px;
             }
@@ -26,7 +41,7 @@
                 top: 34px;
                 opacity: 0.4;
                 filter: blur(75px);
-                transform: matrix(0.96, 0.27, -0.7, 0.71, 0, 0);
+                transform: translate3d(0,0,0) matrix(0.96, 0.27, -0.7, 0.71, 0, 0);
             }
             &::before {
                 width: 347.78px;
@@ -34,7 +49,7 @@
                 right: -42px;
                 top: 142px;
                 filter: blur(75px);
-                transform: matrix(0.96, 0.27, -0.7, 0.71, 0, 0);
+                transform: translate3d(0,0,0) matrix(0.96, 0.27, -0.7, 0.71, 0, 0);
             }
         }
         &__back-white {
@@ -51,6 +66,9 @@
 @media (max-width: 575px) {
     .about {
         padding: 150px 0 90px 0;
+        &:before {
+            background: #2D2B2B;
+        }
         &__title {
             margin-bottom: 39px;
             font-weight: 900;
@@ -64,11 +82,33 @@
         &__subtitle {
             margin-bottom: 20px;
         }
-        &__photo {
+        &__img {
             img {
                 height: 364px;
                 padding-left: 20px;
             }
+            &:after {
+                width: 266.715px;
+                height: 235.282px;
+                opacity: 0.63;
+                left: 9px;
+                top: 5px;
+                filter: blur(75px);
+            }
+            &:before {
+                width: 270.265px;
+                height: 245.829px;
+                opacity: 0.6;
+                right: 17px;
+                top: 141px;
+                filter: blur(75px);
+            }
+        }
+        &__back-white {
+            width: 350.88px;
+            height: 140.854px;
+            top: 140px;
+            left: -35px;
         }
         &__contacts {
             width: 140px;
@@ -86,6 +126,52 @@
     .about {
         &__card {
             width: 280px;
+        }
+        &__img {
+            &:after {
+                width: 166.715px;
+                height: 235.282px;
+                top: 35px;
+                left: 53px;
+                opacity: .63;
+                filter: blur(50px);
+                transform: translate3d(0,0,0) rotate(31.919deg);
+            }
+            &:before {
+                width: 170.265px;
+                height: 245.829px;
+                top: 125px;
+                right: 60px;
+                opacity: .6;
+                filter: blur(50px);
+                transform: translate3d(0,0,0) rotate(31.919deg);
+            }
+        }
+        &__back-white {
+            width: 250.88px;
+            height: 140.854px;
+            top: 110px;
+            left: 16px;
+            filter: blur(50px);
+            transform: translate3d(0,0,0) rotate(31.919deg);
+        }
+    }
+}
+@media (max-width: 360px) {
+    .about {
+        &__card {
+            padding: 30px 14px 30px 14px;
+        }
+        &__img {
+            &:after {
+                filter: blur(45px);
+            }
+            &:before {
+                filter: blur(45px);
+            }
+        }
+        &__back-white {
+            filter: blur(45px);
         }
     }
 }
