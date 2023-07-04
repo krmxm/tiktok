@@ -283,8 +283,9 @@
         &:before {
             content: "";
             position: absolute;
-            background: url(../img/bg/bg2.jpg) center (center/cover) no-repeat;
-            // background-size: contain;
+            background: #2D2B2B;
+            // background: url(../img/bg/bg.jpg);
+            
         }
         &__wrapper {
             display: block;

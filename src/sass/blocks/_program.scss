@@ -3,16 +3,16 @@
     min-height: 1413px;
     padding: 200px 0;
     overflow: hidden;
-    &:after {
-        content: "";
-        position: absolute;
-        height: 546px;
-        width: 100%;
-        z-index: -1;
-        top: 30%;
-        background: linear-gradient(89.87deg, rgba(95, 255, 250, 0.4) 13.48%, rgba(255, 90, 122, 0.4) 86.65%);
-filter: blur(350px);
-    }
+//     &:after {
+//         content: "";
+//         position: absolute;
+//         height: 546px;
+//         width: 100%;
+//         z-index: -1;
+//         top: 30%;
+//         background: linear-gradient(89.87deg, rgba(95, 255, 250, 0.4) 13.48%, rgba(255, 90, 122, 0.4) 86.65%);
+// filter: blur(350px);
+//     }
     &:before {
         content: "";
         position: absolute;

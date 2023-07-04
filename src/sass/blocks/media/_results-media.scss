@@ -329,6 +329,9 @@
 }
 @media (max-width: 575px) {
     .results {
+        &:before {
+            background: #2D2B2B;
+        }
         padding: 90px 0 350px 0;
         &__title {
             margin-bottom: 215px;

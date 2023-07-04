@@ -12,9 +12,9 @@
         width: 100%;
         height: 100%;
         z-index: -1;
-        // background: url(../img/bg/bg.jpg) no-repeat center center;
+        background: url(../img/bg/bg.jpg) no-repeat center center;
         background-size: cover;
-        // background-size: 100% 100%;
+        background-size: 100% 100%;
     }
 
 
@@ -205,6 +205,7 @@
         }
     }
     &__bubble {
+        display: none;
         position: absolute;
         &_tiktok-bubble {
             top: 99px;

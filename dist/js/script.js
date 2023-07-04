@@ -2,15 +2,24 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    const critical = require('critical');
+    window.onload = function () {
+        document.querySelector('.preloader').classList.add('loaded-hiding');
+        window.setTimeout(function () {
+          document.querySelector('.preloader').classList.add('loaded');
+          document.querySelector('.preloader').classList.remove('loaded-hiding');
+        }, 500);
+    };
 
-    critical.generate({
-    inline: true,
-    base: 'initial/',
-    src: 'homepage.html',
-    dest: 'final/homepage.html',
-    width: 1366,
-    height: 768
+    window.addEventListener("load", function() {
+        
+        if (991 <= window.innerWidth) {
+            const promoBubble = document.querySelectorAll('.promo__bubble');
+    
+            promoBubble.forEach(i => {
+                i.style.display = 'block';
+            });
+        }
+    
     });
 
     // modal

@@ -70,6 +70,9 @@
 }
 @media (max-width: 575px) {
     .program {
+        &::before {
+            background: #2D2B2B;
+        }
         padding: 150px 0 90px 0;
         &__title {
             margin-bottom: 42px;
