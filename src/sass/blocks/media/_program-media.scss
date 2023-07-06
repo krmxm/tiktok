@@ -9,8 +9,8 @@
     .program {
         padding: 300px 0 150px 0;
         &__card {
-        // width: 700px;
-        padding: 0px 0 40px 0;
+        padding: 0 0 50px 0;
+        width: 700px;
         }
         &__card-wrap {
             grid-template-columns: 600px;
@@ -23,7 +23,7 @@
             text-align: center;
         }
         &__card-text {
-            margin: 0 0 118px 0;
+            margin: 0;
             h3 {
                 text-align: center;
             }
@@ -32,10 +32,9 @@
 }
 @media (max-width: 767px) {
     .program {
-        padding: 300px 0 100px 0;
+        padding: 0px 0 100px 0;
         &__card {
         width: 422px;
-        // height: 600px;
         }
         &__card-wrap {
             grid-template-columns: 600px;
@@ -51,13 +50,11 @@
             position: relative;
             grid-template-columns: 1fr;
             h3 {
-                margin-top: 132px;
                 font-weight: 900;
                 line-height: 29px;
             }
         }
         &__card-text {
-            margin: 0 0 118px 0;
             h3 {
                 text-align: center;
             }
@@ -71,18 +68,17 @@
 }
 @media (max-width: 575px) {
     .program {
+        padding: 150px 0 50px 0;
         &::before {
             background: #2D2B2B;
         }
-        padding: 150px 0 90px 0;
         &__title {
             margin-bottom: 42px;
         }
         &__card {
             position: relative;
             width: 300px;
-            height: 600px;
-            padding: 0 18px 0 18px;
+            padding: 0 18px 35px 18px;
             margin-bottom: 50px;
         }
         &__num {
@@ -100,7 +96,6 @@
             }
         }
         &__card-text {
-            margin: 0 0;
             ul {
             list-style: none;
                 li {

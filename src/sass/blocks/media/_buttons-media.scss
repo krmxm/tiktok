@@ -1,3 +1,16 @@
+@media (max-width: 1200px) {
+    .button {
+        &__decor-left {
+            top: 40px;
+            height: 35%;
+        }
+        &__decor-right {
+            top: 40px;
+            height: 35%;
+        }
+    }
+}
+
 @media (max-width: 991px) {
     .button-wrap {
         width: 323.14px;
