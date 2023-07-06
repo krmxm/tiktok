@@ -3,16 +3,6 @@
     min-height: 1413px;
     padding: 200px 0;
     overflow: hidden;
-//     &:after {
-//         content: "";
-//         position: absolute;
-//         height: 546px;
-//         width: 100%;
-//         z-index: -1;
-//         top: 30%;
-//         background: linear-gradient(89.87deg, rgba(95, 255, 250, 0.4) 13.48%, rgba(255, 90, 122, 0.4) 86.65%);
-// filter: blur(350px);
-//     }
     &:before {
         content: "";
         position: absolute;
@@ -21,7 +11,6 @@
         width: 100%;
         height: 100%;
         z-index: -2;
-        // transform: matrix(1, 0, 0, -1, 0, 0);
         background: url(../img/bg/bg.jpg) center (center/contain) no-repeat;
         background-size: 100% 100%;
         transform: matrix(1, 0, 0, -1, 0, 0);
@@ -42,8 +31,9 @@
 
     &__card {
         position: relative;
-        width: 960px;
-        min-height: 394px;
+        // width: 960px;
+        // min-height: 394px;
+        padding: 0px 0 40px 0;
         margin-bottom: 63px;
         box-sizing: border-box;
         background: url(../img/about/about-card.png) center (center/contain) no-repeat;
@@ -116,7 +106,6 @@
             top: 250px;
             left: 450px;
             filter: blur(3px);
-            // z-index: 10000000;
             animation: animation-for-tiktok 80s linear infinite;
             img {
                 width: 331px;

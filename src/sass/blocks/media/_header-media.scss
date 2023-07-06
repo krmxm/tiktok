@@ -182,6 +182,8 @@
         &__icon-back {
             width: 77px;
             height: 50px;
+            filter: blur(5px);
+            transform: translate3d(0,0,0);
             margin-top: 5px;
         }
         &__condition-date {
@@ -268,6 +270,8 @@
             &__icon-back {
                 width: 65px;
                 height: 38px;
+                filter: blur(4px);
+                transform: translate3d(0,0,0);
                 margin-top: 12px;
                 border-radius: 10px;
             }

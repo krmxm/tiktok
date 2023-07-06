@@ -9,7 +9,8 @@
     .program {
         padding: 300px 0 150px 0;
         &__card {
-        width: 700px;
+        // width: 700px;
+        padding: 0px 0 40px 0;
         }
         &__card-wrap {
             grid-template-columns: 600px;
