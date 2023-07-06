@@ -8,6 +8,7 @@
             flex-direction: column;
         }
         &__img {
+            margin-top: 20px;
             &::after{
                 filter: blur(110px);
             }
@@ -31,9 +32,8 @@
             width: 510px;
         }
         &__img {
-            img {
-                height: 500px;
-            }
+            width: 270px;
+            height: 500px;
             &::after {
                 width: 343.21px;
                 height: 239.89px;
@@ -83,51 +83,9 @@
             margin-bottom: 20px;
         }
         &__img {
-            img {
-                height: 364px;
-                padding-left: 20px;
-            }
-            &:after {
-                width: 266.715px;
-                height: 235.282px;
-                opacity: 0.63;
-                left: 9px;
-                top: 5px;
-                filter: blur(75px);
-            }
-            &:before {
-                width: 270.265px;
-                height: 245.829px;
-                opacity: 0.6;
-                right: 17px;
-                top: 141px;
-                filter: blur(75px);
-            }
-        }
-        &__back-white {
-            width: 350.88px;
-            height: 140.854px;
-            top: 140px;
-            left: -35px;
-        }
-        &__contacts {
-            width: 140px;
-            height: 41px;
-            a {
-                padding-top: 12px;
-                font-weight: 600;
-                font-size: 16px;
-                line-height: 20px;
-            }
-        }
-    }
-}
-@media (max-width: 575px) {
-    .about {
-        &__card {
-            width: 280px;
-        }
-        &__img {
+            width: 225px;
+            height: 427px;
+            // padding-left: 20px;
             &:after {
                 width: 166.715px;
                 height: 235.282px;
@@ -155,11 +113,23 @@
             filter: blur(50px);
             transform: translate3d(0,0,0) rotate(31.919deg);
         }
+        &__contacts {
+            width: 140px;
+            height: 41px;
+            // margin: 0 33px;
+            a {
+                padding-top: 12px;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
     }
 }
 @media (max-width: 360px) {
     .about {
         &__card {
+            width: 280px;
             padding: 30px 14px 30px 14px;
         }
         &__img {

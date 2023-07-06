@@ -255,15 +255,6 @@
 
 // animation 
 
-@keyframes animate {
-    0% {
-      background-position: -500%;
-    }
-    100% {
-      background-position: 500%;
-    }
-  }
-
 @keyframes animation-promo-tiktok {
     0% { 
       transform: translateY(-40%) translateX(70%) rotate(240deg);
