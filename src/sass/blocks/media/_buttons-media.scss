@@ -20,7 +20,7 @@
         &::after {
         width: 323.14px;
         height: 122.41px;
-        transition: 0.5s ease-in;
+        transition: 0.2s linear;
         }
         &_medium {
             width: 374px;
@@ -30,7 +30,7 @@
             &::after {
                 width: 374px;
                 height: 91.26px;
-                transition: 0.5s ease-in;
+                transition: 0.2s ease-in;
             }
         }
         &_modal {
@@ -42,14 +42,14 @@
             &::after {
                 width: 256.48px;
                 height: 75.86px;
-                transition: 0.5s ease-in;
+                transition: 0.2s ease-in;
             }
         }
         &:hover {
             transform: scale(0.92);
         }
         &__decor-left, &__decor-right {
-            transition: 0.5s;
+            transition: 0.3s;
         }
     }
     .button {

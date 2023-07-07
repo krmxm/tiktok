@@ -34,16 +34,14 @@
         margin: auto;
         z-index: 1;
         mix-blend-mode: multiply;
-        img{
-            display: block;
-            margin: 0 auto;
-            width: 650px;
-            height: 650px;
-            // mix-blend-mode: multiply;
-            transition: 0.2s;  
-        }
-        &:hover:before {
-            filter: blur(145px);
+        picture {
+            img{
+                display: block;
+                margin: 0 auto;
+                width: 650px;
+                height: 650px;
+                transition: 0.2s;
+            }
         }
     }
     &__shine {
@@ -55,6 +53,7 @@
         z-index: -1;
         background: #EEEEEE;
         filter: blur(100px);
+        transform: translate3d(0,0,0);
         opacity: 0.8;  
     }
     &__orbita-main {
@@ -62,11 +61,13 @@
         top: -69px;
         left: 180px;
         opacity: 0.45;
-        img {
-            display: block;
-            margin: 0 auto;
-            width: 800px;
-            height: 800px;
+        picture {
+            img {
+                display: block;
+                margin: 0 auto;
+                width: 800px;
+                height: 800px;
+            }
         }
     }
     &__orbita-small {
@@ -74,13 +75,15 @@
         top: -166px;
         left: 85px;
         opacity: 0.65;
-        img{
-            width: 991px;
-            height: 991px;
-            animation-name: rotation;
-            animation-duration: 15s;
-            animation-iteration-count: infinite;
-            animation-timing-function: linear;
+        picture {
+            img{
+                width: 991px;
+                height: 991px;
+                animation-name: rotation;
+                animation-duration: 15s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
         }
     }
     &__orbita-medium {
@@ -88,13 +91,15 @@
         top: -251px;
         left: 0;
         opacity: 0.55;
-        img{
-            width: 1155px;
-            height: 1155px;
-            animation-name: rotation;
-            animation-duration: 20s;
-            animation-iteration-count: infinite;
-            animation-timing-function: linear;
+        picture {
+            img{
+                width: 1155px;
+                height: 1155px;
+                animation-name: rotation;
+                animation-duration: 20s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
         }
     }
     &__orbita-big {
@@ -102,13 +107,15 @@
         top: -300px;
         left: -49px;
         opacity: 0.5;
-        img{
-            width: 1249px;
-            height: 1249px;
-            animation-name: rotation;
-            animation-duration: 25s;
-            animation-iteration-count: infinite;
-            animation-timing-function: linear;
+        picture {
+            img{
+                width: 1249px;
+                height: 1249px;
+                animation-name: rotation;
+                animation-duration: 25s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
         }
     }
 
@@ -151,6 +158,7 @@
                 background: #EEEEEE;
                 box-shadow: -4px -4px 15px rgba(217, 217, 217, 0.8), 4px 4px 15px rgba(217, 217, 217, 0.7);
                 filter: blur(2px);
+                transform: translate3d(0,0,0);
             }
         }
         &_2 {
@@ -178,6 +186,7 @@
                 background: #EEEEEE;
                 box-shadow: -4px -4px 15px rgba(217, 217, 217, 0.8), 4px 4px 15px rgba(217, 217, 217, 0.7);
                 filter: blur(2px);
+                transform: translate3d(0,0,0);
             }
         }
         &_3 {
@@ -205,6 +214,7 @@
                 background: #EEEEEE;
                 box-shadow: -4px -4px 15px rgba(217, 217, 217, 0.8), 4px 4px 15px rgba(217, 217, 217, 0.7);
                 filter: blur(2px);
+                transform: translate3d(0,0,0);
             }
         }
         &_4 {
@@ -232,6 +242,7 @@
                 background: #EEEEEE;
                 box-shadow: -4px -4px 15px rgba(217, 217, 217, 0.8), 4px 4px 15px rgba(217, 217, 217, 0.7);
                 filter: blur(2px);
+                transform: translate3d(0,0,0);
             }
         }
         
@@ -243,6 +254,7 @@
             top: 790px;
             right: 460px;
             filter: blur(3px);
+            transform: translate3d(0,0,0);
             animation: animation-results-heart 120s linear infinite;
 
         }
@@ -250,6 +262,7 @@
             top: 700px;
             right: 450px;
             filter: blur(3px);
+            transform: translate3d(0,0,0);
             z-index: 10;
             animation: animation-results-send 90s linear infinite;
             img {
@@ -260,6 +273,7 @@
             top: 700px;
             right: 450px;
             filter: blur(2px);
+            transform: translate3d(0,0,0);
             animation: animation-results-tiktok 90s linear infinite;
             img {
                 width: 331px;
@@ -271,11 +285,10 @@
             top: 550px;
             left: 300px;
             filter: blur(2px);
-            // transform: scaleX(-1);
-            // transform: scaleY(-1);
+            transform: translate3d(0,0,0);
             animation: animation-results-message 90s linear infinite;
             img {
-            opacity: 0.8;
+                opacity: 0.8;
             }
         }
     }

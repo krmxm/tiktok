@@ -4,7 +4,7 @@
     width: 333.14px;
     height: 132.41px;
     border-radius: 30px;
-    transition: 0.8s;
+    transition: 0.5s;
     &::before,
     &::after {
         content: '';
@@ -15,7 +15,7 @@
         bottom: 0;
         border-radius: 15px;
         z-index: -1;
-        transition: 0.8s ease-in;
+        transition: 0.3s ease-in;
     }
 
     &::before {
@@ -63,7 +63,7 @@
             bottom: 0;
             border-radius: 15px;
             z-index: -1;
-            transition: 0.8s ease-in;
+            transition: 0.3s ease-in;
         }
     
         &::before {
@@ -98,7 +98,7 @@
                 bottom: 0;
                 border-radius: 15px;
                 z-index: -1;
-                transition: 0.8s ease-in;
+                transition: 0.3s ease-in;
             }
         
             &::before {
@@ -156,7 +156,7 @@
         right: 0;
         filter: blur(50px);
         transform: translate3d(0,0,0);
-        transition: 0.8s;
+        transition: 0.5s;
         &_medium {
             filter: blur(32px);
             transform: translate3d(0,0,0);
@@ -176,7 +176,7 @@
         left: 50%;
         filter: blur(50px);
         transform: translate3d(0,0,0);
-        transition: 0.8s;
+        transition: 0.5s;
         &_medium {
             left: 46%;
             filter: blur(32px);

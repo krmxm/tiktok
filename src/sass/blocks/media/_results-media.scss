@@ -5,9 +5,11 @@
             max-width: 985px;
         }
         &__brain {
-            img {
-                width: 550px;
-                height: 550px;
+            picture {
+                img {
+                    width: 550px;
+                    height: 550px;
+                }
             }
         }
         &__shine {
@@ -17,35 +19,41 @@
         &__orbita-main {
             top: -99px;
             left: 118px;
-            img {
-                // display: block;
-                // margin: 0 auto;
-                width: 750px;
-                height: 750px;
+            picture {
+                img {
+                    width: 750px;
+                    height: 750px;
+                }
             }
         }
         &__orbita-small {
             left: 25px;
             top: -187px;
-            img {
-                width: 941px;
-                height: 941px;
+            picture {
+                img {
+                    width: 941px;
+                    height: 941px;
+                }
             }
         }
         &__orbita-medium {
             left: -58px;
             top: -272px;
-            img {
-                width: 1105px;
-                height: 1105px;
+            picture {
+                img {
+                    width: 1105px;
+                    height: 1105px;
+                }
             }
         }
         &__orbita-big {
             left: -107px;
             top: -321px;
-            img {
-                width: 1199px;
-                height: 1199px;
+            picture {
+                img {
+                    width: 1199px;
+                    height: 1199px;
+                }
             }
         }
         &__card {
@@ -80,9 +88,11 @@
             width: 750px;
         }
         &__brain {
-            img {
-                width: 350px;
-                height: 350px;
+            picture {
+                img {
+                    width: 350px;
+                    height: 350px;
+                }
             }
         }
         &__shine {
@@ -92,37 +102,43 @@
             left: 198px;
         }
         &__orbita-main {
-            top: -50px; // -49
-            left: 150px;  // -32      
-            img {
-                // display: block;
-                // margin: 0 auto;
-                width: 450px;
-                height: 450px;
+            top: -50px;
+            left: 150px;     
+            picture {
+                img {
+                    width: 450px;
+                    height: 450px;
+                }
             }
         }
         &__orbita-small {
             left: 54px;
             top: -145px;
-            img {
-                width: 641px;
-                height: 641px;
+            picture {
+                img {
+                    width: 641px;
+                    height: 641px;
+                }
             }
         }
         &__orbita-medium {
             left: -25px;
             top: -231px;
-            img {
-                width: 805px;
-                height: 805px;
+            picture {
+                img {
+                    width: 805px;
+                    height: 805px;
+                }
             }
         }
         &__orbita-big {
             left: -74px;
             top: -280px;
-            img {
-                width: 899px;
-                height: 899px;
+            picture {
+                img {
+                    width: 899px;
+                    height: 899px;
+                }
             }
         }
         &__card {
@@ -185,9 +201,11 @@
             width: 449px;
         }
         &__brain {
-            img {
-                width: 173px;
-                height: 173px;
+            picture {
+                img {
+                    width: 173px;
+                    height: 173px;
+                }
             }
         }
         &__shine {
@@ -198,38 +216,44 @@
             left: 135px;
         }
         &__orbita-main {
-            // content: url("../img/results/main-orbita-media.png");
             top: -24px;
             left: 112px;
-            img {
-                // display: block;
-                // margin: 0 auto;
-                width: 223px;
-                height: 223px;
+            picture {
+                img {
+                    width: 223px;
+                    height: 223px;
+                }
             }
         }
         &__orbita-small {
             left: 75px;
             top: -63px;
-            img {
-                width: 300px;
-                height: 300px;
+            picture {
+                img {
+                    width: 300px;
+                    height: 300px;
+                }
+    
             }
         }
         &__orbita-medium {
             left: 51px;
             top: -88px;
-            img {
-                width: 350px;
-                height: 350px;
+            picture {
+                img {
+                    width: 350px;
+                    height: 350px;
+                }
             }
         }
         &__orbita-big {
             left: 27px;
             top: -115px;
-            img {
-                width: 400px;
-                height: 400px;
+            picture {
+                img {
+                    width: 400px;
+                    height: 400px;
+                }
             }
         }
         &__card {
@@ -340,9 +364,11 @@
             width: 324px;
         }
         &__brain {
-            img {
-                width: 173px;
-                height: 173px;
+            picture {
+                img {
+                    width: 173px;
+                    height: 173px;
+                }    
             }
         }
         &__shine {
@@ -353,38 +379,44 @@
             left: 89px;
         }
         &__orbita-main {
-            // content: url("../img/results/main-orbita-media.png");
             left: 51px;
             top: -24px;
-            img {
-                // display: block;
-                // margin: 0 auto;
-                width: 223px;
-                height: 223px;
+            picture {
+                img {
+                    width: 223px;
+                    height: 223px;
+                }
             }
         }
         &__orbita-small {
             left: 12px;
             top: -63px;
-            img {
-                width: 300px;
-                height: 300px;
+            picture {
+                img {
+                    width: 300px;
+                    height: 300px;
+                }
             }
         }
         &__orbita-medium {
             left: -13px;
             top: -88px;
-            img {
-                width: 350px;
-                height: 350px;
+            picture {
+                img {
+                    width: 350px;
+                    height: 350px;
+                }
             }
         }
         &__orbita-big {
             left: -33px;
             top: -107px;
-            img {
-                width: 390px;
-                height: 390px;
+            picture {
+                img {
+                    width: 390px;
+                    height: 390px;
+                }
+    
             }
         }
         &__card {
@@ -499,9 +531,11 @@
             width: 300px;
         }
         &__brain {
-            img {
-                width: 153px;
-                height: 153px;
+            picture {
+                img {
+                    width: 153px;
+                    height: 153px;
+                }
             }
         }
         &__shine {
@@ -512,38 +546,47 @@
             top: 16px;
         }
         &__orbita-main {
-            // content: url("../img/results/main-orbita-media.png");
             left: 49px;
             top: -24px;
-            img {
-                // display: block;
-                // margin: 0 auto;
-                width: 203px;
-                height: 203px;
+            picture {
+                img {
+                    width: 203px;
+                    height: 203px;
+                }
+    
             }
         }
         &__orbita-small {
             left: 10px;
             top: -63px;
-            img {
-                width: 280px;
-                height: 280px;
+            picture {
+                img {
+                    width: 280px;
+                    height: 280px;
+                }
+    
             }
         }
         &__orbita-medium {
             left: -15px;
             top: -88px;
-            img {
-                width: 330px;
-                height: 330px;
+            picture {
+                img {
+                    width: 330px;
+                    height: 330px;
+                }
+    
             }
         }
         &__orbita-big {
             left: -35px;
             top: -107px;
-            img {
-                width: 370px;
-                height: 370px;
+            picture {
+                img {
+                    width: 370px;
+                    height: 370px;
+                }
+    
             }
         }
         &__card {
