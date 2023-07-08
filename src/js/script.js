@@ -27,12 +27,13 @@ document.addEventListener('DOMContentLoaded', () => {
     function openModal(modalSelector) {
         const modal = document.querySelector(modalSelector);
         modal.classList.add('active');
-
+        document.body.style.overflow = 'hidden';
     }
 
     function closeModal (modalSelector) {
         const modal = document.querySelector(modalSelector);
         modal.classList.remove('active');
+        document.body.style.overflow = '';
     }
 
     function modal (modalSelector, triggerSelector, closeSelector) {
@@ -126,8 +127,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const thanksModal = document.createElement('div');
         thanksModal.classList.add('modal__dialog');
         thanksModal.innerHTML = `
-            <div class="modal__content">
-                <div class="title title_white">${message}</div>
+            <div class="modal__content modal__content_thanks">
+                <div class="title title__white">${message}</div>
             </div>
         `;
         document.querySelector(modalSelector).append(thanksModal);

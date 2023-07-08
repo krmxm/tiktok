@@ -1,0 +1,80 @@
+@media (max-width: 1200px) {
+    .elipse {
+        &__red {
+            width: 370px;
+            height: 337px;
+            border-radius: 420px;
+            filter: blur(280px);
+        }
+        &__blue {
+            width: 370px;
+            height: 337px;
+            border-radius: 420px;
+            filter: blur(280px);
+        }
+    }
+}
+@media (max-width: 991px) {
+    .elipse {
+        &__red {
+            width: 249px;
+            height: 120px;
+            border-radius: 299px;
+            filter: blur(250px);
+        }
+        &__blue {
+            width: 270px;
+            height: 137px;
+            border-radius: 299px;
+            filter: blur(250px);
+        }
+    }
+}
+@media (max-width: 767px) {
+    .elipse {
+        &__red {
+            width: 150px;
+            height: 100px;
+            border-radius: 299px;
+            filter: blur(250px);
+        }
+        &__blue {
+            width: 150px;
+            height: 100px;
+            border-radius: 299px;
+            filter: blur(250px);
+        }
+    }
+}
+@media (max-width: 575px) {
+    elipse {
+        &__red {
+            width: 100px;
+            height: 60px;
+            border-radius: 120px;
+            filter: blur(120px);
+        }
+        &__blue {
+            width: 100px;
+            height: 60px;
+            border-radius: 120px;
+            filter: blur(120px);
+        }
+    }
+}
+@media (max-width: 360px) {
+    .elipse {
+        &__red {
+            width: 100px;
+            height: 60px;
+            border-radius: 120px;
+            filter: blur(100px);
+        }
+        &__blue {
+            width: 100px;
+            height: 60px;
+            border-radius: 120px;
+            filter: blur(100px);
+        }
+    }
+}

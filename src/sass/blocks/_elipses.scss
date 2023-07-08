@@ -1,0 +1,20 @@
+.elipse {
+    position: absolute;
+    z-index: 10000000;
+    &__red {
+        width: 420px;
+        height: 387px;
+        border-radius: 420px;
+        background: #FE2C55;
+        filter: blur(400px);
+        transform: translate3d(0,0,0);
+    }
+    &__blue {
+        width: 420px;
+        height: 387px;
+        border-radius: 420px;
+        background: #25F4EE;
+        filter: blur(400px);
+        transform: translate3d(0,0,0);
+    }
+}

@@ -172,6 +172,16 @@
             }
         }
     }
+    &__elipse {
+        &_red {
+            top: 200px;
+            left: -1256px;
+        }
+        &_blue {
+            bottom: 390px;
+            right: -1256px;
+        }
+    }
 }
 
 // animation 

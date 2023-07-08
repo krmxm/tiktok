@@ -1,5 +1,10 @@
 @media (max-width: 1200px) {
-
+    .about {
+        &__img {
+            width: 444px;
+            height: 753px;
+        }
+    }
 }
 @media (max-width: 991px) {
     .about {

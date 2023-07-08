@@ -11,16 +11,15 @@
         display: flex;
         justify-content: space-between;
         position: relative;
-        z-index: 1000;
+        z-index: 100000000;
     }
     &__card {
-        
         padding: 98px 0px 102px 0px;
         width: 504px;
         min-height: 1162px;
         background: rgba(22, 21, 20, 0.15);
         position: relative;
-        z-index: 10000;
+        z-index: 10000000;
         border-radius: 15px;
     }
     &__subtitle {
@@ -159,6 +158,22 @@
                 height: 144.053px;
                 opacity: 0.6;
             }
+        }
+    }
+    &__elipse {
+        &_hidden-red {
+            display: none;
+        }
+        &_hidden-blue {
+            display: none;
+        }
+        &_red {
+            top: 200px;
+            left: -1256px;
+        }
+        &_blue {
+            bottom: 390px;
+            right: -1256px;
         }
     }
 }

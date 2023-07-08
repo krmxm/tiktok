@@ -4,7 +4,7 @@
     }
     .title {
         font-size: 50px;
-        &_modal {
+        &__modal {
             font-size: 35px;
             line-height: 47px;
         }
@@ -27,7 +27,7 @@
             font-weight: 600;
             font-size: 18px;  
         }
-        &_contacts {
+        &__contacts {
             font-weight: 400;
             font-size: 30px;
             line-height: 39px;
@@ -37,7 +37,7 @@
 @media (max-width: 767px) {
     .title {
         font-size: 44px;
-        &_modal {
+        &__modal {
             font-size: 29px;
             line-height: 39px;
             text-shadow: 1px 1px #25F4EE, 2px 2px #FE2C55;
@@ -65,7 +65,7 @@
             font-weight: 600;
             font-size: 18px;  
         }
-        &_contacts {
+        &__contacts {
             font-weight: 400;
             font-size: 30px;
             line-height: 39px;
@@ -78,10 +78,10 @@
         font-size: 30px;
         line-height: 43px;
         text-shadow: 1.2px 1.2px #25F4EE, 2.5px 2.5px #FE2C55;
-        &_contacts {
+        &__contacts {
             line-height: 36px;
         }
-        &_modal {
+        &__modal {
             font-size: 25px;
             line-height: 35px;
         }
@@ -109,7 +109,7 @@
             font-weight: 600;
             font-size: 16px; 
         }
-        &_contacts {
+        &__contacts {
             font-weight: 400;
             font-size: 24px;
             line-height: 29px;
@@ -143,10 +143,10 @@
         font-size: 28px;
         line-height: 43px;
         text-shadow: 0.6px 0.6px #25F4EE, 1.4px 1.4px #FE2C55;
-        &_contacts {
+        &__contacts {
             line-height: 36px;
         }
-        &_modal {
+        &__modal {
             font-size: 23px;
             line-height: 30px;
         }
@@ -174,7 +174,7 @@
             font-weight: 600;
             font-size: 14px;  
         }
-        &_contacts {
+        &__contacts {
             font-weight: 400;
             font-size: 21px;
             line-height: 28px;

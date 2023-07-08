@@ -50,7 +50,7 @@
     &:active {
         transform: scale(0.92);
     }
-    &_medium {
+    &__medium {
         width: 326px;
         height: 91.26px;
         &::before,
@@ -85,40 +85,40 @@
             background-color: #FE2C55;
         }
     }
-    &_modal {
+    &__modal {
         width: 326px;
+        height: 91.26px;
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            width: 326px;
             height: 91.26px;
-            &::before,
-            &::after {
-                content: '';
-                position: absolute;
-                width: 326px;
-                height: 91.26px;
-                top: 0;
-                bottom: 0;
-                border-radius: 15px;
-                z-index: -1;
-                transition: 0.3s ease-in;
-            }
-        
-            &::before {
-                background-color: #FE2C55;
-                width: 50%;
-                left: -8px;
-                right: 0;
-            }
-        
-            &::after {
-                background-color: #25F4EE;
-                right: 0;
-                left: 8px;
-            }
-            &:hover::before {
-                background-color: #25F4EE;
-            }
-            &:hover::after {
-                background-color: #FE2C55;
-            }
+            top: 0;
+            bottom: 0;
+            border-radius: 15px;
+            z-index: -1;
+            transition: 0.3s ease-in;
+        }
+    
+        &::before {
+            background-color: #FE2C55;
+            width: 50%;
+            left: -8px;
+            right: 0;
+        }
+    
+        &::after {
+            background-color: #25F4EE;
+            right: 0;
+            left: 8px;
+        }
+        &:hover::before {
+            background-color: #25F4EE;
+        }
+        &:hover::after {
+            background-color: #FE2C55;
+        }
     }
 }
 
@@ -140,9 +140,7 @@
     &__decor-left, &__decor-right {
         display: block;
         position: absolute;
-        width: 333.14px;
-        height: 132.41px;
-        top: 20px;
+        top: 30px;
         bottom: 0;
         border-radius: 15px;
         z-index: -2;
@@ -151,12 +149,12 @@
     &__decor-left {
         background-color: #FE2C55;
         width: 50%;
-        height: 74%;
+        height: 50%;
         left: -3%;
         right: 0;
         filter: blur(50px);
         transform: translate3d(0,0,0);
-        transition: 0.5s;
+        transition: 0.8s;
         &_medium {
             filter: blur(32px);
             transform: translate3d(0,0,0);
@@ -176,7 +174,7 @@
         left: 50%;
         filter: blur(50px);
         transform: translate3d(0,0,0);
-        transition: 0.5s;
+        transition: 0.8s;
         &_medium {
             left: 46%;
             filter: blur(32px);
@@ -188,11 +186,11 @@
             background-color: #FE2C55;
         }
     }
-    &_medium {
+    &__medium {
         width: 326px;
         height: 91.26px;
     }
-    &_modal {
+    &__modal {
         width: 326px;
         height: 91.26px;
     }

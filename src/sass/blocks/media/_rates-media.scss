@@ -9,6 +9,16 @@
                 margin-bottom: 40px;
             }
         }
+        &__elipse {
+            &_red {
+                top: 200px;
+                left: -800px;
+            }
+            &_blue {
+                bottom: 390px;
+                right: -750px;
+            }
+        }
     }
 }
 @media (max-width: 991px) {
@@ -106,12 +116,50 @@
                 }
             }
         }
+        &__elipse {
+            &_hidden-red {
+                display: block;
+                bottom: 300px;
+                left: -350px;
+            }
+            &_hidden-blue {
+                display: block;
+                bottom: 300px;
+                right: -350px;
+            }
+            &_red {
+                top: 1000px;
+                left: -350px;
+            }
+            &_blue {
+                bottom: 1400px;
+                right: -350px;
+            }
+        }
     }
 }
 @media (max-width: 767px) {
     .rates {
         &__card {
             min-height: 950px;
+        }
+        &__elipse {
+            &_hidden-red {
+                bottom: 160px;
+                left: -100px;
+            }
+            &_hidden-blue {
+                bottom: 160px;
+                right: -100px;
+            }
+            &_red {
+                top: 900px;
+                left: -100px;
+            }
+            &_blue {
+                bottom: 1100px;
+                right: -100px;
+            }
         }
     }
 }
@@ -137,6 +185,24 @@
         &__price {
             margin-bottom: 15px;
         }
+        &__elipse {
+            &_hidden-red {
+                bottom: 50px;
+                left: -100px;
+            }
+            &_hidden-blue {
+                bottom: 50px;
+                right: -100px;
+            }
+            &_red {
+                top: 800px;
+                left: -100px;
+            }
+            &_blue {
+                bottom: 950px;
+                right: -100px;
+            }
+        }
     }
 }
 @media (max-width: 360px) {
@@ -157,6 +223,16 @@
         }
         &__price {
             margin-bottom: 15px;
+        }
+        &__elipse {
+            &_red {
+                top: 750px;
+                left: -120px;
+            }
+            &_blue {
+                bottom: 920px;
+                right: -100px;
+            }
         }
     }
 }

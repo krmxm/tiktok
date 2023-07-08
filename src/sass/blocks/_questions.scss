@@ -99,4 +99,14 @@
             }
         }
     }
+    &__elipse {
+        &_red {
+            top: 200px;
+            left: -1256px;
+        }
+        &_blue {
+            top: 600px;
+            right: -1256px;
+        }
+    }
 }

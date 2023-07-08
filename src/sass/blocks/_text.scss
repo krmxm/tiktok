@@ -6,7 +6,7 @@
     text-align: center;
     color: #2D2B2B;
     text-shadow: 2px 2.8px #25F4EE, 5px 4.5px #FE2C55;
-    &_white {
+    &__white {
         color: #EEEEEE;
     }
 }
@@ -38,7 +38,7 @@
     &_red {
         color: #BB334E;
     }
-    &_white {
+    &__white {
         color: #EEEEEE;
     }
     &_line-through {
@@ -62,7 +62,7 @@
         font-weight: 400;
         font-size: 20px;  
     }
-    &_contacts {
+    &__contacts {
         font-weight: 400;
         font-size: 32px;
         line-height: 39px;

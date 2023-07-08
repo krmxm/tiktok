@@ -1,8 +1,9 @@
 footer {
     padding: 100px 0 200px 0;
     background: #F1F1F1;
+    z-index: 100000;
     overflow-x: clip;
-    overflow-y: hidden;
+    overflow-y: clip;
     .wrapper{
         display: flex;
         justify-content: space-between;
@@ -17,7 +18,10 @@ footer {
 }
 
 .footer {
+    overflow-x: clip;
+    overflow-y: clip;
     &__bubble {
+        z-index: 10;
         position: absolute;
         &_heart-bubble {
             top: 120px;
@@ -36,6 +40,14 @@ footer {
                 width: 213px;
                 height: 193px;
             }
+        }
+    }
+    &__elipse {
+        &_hidden-red {
+            display: none;
+        }
+        &_hidden-blue {
+            display: none;
         }
     }
 }
