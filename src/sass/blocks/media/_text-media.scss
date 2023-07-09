@@ -1,3 +1,11 @@
+@media (max-width: 1200px) {
+    .title {
+        &__modal {
+            font-size: 45px;
+        }
+    }
+}
+
 @media (max-width: 991px) {
     h1 {
         font-size: 50px;

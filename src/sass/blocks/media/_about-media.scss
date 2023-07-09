@@ -27,6 +27,12 @@
             top: 315px;
             filter: blur(110px);
         }
+        &__contacts {
+            transition: 2s;
+            &:hover {
+                transform: scale(0.92);
+            }
+        }
     }
 }
 @media (max-width: 767px) {
