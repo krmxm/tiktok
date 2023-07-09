@@ -1,5 +1,8 @@
 @media (max-width: 991px) {
     .modal {
+        &__dialog {
+            width: auto;
+        }
         &__title {
             font-size: 37px;
         }
