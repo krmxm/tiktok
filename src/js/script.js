@@ -27,13 +27,14 @@ document.addEventListener('DOMContentLoaded', () => {
     function openModal(modalSelector) {
         const modal = document.querySelector(modalSelector);
         modal.classList.add('active');
-        document.body.style.overflow = 'hidden';
+        // document.body.style.overflow = 'hidden';
     }
 
     function closeModal (modalSelector) {
         const modal = document.querySelector(modalSelector);
         modal.classList.remove('active');
-        document.body.style.overflow = '';
+        // document.body.style.overflow = '';
+
     }
 
     function modal (modalSelector, triggerSelector, closeSelector) {
