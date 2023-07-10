@@ -104,6 +104,7 @@
             top: 250px;
             left: 450px;
             filter: blur(3px);
+            transform: translate3d(0,0,0);
             animation: animation-for-tiktok 80s linear infinite;
             img {
                 width: 331px;
@@ -121,6 +122,7 @@
             bottom: -200px;
             left: -250px;
             filter: blur(4.5px);
+            transform: translate3d(0,0,0);
             transform: rotate(9.721deg);
             animation: animation-for-message 60s linear infinite;
         }

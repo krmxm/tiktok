@@ -74,11 +74,13 @@
             left: 1400px;
             animation: animation-contacts-message 100s linear infinite;
             filter: blur(4.5px);
+            transform: translate3d(0,0,0);
         }
         &_tiktok-bubble {
             top: 185px;
             right: -450px;
             filter: blur(2px);
+            transform: translate3d(0,0,0);
             animation: animation-contacts-tiktok 100s linear infinite; // style about
             img {
                 width: 165px;
@@ -90,6 +92,7 @@
             top: 600px;
             right: 1200px;
             filter: blur(3px);
+            transform: translate3d(0,0,0);
             animation: animation-contacts-heart 120s linear infinite;
             img {
                 opacity: 0.8;
