@@ -180,16 +180,16 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Создать наблюдателя
-    const observer = new IntersectionObserver(entries => {
-        // перебор записей
-        entries.forEach(entry => {
-            // если элемент появился
-            if (entry.isIntersecting) {
-            // добавить ему CSS-класс
-            entry.target.classList.add('scroll-item-animation');
-            }
-        });
-    });
+    // const observer = new IntersectionObserver(entries => {
+    //     // перебор записей
+    //     entries.forEach(entry => {
+    //         // если элемент появился
+    //         if (entry.isIntersecting) {
+    //         // добавить ему CSS-класс
+    //         entry.target.classList.add('scroll-item-animation');
+    //         }
+    //     });
+    // });
     
     // Сообщить наблюдателю, какие элементы следует отслеживать
     const bubleAnimation = document.querySelectorAll('.scroll-item');

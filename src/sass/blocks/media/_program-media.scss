@@ -32,6 +32,12 @@
 }
 @media (max-width: 767px) {
     .program {
+        &:before {
+            content: "";
+            position: absolute;
+            background-image: url(../img/bg/background-media.jpg);
+            opacity: 0.2;
+        }
         padding: 150px 0 100px 0;
         &__card {
         width: 422px;
@@ -69,9 +75,6 @@
 @media (max-width: 575px) {
     .program {
         padding: 150px 0 50px 0;
-        &::before {
-            background: #2D2B2B;
-        }
         &__title {
             margin-bottom: 42px;
         }

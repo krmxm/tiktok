@@ -33,15 +33,18 @@
 }
 @media (max-width: 767px) {
     .contacts {
+        &:before {
+            content: "";
+            position: absolute;
+            background-image: url(../img/bg/background-media.jpg);
+            opacity: 0.2;
+        }
         padding: 100px 0 350px 0;
     }
 }
 @media (max-width: 575px) {
     .contacts {
         padding: 90px 0 140px 0;
-        &:before {
-            background: #2D2B2B;
-        }
         &__wrap {
             margin-bottom: 21px;
         }

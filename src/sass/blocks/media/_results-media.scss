@@ -193,6 +193,12 @@
 }
 @media (max-width: 767px) {
     .results {
+        &:before {
+            content: "";
+            position: absolute;
+            background-image: url(../img/bg/background-media.jpg);
+            opacity: 0.2;
+        }
         padding: 100px 0 400px 0;
         &__title {
             margin-bottom: 205px;
@@ -353,9 +359,6 @@
 }
 @media (max-width: 575px) {
     .results {
-        &:before {
-            background: #2D2B2B;
-        }
         padding: 50px 0 350px 0;
         &__title {
             margin-bottom: 215px;
