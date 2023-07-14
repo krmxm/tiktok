@@ -192,9 +192,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // });
     
     // Сообщить наблюдателю, какие элементы следует отслеживать
-    const bubleAnimation = document.querySelectorAll('.scroll-item');
-    bubleAnimation.forEach(item => {
-        observer.observe(item);
-    });
+    // const bubleAnimation = document.querySelectorAll('.scroll-item');
+    // bubleAnimation.forEach(item => {
+    //     observer.observe(item);
+    // });
 
 });
