@@ -174,7 +174,7 @@
             top: -250px;
             right: -200px;
             filter: blur(3.5px);
-            transform: rotate(9.721deg);
+            transform: translate3d(0,0,0) rotate(9.721deg);
             animation: animation-about-send 100s linear infinite;
             img {
                 width: 285.903px;
@@ -185,6 +185,7 @@
             top: 1000px;
             right: 1200px;
             filter: blur(3px);
+            transform: translate3d(0,0,0);
             animation: animation-about-heart 100s linear infinite;
             img {
                 opacity: 0.8;
@@ -194,6 +195,7 @@
             top: 700px;
             right: -400px;
             filter: blur(2px);
+            transform: translate3d(0,0,0);
             animation: animation-about-tiktok 100s linear infinite;
             z-index: -3;
             img {
